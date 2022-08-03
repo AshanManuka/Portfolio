@@ -31,5 +31,9 @@
     top: -60px;
     left: 61%;
 }
+#pro-image{
+    width: 100%;
+    height: 800px;
+}
 
 /*End Header*/
