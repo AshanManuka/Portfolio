@@ -95,6 +95,13 @@ header>#frame>ul{
     font-size: large;
 }
 
+header>#frame>#cv{
+    position: relative;
+    color: #eeeeee;
+    top: 35%;
+    left: 3%;
+}
+
 
 
 
