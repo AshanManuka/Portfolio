@@ -1,39 +1,31 @@
 
-#body{
+body{
     background-color: #320606;
 }
 
 /*Begin Header*/
+header{
+    position: absolute;
+    width: 100%;
+}
+
 #nav-bar{
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 50px;
     background-color: #90727c;
 
 }
 #nav-icon{
+    position: absolute;
     width: 100px;
-    height: 33px;
-    position: relative;
+    height: 5vh;
     left: 2%;
-    top: 8px;
+    top: 10px;
 }
-.n-list{
-    list-style-type: none;
-    overflow: hidden;
-}
-.li {
-    float: left;
-    color: #eeeeee;
-}
-.nav-list{
-    position: relative;
-    top: -60px;
-    left: 61%;
-}
-#pro-image{
-    width: 100%;
-    height: 800px;
-}
+
 
 /*End Header*/
