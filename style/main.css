@@ -22,7 +22,7 @@ header{
 #nav-icon{
     position: absolute;
     width: 100px;
-    height: 5vh;
+    height: 30px;
     left: 2%;
     top: 10px;
 }
@@ -40,11 +40,17 @@ header{
     overflow: hidden;
 }
 
-
 .li{
     display: inline;
     float: left;
     color: #eeeeee;
+}
+
+#profile-image{
+    position: relative;
+    background-color: darkcyan;
+    width: 500px;
+    height: 300px;
 }
 
 /*End Header*/
