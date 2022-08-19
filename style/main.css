@@ -27,5 +27,23 @@ header{
     top: 10px;
 }
 
+#nav-list{
+    position: absolute;
+    right: 0;
+    width: 500px;
+    height: 50px;
+}
+
+#n-list{
+    display: inline;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.li{
+    display: inline;
+    float: left;
+    color: #eeeeee;
+}
 
 /*End Header*/
