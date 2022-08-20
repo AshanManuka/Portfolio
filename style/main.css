@@ -66,5 +66,12 @@ header>h1:first-child{
     color: #eeeeee;
 }
 
+main{
+    position: relative;
+    top: 700px;
+    height: 800px;
+    background-color: #eeeeee;
+
+}
 
 /*End Header*/
