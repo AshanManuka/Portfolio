@@ -25,12 +25,44 @@
         position: absolute;
         right: 0;
         top: 0;
-        background-color: aqua;
     }
 
-    header>div>ul
+    header>div>ul>li{
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px;
+        color: rgba(46, 41, 41, 0.96);
+    }
 
+    main{
+        position: absolute;
+        top: 76px;
+    }
 
+    main>aside:nth-child(1){
+        position: absolute;
+        display: inline;
+        width: 250px;
+        height: 100vh;
+        background-color: #431261;
+    }
+
+    main>aside:nth-child(1)>ul>li{
+        position: relative;
+        cursor: pointer;
+        padding: 10px;
+        left: -15px;
+        color:white;
+        list-style-type: none;
+    }
+
+    main>aside:nth-child(2){
+        position: absolute;
+        width: 1099px;
+        height: 100vh;
+        left: 250px;
+        background-color: #f9fcfc;
+    }
 
 
 
@@ -39,7 +71,10 @@
     </style>
 </head>
 <body>
+
+<!--Begin Header-->
     <header>
+
         <img src="event-image/ijse.jpg" alt="">
 
         <div>
@@ -50,10 +85,32 @@
                 <li>About Us</li>
             </ul>
         </div>
+
     </header>
-    <section></section>
-    <section></section>
-    <section></section>
+<!--End Header-->
+
+<!--Begin Main-->
+    <main>
+    <!-- Navigation Section-->
+        <aside>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>About Us</li>
+            </ul>
+        </aside>
+    <!-- Navigation Section-->
+
+    <!-- content Section-->
+        <aside>
+
+        </aside>
+    <!-- content Section-->
+
+    </main>
+<!--End Main-->
+
     <footer></footer>
 
 </body>
