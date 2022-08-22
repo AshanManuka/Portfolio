@@ -74,12 +74,29 @@ header{
 
 #content-frame{
     position: relative;
-    border: #3d1111 solid 3px;
-    border-radius: 5%;
     width: 60%;
     height: 75%;
     left: 2%;
     top: 10%;
+}
+
+#content-frame>h1{
+    position: inherit;
+}
+
+#content-frame>h1:nth-child(1){
+    color: #eeeeee;
+    left: 5%;
+    top: 3%;
+}
+
+#content-frame>h1:nth-child(2){
+    color: #e75778;
+    left: 8%;
+}
+
+#content-frame>ul{
+    color: #eeeeee;
 }
 
 main{
