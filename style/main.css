@@ -109,14 +109,23 @@ header{
     color: #ffffff;
     background-color: #871b3a;
     border-radius: 10%;
+    border: white solid 1px;
     width: 150px;
     height: 45px;
-    /*background-color: #932d37;
-    border-radius: 20px;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 20px;*/
 }
+
+    button#start-btn{
+        position: absolute;
+        color: #ffffff;
+        background-color: #550a15;
+        border-radius: 10%;
+        border: white solid 1px;
+        width: 210px;
+        height: 75px;
+        font-size: x-large;
+        left: 65%;
+        top: 99%;
+    }
 
 main{
     position: relative;
