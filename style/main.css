@@ -127,12 +127,32 @@ header{
         top: 99%;
     }
 
+/*End Header*/
+
+/*Begin main*/
 main{
     position: relative;
     top: 700px;
-    height: 800px;
-    background-color: #eeeeee;
+    height: 900px;
+    background-color: #111010;
+    border-top: wheat solid 3px;
+}
+
+main>h1{
+    position: relative;
+    color: white;
+    left: 45%;
+    top: 5%;
 
 }
 
-/*End Header*/
+
+
+
+
+
+
+
+
+
+
