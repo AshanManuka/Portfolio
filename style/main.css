@@ -99,6 +99,25 @@ header{
     color: #eeeeee;
 }
 
+#content-frame>#cv{
+    position: inherit;
+    left: 2%;
+    color: #eeeeee;
+}
+
+    button#download-btn{
+    color: #ffffff;
+    background-color: #871b3a;
+    border-radius: 10%;
+    width: 150px;
+    height: 45px;
+    /*background-color: #932d37;
+    border-radius: 20px;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;*/
+}
+
 main{
     position: relative;
     top: 700px;
