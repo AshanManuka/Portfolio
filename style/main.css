@@ -188,7 +188,7 @@ main>#pane-one>div>.hs{
     top: -70%;
     width: 80%;
     left: 10%;
-    z-index: 5;
+    /*z-index: 5;*/
 }
 
 main>#pane-two>div>.hs{
@@ -196,7 +196,7 @@ main>#pane-two>div>.hs{
     top: -70%;
     width: 80%;
     left: 10%;
-    z-index: 5;
+    /*z-index: 5;*/
 }
 
 main>section>div>.hs>h2{
