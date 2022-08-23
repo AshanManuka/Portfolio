@@ -177,6 +177,12 @@ main>#pane-two>div{
     border: #897321 solid 1px;
 }
 
+main>section>div>.im{
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+
 
 
 
