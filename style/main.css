@@ -239,6 +239,16 @@ button#project-btn{
     margin: 50px;
 }
 
+#skill-section>#row-one>div:nth-child(1){
+    border-color: white;
+}
+
+#skill-section>div>div>.logo-image{
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 100%;
+}
 
 
 
