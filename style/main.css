@@ -135,7 +135,7 @@ main{
     top: 700px;
     height: 950px;
     background-color: #111010;
-    border-top: wheat solid 3px;
+    border-top: #282317 solid 6px;
     border-bottom: white solid 1px;
 }
 
@@ -222,8 +222,8 @@ button#project-btn{
 #skill-section{
     position: absolute;
     width: 100%;
-    height: 500px;
-    top: 1650px;
+    height: 450px;
+    top: 1700px;
     border-bottom: #ac69d5 solid 1px;
 }
 
@@ -232,14 +232,10 @@ button#project-btn{
     width: 120px;
     height: 120px;
     left: 14%;
-    border: #e7678c solid 5px;
+    border: #49a2af solid 5px;
     border-radius: 100%;
     display: inline-block;
     margin: 30px;
-}
-
-#skill-section>#row-one>div:nth-child(1){
-    border-color: white;
 }
 
 #skill-section>div>div>.logo-image{
