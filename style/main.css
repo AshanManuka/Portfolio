@@ -220,11 +220,13 @@ button#project-btn{
 }
 
 #skill-section{
+    background-color: #b8f6b1;
     position: absolute;
     width: 100%;
     height: 450px;
-    top: 1700px;
-    border-bottom: #ac69d5 solid 1px;
+    top: 1550px;
+    border-bottom: #1a2465 solid 6px;
+    border-top: #321122 solid 6px;
 }
 
 #skill-section>div>div{
@@ -232,7 +234,7 @@ button#project-btn{
     width: 120px;
     height: 120px;
     left: 14%;
-    border: #49a2af solid 5px;
+    border: #1a2465 solid 5px;
     border-radius: 100%;
     display: inline-block;
     margin: 30px;
@@ -245,6 +247,16 @@ button#project-btn{
     border-radius: 100%;
     left: 2%;
     top: 2%;
+}
+
+#skill-section>h2{
+    position: relative;
+    display: inline;
+    color: #321122;
+    left: 42%;
+    font-size: 3em;
+
+
 }
 
 
