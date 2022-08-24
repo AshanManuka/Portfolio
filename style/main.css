@@ -133,13 +133,15 @@ header{
 main{
     position: relative;
     top: 700px;
-    height: 1000px;
+    height: 950px;
     background-color: #111010;
     border-top: wheat solid 3px;
+    border-bottom: white solid 1px;
 }
 
 main>h1{
     position: relative;
+    display: inline;
     color: white;
     left: 45%;
     top: 5%;
@@ -188,7 +190,6 @@ main>#pane-one>div>.hs{
     top: -70%;
     width: 80%;
     left: 10%;
-    /*z-index: 5;*/
 }
 
 main>#pane-two>div>.hs{
@@ -196,7 +197,6 @@ main>#pane-two>div>.hs{
     top: -70%;
     width: 80%;
     left: 10%;
-    /*z-index: 5;*/
 }
 
 main>section>div>.hs>h2{
@@ -206,7 +206,34 @@ main>section>div>.hs>h2{
     margin: 0;
 }
 
+button#project-btn{
+    position: absolute;
+    color: #ffffff;
+    background-color: #550a15;
+    border-radius: 20%;
+    border: white solid 1px;
+    width: 210px;
+    height: 50px;
+    font-size: x-large;
+    left: 77%;
+    bottom: 13%;
+}
 
+#skill-section{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    top: 1650px;
+    border: #ac69d5 solid 1px;
+}
+
+#skill-section>h1{
+    position: relative;
+    display: inline;
+    color: white;
+    left: 45%;
+    top: 5%;
+}
 
 
 
