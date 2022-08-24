@@ -232,11 +232,10 @@ button#project-btn{
     width: 120px;
     height: 120px;
     left: 14%;
-    top: 5%;
     border: #e7678c solid 5px;
     border-radius: 100%;
     display: inline-block;
-    margin: 50px;
+    margin: 30px;
 }
 
 #skill-section>#row-one>div:nth-child(1){
