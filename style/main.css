@@ -228,7 +228,6 @@ button#project-btn{
     width: 100%;
     height: 450px;
     top: 1550px;
-    border-bottom: #1a2465 solid 6px;
     border-top: #321122 solid 6px;
 }
 
@@ -265,12 +264,34 @@ button#project-btn{
 /*Begin Education section*/
 #edu-section{
     position: absolute;
-    top: 2001px;
+    background-color: rgba(87, 8, 8, 0.5);
+    top: 2000px;
     width: 100%;
-    height: 1000px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
     border-bottom: yellow solid 1px;
 }
 
+#edu-section>div{
+    width: 100%;
+    height: 100%;
+    border-bottom: #000000 solid 1px;
+}
+
+#edu-section>#edu-three,#edu-four,#edu-five{
+    background-color: rgba(87, 8, 8, 0.7);
+}
+
+#edu-section>div>.edu-logo{
+    position: relative;
+    top: 10%;
+    left: 5%;
+    width: 120px;
+    height: 120px;
+    border: rgb(176, 183, 248) solid 5px;
+    border-radius: 100%;
+}
 
 
 
