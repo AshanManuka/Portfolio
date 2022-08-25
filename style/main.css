@@ -286,13 +286,21 @@ button#project-btn{
 #edu-section>div>.edu-logo{
     position: relative;
     top: 10%;
-    left: 5%;
+    left: 15%;
     width: 120px;
     height: 120px;
     border: rgb(176, 183, 248) solid 5px;
     border-radius: 100%;
 }
 
+#edu-section>div>.edu-logo>.logo-e{
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 100%;
+    left: 2%;
+    top: 2%;
+}
 
 
 
