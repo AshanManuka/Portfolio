@@ -5,8 +5,80 @@
     <title>Assignment 06</title>
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
     <link rel="stylesheet" href="../normalize.css">
+
+    <style>
+        section{
+            width: 99%;
+            height: 650px;
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(4,1fr);
+            gap: 9px;
+        }
+
+        section > div {
+            background-size: cover;
+            background-position: center;
+            box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.68);
+        }
+
+        section>div>img {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        section>div:nth-child(1){
+            grid-column: 1/3;
+            background-color: #041676;
+        }
+
+        section>div:nth-child(2){
+            background-color: #760404;
+        }
+
+        section>div:nth-child(3) {
+            grid-row: 1/4;
+            grid-column: 4/5;
+            background-color: #04761d;
+        }
+
+        section>div:nth-child(4) {
+            background-color: #470476;
+        }
+
+        section>div:nth-child(5) {
+            background-color: #764c04;
+        }
+
+        section>div:nth-child(6) {
+            background-color: #9cf167;
+        }
+
+        section>div:nth-child(7) {
+            background-color: #e33636;
+        }
+
+        section>div:nth-child(8) {
+            grid-column: 2/4;
+            grid-row: 3/4;
+            background-color: #05060e;
+        }
+
+
+    </style>
 </head>
 <body>
-
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
 </body>
 </html>
