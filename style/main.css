@@ -270,7 +270,7 @@ button#project-btn{
     height: 800px;
     display: flex;
     flex-direction: column;
-    border-bottom: yellow solid 1px;
+    border-bottom: #801313 solid 5px;
 }
 
 #edu-section>div{
@@ -312,6 +312,15 @@ button#project-btn{
     width: 100%;
     height: 800px;
 }
+
+#contact-section>h1{
+    position: absolute;
+    top: 10%;
+    left: 43%;
+    color: white;
+}
+
+
 
 /*End contact section*/
 
