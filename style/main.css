@@ -320,7 +320,14 @@ button#project-btn{
     color: white;
 }
 
-
+#contact-section>#contact-details{
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    width: 40%;
+    height: 60%;
+    border: white solid 1px;
+}
 
 /*End contact section*/
 
