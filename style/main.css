@@ -326,7 +326,7 @@ button#project-btn{
     left: 2%;
     width: 40%;
     height: 60%;
-    border: white solid 1px;
+    /*border: white solid 1px;*/
     display: flex;
     flex-direction: column;
 }
@@ -338,12 +338,21 @@ button#project-btn{
 
 #contact-section>#contact-details>div>div{
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
     border: #eeeeee solid 3px;
     left: 10%;
-    top: 15%;
+    top: 25%;
+    display: inline-block;
+}
+
+#contact-section>#contact-details>div>h3{
+    position: relative;
+    color: white;
+    margin: 0;
+    top: -20%;
+    left: 35%;
 }
 
 /*End contact section*/
