@@ -341,7 +341,8 @@ button#project-btn{
     width: 80px;
     height: 80px;
     border-radius: 100%;
-    border: #eeeeee solid 3px;
+    border: #eeeeee solid 1px;
+    background-color: white;
     left: 10%;
     top: 25%;
     display: inline-block;
@@ -351,9 +352,22 @@ button#project-btn{
     position: relative;
     color: white;
     margin: 0;
-    top: -20%;
+    top: -18%;
     left: 35%;
 }
+
+#contact-section>#form{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 40%;
+    height: 60%;
+    border: white solid 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 /*End contact section*/
 
