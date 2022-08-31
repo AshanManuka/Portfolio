@@ -367,7 +367,12 @@ button#project-btn{
     flex-direction: column;
 }
 
-
+#contact-section>#form>#message-form{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    color: white;
+}
 
 /*End contact section*/
 
