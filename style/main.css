@@ -356,6 +356,27 @@ button#project-btn{
     left: 35%;
 }
 
+#contact-section>#contact-details>div:nth-child(1)>div>h1{
+    position: absolute;
+    font-size: 60px;
+    left: 17%;
+    top: -40%;
+}
+
+#contact-section>#contact-details>div:nth-child(2)>div>h1{
+    position: absolute;
+    font-size: 55px;
+    left: 15%;
+    top: -33%;
+}
+
+#contact-section>#contact-details>div:nth-child(3)>div>h1{
+    position: absolute;
+    font-size: 50px;
+    left: 25%;
+    top: -25%;
+}
+
 #contact-section>#form{
     position: absolute;
     top: 20%;
