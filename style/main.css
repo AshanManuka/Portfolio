@@ -419,8 +419,12 @@ button#project-btn{
     height: 80px;
     border-radius: 100%;
     border: white solid 5px;
+}
 
-
+#contact-section>#social-logo>.s-logo>div>.sl{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
 }
 
 
