@@ -427,8 +427,42 @@ button#project-btn{
     border-radius: 100%;
 }
 
-
 /*End contact section*/
+
+/*Begin Footer section*/
+#footer{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top:3700px ;
+    background-color: #1b2828;
+}
+
+#footer>div{
+    position: relative;
+    left: 20%;
+    top: 5%;
+    display: inline;
+}
+
+#footer>div>h2{
+    position: relative;
+    display: inline;
+    color: #eeeeee;
+}
+
+#footer>div>h4{
+    position: relative;
+    display: inline;
+    color: #eeeeee;
+}
+
+#footer>div>h1{
+    position: relative;
+    display: inline;
+    color: #e87373;
+}
+/*End Footer section*/
 
 
 
