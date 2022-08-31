@@ -362,16 +362,22 @@ button#project-btn{
     left: 50%;
     width: 40%;
     height: 60%;
-    border: white solid 1px;
+    /*border: white solid 1px;*/
     display: flex;
     flex-direction: column;
 }
 
 #contact-section>#form>#message-form{
     position: relative;
-    top: 10%;
+    top: 15%;
     left: 10%;
     color: white;
+}
+
+#contact-section>#form>#message-form>.text-field{
+    width: 78%;
+    height: 12%;
+    border: none;
 }
 
 /*End contact section*/
