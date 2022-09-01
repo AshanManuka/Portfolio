@@ -46,6 +46,7 @@ header{
     display: inline;
     float: left;
     color: #eeeeee;
+    font-family: Arial, sans-serif;
 }
 
 #profile-image{
@@ -108,23 +109,25 @@ header{
     button#download-btn{
     color: #ffffff;
     background-color: #871b3a;
-    border-radius: 10%;
+    border-radius: 20px;
     border: white solid 1px;
     width: 150px;
-    height: 45px;
+    height: 40px;
+    cursor: pointer;
 }
 
     button#start-btn{
         position: absolute;
         color: #ffffff;
         background-color: #550a15;
-        border-radius: 10%;
+        border-radius: 20px;
         border: white solid 1px;
         width: 210px;
-        height: 75px;
+        height: 50px;
         font-size: x-large;
         left: 65%;
         top: 99%;
+        cursor: pointer;
     }
 
 /*End Header*/
@@ -210,13 +213,14 @@ button#project-btn{
     position: absolute;
     color: #ffffff;
     background-color: #550a15;
-    border-radius: 20%;
+    border-radius: 20px;
     border: white solid 1px;
     width: 210px;
     height: 50px;
     font-size: x-large;
     left: 77%;
     bottom: 13%;
+    cursor: pointer;
 }
 /*End main Project Section*/
 
@@ -416,9 +420,10 @@ button#project-btn{
 }
 
 #contact-section>#form>#message-form>.text-field{
-    width: 78%;
+    width: 84%;
     height: 12%;
     border: none;
+    border-radius: 5px;
 }
 
 #contact-section>#form>#message-form>#send-btn {
@@ -427,7 +432,8 @@ button#project-btn{
     height: 12%;
     background-color: #ee4f4f;
     left: 4%;
-    border-radius: 10%;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 #contact-section>h2{
