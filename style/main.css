@@ -250,12 +250,11 @@ button#project-btn{
 
 /*Begin Skill section*/
 #skill-section{
-    background-color: #1b2828;
+    background-color: #060e0e;
     position: absolute;
     width: 100%;
     height: 450px;
     top: 1550px;
-    border-top: #321122 solid 6px;
 }
 
 #skill-section>div>div{
