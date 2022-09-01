@@ -95,6 +95,7 @@ li>a:hover{
 
 #content-frame>h1{
     position: inherit;
+    font-family: Arial, sans-serif;
 }
 
 #content-frame>h1:nth-child(1){
@@ -112,10 +113,16 @@ li>a:hover{
     color: #eeeeee;
 }
 
+#content-frame>#about-me>.about-list{
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
 #content-frame>#cv{
     position: inherit;
     left: 2%;
     color: #eeeeee;
+    font-family: Arial, sans-serif;
 }
 
     button#download-btn{
