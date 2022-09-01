@@ -5,11 +5,15 @@ body{
 /* Begin Header*/
 #head{
     position: absolute;
+    top: 100px;
     width: 100%;
     height: 150px;
 }
 
 #head>h1{
+    position: relative;
+    display: inline;
+    left: 40%;
     color: #eeeeee;
     font-family: Arial, sans-serif;
 }
@@ -41,13 +45,16 @@ body{
 
 #assignment-sec{
     position: absolute;
-    top: 155px;
+    top: 290px;
     width: 100%;
     height: 250px;
    /* border-bottom: #eeeeee solid 1px;*/
 }
 
 #assignment-sec>h1{
+    position: relative;
+    display: inline;
+    left: 40%;
     color: #eeeeee;
     font-family: Arial, sans-serif;
 }
