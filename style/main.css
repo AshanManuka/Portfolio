@@ -147,6 +147,7 @@ li>a:hover{
         left: 65%;
         top: 99%;
         cursor: pointer;
+        font-family: Arial, sans-serif;
     }
 
 /*End Header*/
@@ -223,9 +224,11 @@ main>#pane-two>div>.hs{
 
 main>section>div>.hs>h2{
     z-index: 7;
-    background-color: #111010;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
     margin: 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
 }
 
 button#project-btn{
@@ -240,6 +243,7 @@ button#project-btn{
     left: 77%;
     bottom: 13%;
     cursor: pointer;
+    font-family: Arial, sans-serif;
 }
 /*End main Project Section*/
 
@@ -333,6 +337,7 @@ button#project-btn{
     color: #35e5e5;
     margin-bottom: 0;
     margin-top: 0;
+    font-family: Arial, sans-serif;
 }
 
 #edu-section>div>h3:nth-child(3){
@@ -397,6 +402,7 @@ button#project-btn{
     margin: 0;
     top: -23%;
     left: 35%;
+    font-family: Arial, sans-serif;
 }
 
 #contact-section>#contact-details>div:nth-child(1)>div>h1{
@@ -453,6 +459,8 @@ button#project-btn{
     left: 4%;
     border-radius: 10px;
     cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
 }
 
 #contact-section>h2{
@@ -461,6 +469,7 @@ button#project-btn{
     top: 75%;
     left: 5%;
     display: inline;
+    font-family: Arial, sans-serif;
 }
 
 #contact-section>#social-logo{
@@ -515,18 +524,21 @@ button#project-btn{
     position: relative;
     display: inline;
     color: #eeeeee;
+    font-family: Arial, sans-serif;
 }
 
 #footer>div>h4{
     position: relative;
     display: inline;
     color: #eeeeee;
+    font-family: Arial, sans-serif;
 }
 
 #footer>div>h1{
     position: relative;
     display: inline;
     color: #e87373;
+    font-family: Arial, sans-serif;
 }
 /*End Footer section*/
 
