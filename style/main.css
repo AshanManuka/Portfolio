@@ -47,6 +47,18 @@ header{
     float: left;
     color: #eeeeee;
     font-family: Arial, sans-serif;
+    margin: 0;
+
+}
+
+.li>a{
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+li>a:hover{
+    cursor: pointer;
+    color: #c2063b;
 }
 
 #profile-image{
