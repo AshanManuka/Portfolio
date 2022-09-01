@@ -1,5 +1,5 @@
 body{
-    background-color: #685252;
+    background-color: #151212;
 }
 
 /* Begin Header*/
@@ -7,10 +7,14 @@ body{
     position: absolute;
     width: 100%;
     height: 150px;
-    border-bottom: #eeeeee solid 1px;
 }
 
-#head>div>div{
+#head>h1{
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+
+#head>#project-div>div{
     position: relative;
     width: 200px;
     height: 50px;
@@ -19,13 +23,67 @@ body{
     left: 150px;
 }
 
-#head>div>div>h4{
+#head>#project-div>div>h4{
     position: relative;
     font-family: Arial, sans-serif;
     margin: 0;
     top: 30%;
-    left: 20%;
-
+    left: 10%;
 }
 
+#head>#project-div>div:hover{
+    background-color: #395a5a;
+    cursor: pointer;
+}
+
+
 /* End Header*/
+
+#assignment-sec{
+    position: absolute;
+    top: 155px;
+    width: 100%;
+    height: 250px;
+   /* border-bottom: #eeeeee solid 1px;*/
+}
+
+#assignment-sec>h1{
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+
+#assignment-sec>div>div{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background-color: #35e5e5;
+    display: inline-block;
+    left: 150px;
+    border-bottom: black solid 3px;
+}
+
+#assignment-sec>div>div>h4{
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    top: 30%;
+    left: 15%;
+}
+
+#assignment-sec>div>div:hover{
+    background-color: #395a5a;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
