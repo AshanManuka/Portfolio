@@ -27,7 +27,12 @@ body{
     left: 150px;
 }
 
-#head>#project-div>div>h4{
+#head>#project-div>div>a{
+    text-decoration: none;
+    color: black;
+}
+
+#head>#project-div>div>a>h4{
     position: relative;
     font-family: Arial, sans-serif;
     margin: 0;
