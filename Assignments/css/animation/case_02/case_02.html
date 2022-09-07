@@ -6,8 +6,58 @@
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
     <link rel="stylesheet" href="../../../normalize.css">
     <link rel="stylesheet" href="../../../../fonts/css/all.css">
+
+    <style>
+        div{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border:blue solid 5px;
+            border-radius: 100%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            animation-name: my-animation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes my-animation {
+            0% {
+                width: 10px;
+                height: 10px;
+            }
+
+            100% {
+                width: 200px;
+                height: 200px;
+                opacity: 0;
+                border: 10px solid rgb(7, 95, 147);
+            }
+        }
+
+        @keyframes next-animation {
+            0% {
+                width: 10px;
+                height: 10px;
+                border: #2d9999 solid 5px;
+            }
+
+            100% {
+                width: 200px;
+                height: 200px;
+                opacity: 0;
+                border: 10px solid rgb(7, 95, 147);
+            }
+        }
+
+    </style>
 </head>
 <body>
+<div></div>
 
 </body>
 </html>
