@@ -6,8 +6,54 @@
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
     <link rel="stylesheet" href="../../../normalize.css">
     <link rel="stylesheet" href="../../../../fonts/css/all.css">
+
+    <style>
+        div{
+            width: 200px;
+            height: 90px;
+            border: 2px solid black;
+            background-color: black;
+            border-radius: 20px;
+
+            animation-name: my-animation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes my-animation {
+            0%{
+                background: yellow;
+                margin: 0px 0px 0px 0px;
+                transform: rotate(0deg);
+            }
+            25%{
+                background: blue;
+                margin: 0px 0px 0px 1100px;
+                transform: rotate(90deg);
+            }
+
+            50%{
+                background: #3fc90d;
+                margin: 500px 0px 0px 1100px;
+                transform: rotate(180deg);
+            }
+            75%{
+                background: red;
+                margin: 500px 0px 0px 0px;
+                transform: rotate(270deg);
+            }
+            100%{
+                background: deeppink;
+                margin: 0px 0px 0px 0px;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 <body>
+<div></div>
 
 </body>
 </html>
