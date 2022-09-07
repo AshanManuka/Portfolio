@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 10</title>
+    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../../fonts/css/all.css">
+
+    <style>
+        #one{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 0;
+            left: 0;
+            background-color: #cb0431;
+            border-radius: 100%;
+            animation-name: new-animation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        #two{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 0;
+            left: 100%;
+            background-color: #cb0431;
+            border-radius: 100%;
+            animation-name: next-animation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes new-animation {
+            0% {
+                background-color: black;
+                border: #35e5e5 solid 6px;
+                left: 0;
+                top: 5%;
+            }
+            100% {
+                background-color: #041676;
+                border: #80ee52 solid 6px;
+                left: 50%;
+                top: 5%;
+            }
+        }
+
+        @keyframes next-animation {
+            0%{
+                background-color: black;
+                border: #35e5e5 solid 6px;
+                left: 100%;
+                top: 5%;
+            }
+            100%{
+                background-color: #041676;
+                border: #80ee52 solid 6px;
+                left: 50%;
+                top: 5%;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+<div id="one"></div>
+<div id="two"></div>
+</body>
+</html>
