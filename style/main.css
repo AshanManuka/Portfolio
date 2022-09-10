@@ -579,7 +579,7 @@ button#project-btn:hover{
 
 /*style for 1024 Laptop size*/
 
-@media all and (min-width: 769px) and (max-width: 1024px) {
+@media all and (min-width: 970px) and (max-width: 1024px) {
 
 /*    Begin Header*/
     button#start-btn{
@@ -589,7 +589,7 @@ button#project-btn:hover{
         cursor: pointer;
         font-family: Arial, sans-serif;
     }
-/*    Begin Header*/
+/*    End Header*/
 
 
 /* section project*/
@@ -637,6 +637,31 @@ button#project-btn:hover{
     }
 
 /* End Footer*/
+
+
+}
+
+
+/*style for 1024 Laptop size*/
+
+@media all and (min-width: 720px) and (max-width: 768px) {
+/*    Begin Header*/
+    button#start-btn{
+        position: absolute;
+        left: 50%;
+        top: 110%;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+    }
+
+    #profile-image{
+        position: absolute;
+        width: 250px;
+        height: 325px;
+        left: 50%;
+        top: 150px;
+    }
+/*    End Header*/
 
 
 }
