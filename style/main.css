@@ -196,12 +196,14 @@ main>#pane-one>div>.hs>a{
     text-decoration: none;
     color: white;
     background-color: #1b2828;
+    font-family: Arial, sans-serif;
 }
 
 main>#pane-two>div>.hs>a{
     text-decoration: none;
     color: white;
     background-color: #1b2828;
+    font-family: Arial, sans-serif;
 }
 
 main>#pane-two{
@@ -312,7 +314,7 @@ button#project-btn:hover{
     position: relative;
     display: inline;
     color: #9e3232;
-    left: 42%;
+    left: 40%;
     font-size: 3em;
 }
 
@@ -548,7 +550,7 @@ button#project-btn:hover{
 
 #footer>div{
     position: relative;
-    left: 20%;
+    left: 18%;
     top: 5%;
     display: inline;
 }
@@ -574,6 +576,13 @@ button#project-btn:hover{
     font-family: Arial, sans-serif;
 }
 /*End Footer section*/
+
+
+
+
+
+
+
 
 /*================Media==================*/
 
@@ -663,6 +672,102 @@ button#project-btn:hover{
     }
 /*    End Header*/
 
+
+/*    Begin Project section*/
+    main{
+        position: relative;
+        top: 700px;
+        height: 500px;
+        background-color: #111010;
+        border-top: #282317 solid 6px;
+        border-bottom: white solid 1px;
+    }
+
+    main>#pane-one>div>.hs>a{
+        font-size: 10px;
+    }
+
+    main>#pane-two>div>.hs>a{
+        font-size: 10px;
+    }
+
+    button#project-btn{
+        left: 38%;
+        bottom: 5%;
+    }
+/*    End Project section*/
+
+/* Begin skill section*/
+    #skill-section{
+        height: 600px;
+        top: 1200px;
+    }
+
+    #skill-section>div>div{
+        width: 100px;
+        height: 100px;
+        left: 1%;
+        margin: 20px;
+    }
+
+    #skill-section>div>div>.logo-image{
+        width: 98px;
+        height: 98px;
+        left: 1%;
+        top: 1%;
+    }
+/* End skill section*/
+
+/* begin Education section*/
+    #edu-section{
+        top: 1640px;
+    }
+/* End Education section*/
+
+
+/*  Begin Contact section*/
+    #contact-section{
+        top: 2400px;
+    }
+
+    #contact-section>#contact-details{
+        top: 15%;
+        left: 15%;
+        flex-direction: row;
+    }
+
+    #contact-section>#contact-details>div{
+        width: 100%;
+        height: 70%;
+    }
+
+    #contact-section>#contact-details>div>h3{
+        display: none;
+        top: -29%;
+        left: 25%;
+    }
+
+    #contact-section>#form{
+        top: 27%;
+        left: 17%;
+    }
+
+    #contact-section>#social-logo{
+        width: 600px;
+        left: 15%;
+    }
+/*End Contact section*/
+
+/*  Begin footer*/
+    #footer{
+        top:3302px ;
+    }
+
+    #footer>div{
+        left: 8%;
+        font-size: 12px;
+    }
+/*  End footer*/
 
 }
 
