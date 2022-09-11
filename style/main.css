@@ -770,6 +770,92 @@ button#project-btn:hover{
 /*  End footer*/
 
 }
+/*End Tablet mode*/
+
+
+/*style for 425 Mobile size*/
+
+@media all and (min-width: 410px) and (max-width: 425px) {
+
+/* Begin header*/
+
+    #nav-bar{
+        height: 25px;
+    }
+
+    #nav-bar>#nav-icon{
+        display: none;
+    }
+
+    #nav-bar>#nav-list>#n-list>.li>a>h3>i{
+        display: none;
+    }
+
+    .li{
+        font-size: 10px;
+        margin-right: 3px;
+        margin-left: 5px;
+    }
+
+    #nav-bar>#nav-list{
+        left: 5%;
+    }
+
+    #content-frame{
+        position: absolute;
+        width: 95%;
+/*        top: 10%;*/
+        left: 8%;
+        height: 400px;
+    }
+    #content-frame>h1{
+        top: 10%;
+        font-size: 25px;
+    }
+
+    #content-frame>#about-me{
+        top: 90%;
+        display: none;
+    }
+
+    #content-frame>#cv{
+        top: 130%;
+        left: 12%;
+    }
+
+    button#download-btn {
+        position: absolute;
+        left: 20%;
+    }
+
+    #profile-image{
+        top: 20%;
+    }
+
+    button#start-btn {
+        left: 17%;
+        top: 112%;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+    }
+
+
+
+
+
+
+
+
+
+
+/*End Header*/
+
+
+
+
+
+}
+
 
 
 
