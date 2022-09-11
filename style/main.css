@@ -804,7 +804,7 @@ button#project-btn:hover{
     #content-frame{
         position: absolute;
         width: 95%;
-/*        top: 10%;*/
+        top: 7%;
         left: 8%;
         height: 400px;
     }
@@ -839,16 +839,80 @@ button#project-btn:hover{
         font-family: Arial, sans-serif;
     }
 
-
-
-
-
-
-
-
-
-
 /*End Header*/
+
+/* Begin section project*/
+
+    main{
+        height: 1300px;
+        border: none;
+    }
+
+    main>h1:nth-child(1){
+        top: 1%;
+    }
+
+    main>#pane-one{
+        position: absolute;
+        width: 45%;
+        height: 75%;
+        border: #000000 solid 1px;
+        top: 5%;
+        left: 4%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main>#pane-two{
+        position: absolute;
+        width: 45%;
+        height: 75%;
+        border: #000000 solid 1px;
+        top: 5%;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main>#pane-one>div{
+        width: 100%;
+        height: 100%;
+        border: #000000 solid 1px;
+        cursor: pointer;
+    }
+
+    main>#pane-two>div{
+        width: 100%;
+        height: 100%;
+        border: #000000 solid 1px;
+        cursor: pointer;
+    }
+
+    button#project-btn {
+        left: 25%;
+        bottom: 5%;
+    }
+
+
+
+
+    #skill-section{display: none}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
