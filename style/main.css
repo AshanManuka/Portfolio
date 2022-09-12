@@ -1005,7 +1005,23 @@ button#project-btn:hover{
     }
 /*   End contact section*/
 
-    #footer{display: none}
+
+/*  Begin footer*/
+    #footer{
+        top: 4600px;
+    }
+
+    #footer>div{
+        left: 3%;
+        font-size: 9px;
+    }
+
+    #footer>div>h4:nth-last-child(1){
+        left: 36%;
+    }
+
+/*  End footer*/
+
 
 
 
