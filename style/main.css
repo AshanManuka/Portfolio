@@ -956,12 +956,57 @@ button#project-btn:hover{
         margin-top: 10px;
         font-size: 18px;
     }
-
 /*  End Edu section*/
 
 
+/*   Begin contact section*/
+    #contact-section{
+        top: 3700px;
+    }
+
+    #contact-section>h1:nth-child(1){
+        left: 35%;
+    }
+
+    #contact-section>#contact-details{
+        top: 10%;
+        left: 12%;
+        width: 80%;
+        flex-direction: row;
+    }
+
+    #contact-section>#contact-details>div{
+        width: 50%;
+        height: 70%;
+    }
+
+    #contact-section>#contact-details>div>h3{
+        display: none;
+    }
+
+    #contact-section>#contact-details>div>div{
+        width: 80px;
+        height: 80px;
+    }
+
+    #contact-section>#form{
+        width: 90%;
+        top: 27%;
+        left: 3%;
+    }
+
+    textarea#txtMessage{
+        width: 83%;
+    }
+
+    #contact-section>#social-logo{
+        width: 100%;
+        left: 2%;
+    }
+/*   End contact section*/
+
     #footer{display: none}
-    #contact-section{display: none}
+
 
 
 
