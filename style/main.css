@@ -892,12 +892,47 @@ button#project-btn:hover{
         left: 25%;
         bottom: 5%;
     }
+/*  End project Section*/
+
+
+/*    Begin Skill section*/
+    #skill-section{
+        top: 2000px;
+        height: 1000px;
+    }
+
+    #skill-section>#row-one{
+        position: absolute;
+        width: 45%;
+        height: 95%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #skill-section>#row-two{
+        position: absolute;
+        width: 45%;
+        height: 95%;
+        top: 0;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #skill-section>h2:nth-last-child(1){
+        position: absolute;
+        left: 20%;
+        bottom: -4%;
+
+    }
+/*    End Skill section*/
 
 
 
-
-    #skill-section{display: none}
-
+    #edu-section{display: none}
+    #contact-section{display: none}
 
 
 
