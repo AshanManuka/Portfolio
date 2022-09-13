@@ -1049,7 +1049,7 @@ button#project-btn:hover{
 
         #content-frame{
             position: absolute;
-            width: 95%;
+            width: 90%;
             top: 7%;
             left: 8%;
             height: 400px;
@@ -1202,30 +1202,18 @@ button#project-btn:hover{
         }
     /* End Edu section*/
 
-
-
-     #contact-section{display: none}
-     #footer{display: none}
-
-    }
-
-/*
-
-
-
-
-        !*   Begin contact section*!
+        /*Begin contact section*/
         #contact-section{
-            top: 3700px;
+            top: 3450px;
         }
 
         #contact-section>h1:nth-child(1){
-            left: 35%;
+            left: 32%;
         }
 
         #contact-section>#contact-details{
             top: 10%;
-            left: 12%;
+            left: 9%;
             width: 80%;
             flex-direction: row;
         }
@@ -1245,9 +1233,9 @@ button#project-btn:hover{
         }
 
         #contact-section>#form{
-            width: 90%;
+            width: 85%;
             top: 27%;
-            left: 3%;
+            left: 4%;
         }
 
         textarea#txtMessage{
@@ -1255,28 +1243,39 @@ button#project-btn:hover{
         }
 
         #contact-section>#social-logo{
-            width: 100%;
-            left: 2%;
+            width: 99%;
+            left: 0;
         }
-        !*   End contact section*!
+      /*End contact section*/
 
 
-        !*  Begin footer*!
+        /*Begin footer*/
         #footer{
-            top: 4600px;
+            top: 4315px;
+            height: 35px;
         }
 
         #footer>div{
-            left: 3%;
+            top: 15%;
+            left: 0;
             font-size: 9px;
+        }
+
+        #footer>div>h2{
+            font-size: 12px;
         }
 
         #footer>div>h4:nth-last-child(1){
             left: 36%;
+            display: none;
         }
-        !*  End footer*!
+        /*   End footer*/
 
-        !* End display size 425px*!*/
+    }
+
+/*End display size 375px*/
+
+
 
 
 
