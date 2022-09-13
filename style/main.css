@@ -1140,29 +1140,18 @@ button#project-btn:hover{
         }
       /*End project Section*/
 
-
-
-     #edu-section{display: none}
-
-    }
-
-/*
-
-
-
-
-        !*    Begin Skill section*!
-        #skill-section{
-            top: 2000px;
-            height: 1000px;
-        }
+        /*Begin Skill section*/
+     #skill-section{
+         top: 1800px;
+         height: 1000px;
+     }
 
         #skill-section>#row-one{
             position: absolute;
             width: 45%;
             height: 95%;
             top: 0;
-            left: 0;
+            left: -3%;
             display: flex;
             flex-direction: column;
         }
@@ -1182,7 +1171,18 @@ button#project-btn:hover{
             left: 20%;
             bottom: -4%;
         }
-        !*    End Skill section*!
+/*        End Skill section*/
+
+
+
+
+        #edu-section{display: none}
+     #contact-section{display: none}
+     #footer{display: none}
+
+    }
+
+/*
 
 
         !*  Begin Edu section*!
