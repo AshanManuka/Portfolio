@@ -1172,24 +1172,12 @@ button#project-btn:hover{
             bottom: -4%;
         }
 /*        End Skill section*/
+      /*Begin Edu section*/
+     #edu-section{
+         top: 2800px;
+         height: 700px;
 
-
-
-
-        #edu-section{display: none}
-     #contact-section{display: none}
-     #footer{display: none}
-
-    }
-
-/*
-
-
-        !*  Begin Edu section*!
-        #edu-section{
-            top: 3000px;
-            height: 700px;
-        }
+     }
 
         #edu-section>div>.edu-logo{
             width: 100px;
@@ -1212,7 +1200,18 @@ button#project-btn:hover{
             margin-top: 10px;
             font-size: 18px;
         }
-        !*  End Edu section*!
+    /* End Edu section*/
+
+
+
+     #contact-section{display: none}
+     #footer{display: none}
+
+    }
+
+/*
+
+
 
 
         !*   Begin contact section*!
