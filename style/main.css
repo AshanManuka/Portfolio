@@ -1086,19 +1086,13 @@ button#project-btn:hover{
 
     /* End Header*/
 
+     /*Begin section project*/
 
-
-    }
-
-/*
-
-
-        !* Begin section project*!
-
-        main{
-            height: 1300px;
-            border: none;
-        }
+     main{
+         height: 1300px;
+         top: 630px;
+         border: none;
+     }
 
         main>h1:nth-child(1){
             top: 1%;
@@ -1142,9 +1136,19 @@ button#project-btn:hover{
 
         button#project-btn {
             left: 25%;
-            bottom: 5%;
+            bottom: 15%;
         }
-        !*  End project Section*!
+      /*End project Section*/
+
+
+
+     #edu-section{display: none}
+
+    }
+
+/*
+
+
 
 
         !*    Begin Skill section*!
