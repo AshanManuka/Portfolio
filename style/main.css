@@ -777,48 +777,48 @@ button#project-btn:hover{
 
 @media all and (min-width: 410px) and (max-width: 425px) {
 
-/* Begin header*/
-
-    #nav-bar{
+    /* Begin header*/
+    #nav-bar {
         height: 25px;
     }
 
-    #nav-bar>#nav-icon{
+    #nav-bar > #nav-icon {
         display: none;
     }
 
-    #nav-bar>#nav-list>#n-list>.li>a>h3>i{
+    #nav-bar > #nav-list > #n-list > .li > a > h3 > i {
         display: none;
     }
 
-    .li{
+    .li {
         font-size: 10px;
         margin-right: 3px;
         margin-left: 5px;
     }
 
-    #nav-bar>#nav-list{
+    #nav-bar > #nav-list {
         left: 5%;
     }
 
-    #content-frame{
+    #content-frame {
         position: absolute;
         width: 95%;
         top: 7%;
         left: 8%;
         height: 400px;
     }
-    #content-frame>h1{
+
+    #content-frame > h1 {
         top: 10%;
         font-size: 25px;
     }
 
-    #content-frame>#about-me{
+    #content-frame > #about-me {
         top: 90%;
         display: none;
     }
 
-    #content-frame>#cv{
+    #content-frame > #cv {
         top: 130%;
         left: 12%;
     }
@@ -828,7 +828,7 @@ button#project-btn:hover{
         left: 20%;
     }
 
-    #profile-image{
+    #profile-image {
         top: 20%;
     }
 
@@ -839,20 +839,18 @@ button#project-btn:hover{
         font-family: Arial, sans-serif;
     }
 
-/*End Header*/
-
-/* Begin section project*/
-
-    main{
+    /*End Header*/
+    /* Begin section project*/
+    main {
         height: 1300px;
         border: none;
     }
 
-    main>h1:nth-child(1){
+    main > h1:nth-child(1) {
         top: 1%;
     }
 
-    main>#pane-one{
+    main > #pane-one {
         position: absolute;
         width: 45%;
         height: 75%;
@@ -863,7 +861,7 @@ button#project-btn:hover{
         flex-direction: column;
     }
 
-    main>#pane-two{
+    main > #pane-two {
         position: absolute;
         width: 45%;
         height: 75%;
@@ -874,14 +872,14 @@ button#project-btn:hover{
         flex-direction: column;
     }
 
-    main>#pane-one>div{
+    main > #pane-one > div {
         width: 100%;
         height: 100%;
         border: #000000 solid 1px;
         cursor: pointer;
     }
 
-    main>#pane-two>div{
+    main > #pane-two > div {
         width: 100%;
         height: 100%;
         border: #000000 solid 1px;
@@ -892,16 +890,15 @@ button#project-btn:hover{
         left: 25%;
         bottom: 5%;
     }
-/*  End project Section*/
 
-
-/*    Begin Skill section*/
-    #skill-section{
+    /*  End project Section*/
+    /*    Begin Skill section*/
+    #skill-section {
         top: 2000px;
         height: 1000px;
     }
 
-    #skill-section>#row-one{
+    #skill-section > #row-one {
         position: absolute;
         width: 45%;
         height: 95%;
@@ -911,7 +908,7 @@ button#project-btn:hover{
         flex-direction: column;
     }
 
-    #skill-section>#row-two{
+    #skill-section > #row-two {
         position: absolute;
         width: 45%;
         height: 95%;
@@ -921,129 +918,389 @@ button#project-btn:hover{
         flex-direction: column;
     }
 
-    #skill-section>h2:nth-last-child(1){
+    #skill-section > h2:nth-last-child(1) {
         position: absolute;
         left: 20%;
         bottom: -4%;
     }
-/*    End Skill section*/
 
-
-/*  Begin Edu section*/
-    #edu-section{
+    /*    End Skill section*/
+    /*  Begin Edu section*/
+    #edu-section {
         top: 3000px;
         height: 700px;
     }
 
-    #edu-section>div>.edu-logo{
+    #edu-section > div > .edu-logo {
         width: 100px;
         height: 100px;
         left: 5%;
     }
 
-    #edu-section>div>.edu-logo>.logo-e{
+    #edu-section > div > .edu-logo > .logo-e {
         width: 96px;
         height: 96px;
     }
 
-    #edu-section>#edu-one>h3:nth-child(2){
-      margin-top: 20px;
+    #edu-section > #edu-one > h3:nth-child(2) {
+        margin-top: 20px;
         font-size: 15px;
     }
 
-    #edu-section>#edu-one>h3:nth-child(3){
+    #edu-section > #edu-one > h3:nth-child(3) {
         margin-bottom: 10px;
         margin-top: 10px;
         font-size: 18px;
     }
-/*  End Edu section*/
 
-
-/*   Begin contact section*/
-    #contact-section{
+    /*  End Edu section*/
+    /*   Begin contact section*/
+    #contact-section {
         top: 3700px;
     }
 
-    #contact-section>h1:nth-child(1){
+    #contact-section > h1:nth-child(1) {
         left: 35%;
     }
 
-    #contact-section>#contact-details{
+    #contact-section > #contact-details {
         top: 10%;
         left: 12%;
         width: 80%;
         flex-direction: row;
     }
 
-    #contact-section>#contact-details>div{
+    #contact-section > #contact-details > div {
         width: 50%;
         height: 70%;
     }
 
-    #contact-section>#contact-details>div>h3{
+    #contact-section > #contact-details > div > h3 {
         display: none;
     }
 
-    #contact-section>#contact-details>div>div{
+    #contact-section > #contact-details > div > div {
         width: 80px;
         height: 80px;
     }
 
-    #contact-section>#form{
+    #contact-section > #form {
         width: 90%;
         top: 27%;
         left: 3%;
     }
 
-    textarea#txtMessage{
+    textarea#txtMessage {
         width: 83%;
     }
 
-    #contact-section>#social-logo{
+    #contact-section > #social-logo {
         width: 100%;
         left: 2%;
     }
-/*   End contact section*/
 
-
-/*  Begin footer*/
-    #footer{
+    /*   End contact section*/
+    /*  Begin footer*/
+    #footer {
         top: 4600px;
     }
 
-    #footer>div{
+    #footer > div {
         left: 3%;
         font-size: 9px;
     }
 
-    #footer>div>h4:nth-last-child(1){
+    #footer > div > h4:nth-last-child(1) {
         left: 36%;
     }
 
-/*  End footer*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /*  End footer*/
 
 }
+/* End display size 425px*/
+
+
+
+    /*style for 375 Mobile size*/
+    @media all and (min-width: 350px) and (max-width: 375px) {
+
+        /* Begin header*/
+        #nav-bar {
+            height: 23px;
+        }
+
+        #nav-bar>#nav-icon{display: none}
+
+        #nav-bar>#nav-list>#n-list>.li>a>h3>i{
+            display: none;
+        }
+
+        .li{
+            font-size: 10px;
+            margin-left: 2px;
+ /*           display: inline;*/
+        }
+
+        #nav-bar>#nav-list{
+            left: 4%;
+            display: inline;
+            width: 98%;
+        }
+
+        #content-frame{
+            position: absolute;
+            width: 95%;
+            top: 7%;
+            left: 8%;
+            height: 400px;
+        }
+
+        #content-frame>h1{
+            top: 10%;
+            font-size: 25px;
+        }
+
+        #content-frame>#about-me{
+            top: 90%;
+            display: none;
+        }
+
+        #content-frame>#cv{
+            top: 115%;
+            left: 12%;
+        }
+
+        button#download-btn {
+            position: absolute;
+            left: 20%;
+        }
+
+        #profile-image{
+            top: 20%;
+            left: 6%;
+        }
+
+        button#start-btn {
+        display: none;
+        }
+
+    /* End Header*/
+
+
+
+    }
+
+/*
+
+
+        !* Begin section project*!
+
+        main{
+            height: 1300px;
+            border: none;
+        }
+
+        main>h1:nth-child(1){
+            top: 1%;
+        }
+
+        main>#pane-one{
+            position: absolute;
+            width: 45%;
+            height: 75%;
+            border: #000000 solid 1px;
+            top: 5%;
+            left: 4%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main>#pane-two{
+            position: absolute;
+            width: 45%;
+            height: 75%;
+            border: #000000 solid 1px;
+            top: 5%;
+            left: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main>#pane-one>div{
+            width: 100%;
+            height: 100%;
+            border: #000000 solid 1px;
+            cursor: pointer;
+        }
+
+        main>#pane-two>div{
+            width: 100%;
+            height: 100%;
+            border: #000000 solid 1px;
+            cursor: pointer;
+        }
+
+        button#project-btn {
+            left: 25%;
+            bottom: 5%;
+        }
+        !*  End project Section*!
+
+
+        !*    Begin Skill section*!
+        #skill-section{
+            top: 2000px;
+            height: 1000px;
+        }
+
+        #skill-section>#row-one{
+            position: absolute;
+            width: 45%;
+            height: 95%;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #skill-section>#row-two{
+            position: absolute;
+            width: 45%;
+            height: 95%;
+            top: 0;
+            left: 45%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #skill-section>h2:nth-last-child(1){
+            position: absolute;
+            left: 20%;
+            bottom: -4%;
+        }
+        !*    End Skill section*!
+
+
+        !*  Begin Edu section*!
+        #edu-section{
+            top: 3000px;
+            height: 700px;
+        }
+
+        #edu-section>div>.edu-logo{
+            width: 100px;
+            height: 100px;
+            left: 5%;
+        }
+
+        #edu-section>div>.edu-logo>.logo-e{
+            width: 96px;
+            height: 96px;
+        }
+
+        #edu-section>#edu-one>h3:nth-child(2){
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
+        #edu-section>#edu-one>h3:nth-child(3){
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        !*  End Edu section*!
+
+
+        !*   Begin contact section*!
+        #contact-section{
+            top: 3700px;
+        }
+
+        #contact-section>h1:nth-child(1){
+            left: 35%;
+        }
+
+        #contact-section>#contact-details{
+            top: 10%;
+            left: 12%;
+            width: 80%;
+            flex-direction: row;
+        }
+
+        #contact-section>#contact-details>div{
+            width: 50%;
+            height: 70%;
+        }
+
+        #contact-section>#contact-details>div>h3{
+            display: none;
+        }
+
+        #contact-section>#contact-details>div>div{
+            width: 80px;
+            height: 80px;
+        }
+
+        #contact-section>#form{
+            width: 90%;
+            top: 27%;
+            left: 3%;
+        }
+
+        textarea#txtMessage{
+            width: 83%;
+        }
+
+        #contact-section>#social-logo{
+            width: 100%;
+            left: 2%;
+        }
+        !*   End contact section*!
+
+
+        !*  Begin footer*!
+        #footer{
+            top: 4600px;
+        }
+
+        #footer>div{
+            left: 3%;
+            font-size: 9px;
+        }
+
+        #footer>div>h4:nth-last-child(1){
+            left: 36%;
+        }
+        !*  End footer*!
+
+        !* End display size 425px*!*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
