@@ -1306,27 +1306,25 @@ button#project-btn:hover{
     #content-frame {
         position: absolute;
         width: 90%;
-        top: 7%;
+        top: 2%;
         height: 400px;
     }
 
     #content-frame > h1 {
         top: 10%;
-        font-size: 25px;
+        font-size: 23px;
     }
 
     #content-frame > #about-me {
-        top: 90%;
         display: none;
     }
-
 
     button#start-btn {
         display: none;
     }
 
-      #content-frame>#cv{
-          top: 115%;
+     #content-frame>#cv{
+          top: 120%;
           left: 12%;
       }
 
@@ -1335,10 +1333,11 @@ button#project-btn:hover{
           left: 20%;
       }
 
-      #profile-image{
-          top: 20%;
-          width: 100%;
-      }
+    #profile-image {
+        top: 20%;
+        width: 90%;
+        left: -5%;
+    }
 
    /*
    !* End Header*!
@@ -1534,7 +1533,6 @@ button#project-btn:hover{
 
     #skill-section{display: none}
     #edu-section{display: none}
-    main{display: none}
     #contact-section{display: none}
     #footer{display: none}
 
