@@ -53,7 +53,6 @@ body{
     top: 290px;
     width: 100%;
     height: 250px;
-   /* border-bottom: #eeeeee solid 1px;*/
 }
 
 #assignment-sec>h1{
@@ -92,6 +91,53 @@ body{
     background-color: #395a5a;
     cursor: pointer;
 }
+
+
+
+/*================Media==================*/
+
+/*style for 1024 Laptop size*/
+
+@media all and (min-width: 970px) and (max-width: 1024px) {
+    #head>#project-div>div{
+        width: 150px;
+        font-size: 14px;
+    }
+
+    #assignment-sec>div>div{
+        width: 150px;
+        font-size: 14px;
+    }
+
+    #assignment-sec>div>div>a>h4{
+        left: 10%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
