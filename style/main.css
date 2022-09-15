@@ -1436,22 +1436,23 @@ button#project-btn:hover{
 
 
 
-        /* !*Begin Edu section*!
+/*    Begin Edu section*/
          #edu-section{
-             top: 2800px;
+             top: 2750px;
              height: 700px;
 
          }
 
          #edu-section>div>.edu-logo{
-             width: 100px;
-             height: 100px;
-             left: 5%;
+             width: 80px;
+             height: 80px;
+             left: 3%;
          }
 
          #edu-section>div>.edu-logo>.logo-e{
-             width: 96px;
-             height: 96px;
+             width: 77px;
+             height: 77px;
+             left: 1px;
          }
 
          #edu-section>#edu-one>h3:nth-child(2){
@@ -1464,82 +1465,83 @@ button#project-btn:hover{
              margin-top: 10px;
              font-size: 18px;
          }
-         !* End Edu section*!
-
-         !*Begin contact section*!
-         #contact-section{
-             top: 3450px;
-         }
-
-         #contact-section>h1:nth-child(1){
-             left: 32%;
-         }
-
-         #contact-section>#contact-details{
-             top: 10%;
-             left: 9%;
-             width: 80%;
-             flex-direction: row;
-         }
-
-         #contact-section>#contact-details>div{
-             width: 50%;
-             height: 70%;
-         }
-
-         #contact-section>#contact-details>div>h3{
-             display: none;
-         }
-
-         #contact-section>#contact-details>div>div{
-             width: 80px;
-             height: 80px;
-         }
-
-         #contact-section>#form{
-             width: 85%;
-             top: 27%;
-             left: 4%;
-         }
-
-         textarea#txtMessage{
-             width: 83%;
-         }
-
-         #contact-section>#social-logo{
-             width: 99%;
-             left: 0;
-         }
-         !*End contact section*!
+/*         End Edu section*/
 
 
-         !*Begin footer*!
-         #footer{
-             top: 4315px;
-             height: 35px;
-         }
+              /*
+                     !*Begin contact section*!
+                     #contact-section{
+                         top: 3450px;
+                     }
 
-         #footer>div{
-             top: 15%;
-             left: 0;
-             font-size: 9px;
-         }
+                     #contact-section>h1:nth-child(1){
+                         left: 32%;
+                     }
 
-         #footer>div>h2{
-             font-size: 12px;
-         }
+                     #contact-section>#contact-details{
+                         top: 10%;
+                         left: 9%;
+                         width: 80%;
+                         flex-direction: row;
+                     }
 
-         #footer>div>h4:nth-last-child(1){
-             left: 36%;
-             display: none;
-         }
-         !*   End footer*!
+                     #contact-section>#contact-details>div{
+                         width: 50%;
+                         height: 70%;
+                     }
 
-         }
+                     #contact-section>#contact-details>div>h3{
+                         display: none;
+                     }
 
-         !*End display size 375px*!*/
+                     #contact-section>#contact-details>div>div{
+                         width: 80px;
+                         height: 80px;
+                     }
 
-    #edu-section{display: none}
+                     #contact-section>#form{
+                         width: 85%;
+                         top: 27%;
+                         left: 4%;
+                     }
+
+                     textarea#txtMessage{
+                         width: 83%;
+                     }
+
+                     #contact-section>#social-logo{
+                         width: 99%;
+                         left: 0;
+                     }
+                     !*End contact section*!
+
+
+                     !*Begin footer*!
+                     #footer{
+                         top: 4315px;
+                         height: 35px;
+                     }
+
+                     #footer>div{
+                         top: 15%;
+                         left: 0;
+                         font-size: 9px;
+                     }
+
+                     #footer>div>h2{
+                         font-size: 12px;
+                     }
+
+                     #footer>div>h4:nth-last-child(1){
+                         left: 36%;
+                         display: none;
+                     }
+                     !*   End footer*!
+
+                     }
+
+                     !*End display size 375px*!*/
+
     #contact-section{display: none}
     #footer{display: none}
 
