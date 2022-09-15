@@ -1510,7 +1510,7 @@ button#project-btn:hover{
 
                      #contact-section>#social-logo{
                          width: 98%;
-                         left: 2%;
+                         left: 1%;
                      }
 
                      #contact-section>#social-logo>.s-logo>div {
@@ -1522,12 +1522,10 @@ button#project-btn:hover{
                          width: 50px;
                          height: 50px;
                      }
+     /*End contact section*/
 
 
-              /*End contact section*/
-
-
-/*                     !*Begin footer*!
+/*    Begin footer*/
                      #footer{
                          top: 4315px;
                          height: 35px;
@@ -1535,8 +1533,8 @@ button#project-btn:hover{
 
                      #footer>div{
                          top: 15%;
-                         left: 0;
-                         font-size: 9px;
+                         left: 1%;
+                         font-size: 5px;
                      }
 
                      #footer>div>h2{
@@ -1547,15 +1545,11 @@ button#project-btn:hover{
                          left: 36%;
                          display: none;
                      }
-                     !*   End footer*!
+/*                     End footer*/
 
                      }
 
-                     !*End display size 375px*!*/
-
-    #footer{display: none}
-
-}
+                     /*End display size 375px*/
 
 
 
