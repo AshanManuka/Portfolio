@@ -139,6 +139,37 @@ body{
 /*End tablet size*/
 
 
+/*style for 425 Mobile size*/
+
+@media all and (min-width: 410px) and (max-width: 425px) {
+    #head>h1{
+        left: 19%;
+    }
+
+    #assignment-sec{
+        top: 60%;
+    }
+
+    #head>#project-div>div{
+        width: 150px;
+        font-size: 14px;
+        left: 10%;
+    }
+
+    #assignment-sec>div>div{
+        width: 150px;
+        font-size: 14px;
+        left: 10%;
+    }
+
+    #assignment-sec>h1{
+        left: 25%;
+    }
+
+    #assignment-sec>div>div>a>h4{
+        left: 10%;
+    }
+}
 
 
 
