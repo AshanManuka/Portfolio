@@ -170,9 +170,75 @@ body{
         left: 10%;
     }
 }
+/*end 425px*/
+
+/*style for 375 Mobile size*/
+@media all and (min-width: 350px) and (max-width: 375px) {
+    #head > h1 {
+        left: 19%;
+    }
+
+    #assignment-sec {
+        top: 60%;
+    }
+
+    #head > #project-div > div {
+        width: 150px;
+        font-size: 14px;
+        left: 10%;
+    }
+
+    #assignment-sec > div > div {
+        width: 150px;
+        font-size: 14px;
+        left: 10%;
+    }
+
+    #assignment-sec > h1 {
+        left: 25%;
+    }
+
+    #assignment-sec > div > div > a > h4 {
+        left: 10%;
+    }
+}
+/*end 375*/
 
 
+/*style for 320 Mobile size*/
+@media all and (min-width: 310px) and (max-width: 320px) {
+    #head{
+        top: 3%;
+    }
 
+    #head > h1 {
+        left: 15%;
+    }
+
+    #assignment-sec {
+        top: 60%;
+    }
+
+    #head > #project-div > div {
+        width: 150px;
+        font-size: 14px;
+        left: 25%;
+    }
+
+    #assignment-sec > div > div {
+        width: 150px;
+        font-size: 14px;
+        left: 25%;
+    }
+
+    #assignment-sec > h1 {
+        left: 25%;
+    }
+
+    #assignment-sec > div > div > a > h4 {
+        left: 10%;
+    }
+}
 
 
 

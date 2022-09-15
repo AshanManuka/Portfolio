@@ -1276,7 +1276,7 @@ button#project-btn:hover{
 /*End display size 375px*/
 
 
-/*style for 375 Mobile size*/
+/*style for 320 Mobile size*/
 @media all and (min-width: 310px) and (max-width: 320px) {
 
     /* Begin header*/
