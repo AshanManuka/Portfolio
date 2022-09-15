@@ -651,7 +651,7 @@ button#project-btn:hover{
 }
 
 
-/*style for 1024 Laptop size*/
+/*style for 768 tablet size*/
 
 @media all and (min-width: 720px) and (max-width: 768px) {
 /*    Begin Header*/

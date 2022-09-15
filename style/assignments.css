@@ -113,6 +113,33 @@ body{
         left: 10%;
     }
 }
+/*End 1024px*/
+
+
+/*style for 768 tablet size*/
+
+@media all and (min-width: 720px) and (max-width: 768px) {
+    #head>#project-div>div{
+        width: 150px;
+        font-size: 14px;
+        left: 10%;
+    }
+
+    #assignment-sec>div>div{
+        width: 150px;
+        font-size: 14px;
+        left: 10%;
+    }
+
+    #assignment-sec>div>div>a>h4{
+        left: 10%;
+    }
+
+}
+/*End tablet size*/
+
+
+
 
 
 
