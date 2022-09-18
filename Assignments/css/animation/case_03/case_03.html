@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 11</title>
+    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+    <link rel="stylesheet" href="../../../normalize.css">
+    <link rel="stylesheet" href="../../../../fonts/css/all.css">
+
+    <style>
+        body{
+            background-color: #5b6f79;
+        }
+        main {
+            width: 800px;
+            height: 450px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        main > section {
+            height: 100%;
+            width: 400%;
+            display: flex;
+            animation-name: my-animation;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        main > section > div {
+            height: 100%;
+            width: 100%;
+        }
+
+        main > section > div:nth-child(1) {
+            background-color: #cb0431;
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(2) {
+            background-color: #0454cb;
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(3) {
+            background-color: #c4cb04;
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(4) {
+            background-color: #8f04cb;
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes my-animation {
+            0%,20%{
+                transform: translateX(0);
+            }
+            30%,50% {
+                transform: translateX(-25%);
+            }
+            60%,80% {
+                transform: translateX(-50%);
+            }
+            90%,100% {
+                transform: translateX(-75%);
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+</body>
+</html>
