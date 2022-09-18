@@ -25,9 +25,39 @@ body{
 
 #head-sec>div>.bt-div>h1{
     position: relative;
-    left: 30%;
     top: 15%;
+    text-align: center;
     font-weight: bold;
+}
+
+#second-dev>.wel-image{
+    position: absolute;
+    width: 40vw;
+    height: 400px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#lg-sec{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    top: 30em;
+    background-color: rgba(28, 17, 17, 0.41);
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#lg-sec>label{
+    display: inline;
+}
+#lg-sec>#txtName{
+    position: relative;
+    width: 10px;
 }
 
 
