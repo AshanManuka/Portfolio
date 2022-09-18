@@ -588,7 +588,7 @@ button#project-btn:hover{
 
 /*style for 1024 Laptop size*/
 
-@media all and (min-width: 970px) and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
 
 /*    Begin Header*/
     button#start-btn{
@@ -653,7 +653,7 @@ button#project-btn:hover{
 
 /*style for 768 tablet size*/
 
-@media all and (min-width: 720px) and (max-width: 768px) {
+@media all and (max-width: 768px) {
 /*    Begin Header*/
     button#start-btn{
         position: absolute;
@@ -704,15 +704,15 @@ button#project-btn:hover{
     }
 
     #skill-section>div>div{
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         left: 1%;
         margin: 20px;
     }
 
     #skill-section>div>div>.logo-image{
-        width: 98px;
-        height: 98px;
+        width: 88px;
+        height: 88px;
         left: 1%;
         top: 1%;
     }
@@ -775,7 +775,7 @@ button#project-btn:hover{
 
 /*style for 425 Mobile size*/
 
-@media all and (min-width: 410px) and (max-width: 425px) {
+@media all and (max-width: 425px) {
 
     /* Begin header*/
     #nav-bar {
@@ -1022,7 +1022,7 @@ button#project-btn:hover{
 
 
     /*style for 375 Mobile size*/
-    @media all and (min-width: 350px) and (max-width: 375px) {
+    @media all and (max-width: 375px) {
 
         /* Begin header*/
         #nav-bar {
@@ -1277,7 +1277,7 @@ button#project-btn:hover{
 
 
 /*style for 320 Mobile size*/
-@media all and (min-width: 310px) and (max-width: 320px) {
+@media all and (max-width: 320px) {
 
     /* Begin header*/
     #nav-bar {
