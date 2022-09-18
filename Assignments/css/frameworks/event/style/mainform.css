@@ -52,13 +52,7 @@ body{
     margin-bottom: 10px;
 }
 
-#lg-sec>label{
-    display: inline;
-}
-#lg-sec>#txtName{
-    position: relative;
-    width: 10px;
-}
+
 
 
  /*######### Head Section #########*/
