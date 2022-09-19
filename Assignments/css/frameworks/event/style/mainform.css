@@ -1,92 +1,22 @@
-body{
-    background-color: #2cad67;
+
+#head{
+    height: 60px;
 }
 
-/*######### Head Section #########*/
-
- #head-sec{
-     background-color: rgba(0, 0, 0, 0.1);
-     border-bottom: 3px solid rgba(30, 87, 104, 0.6);
- }
-
-.img-thumbnail{
-    width: 100px;
+#sec-2{
+    height: 500px;
 }
 
-#head-sec>div>.bt-div{
-    position: relative;
-    top: 5%;
-    width: 80%;
-    height: 90%;
-    border-radius: 100px;
-    border: rgba(26, 14, 14, 0.25) 2px solid;
-    background-color: rgba(0, 0, 0, 0.05);
+#sec-3{
+    height: 600px;
 }
 
-#head-sec>div>.bt-div>h1{
-    position: relative;
-    top: 15%;
-    text-align: center;
-    font-weight: bold;
-}
-
-#second-dev>.wel-image{
-    position: absolute;
-    width: 40vw;
-    height: 400px;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-}
-
-#lg-sec {
-    position: relative;
-    left: 15%;
+#sec-3>div{
     width: 70%;
-    top: 30em;
-    background-color: rgba(135, 107, 107, 0.41);
-    border-radius: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height: 80%;
 }
 
-#lg-sec>div{
-    position: relative;
-    width: 50%;
-    height: 98%;
-    left: 25%;
+#sec-3>div>div{
+    width: 70%;
+    height: 80%;
 }
-
-#lg-sec>div>div:nth-child(1)>h1{
-    color: #130303;
-    text-align: center;
-    font-weight: bold;
-}
-
-
-
-
- /*######### Head Section #########*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

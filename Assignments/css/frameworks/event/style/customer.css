@@ -18,3 +18,20 @@ body{
     font-weight: bold;
     margin-left: 20px;
 }
+
+#searchLine>div{
+    position: relative;
+    width: 70%;
+    display: inline;
+    left: 15%;
+}
+
+#searchLine>div>#send-btn{
+    position: relative;
+    display: inline;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+}
+
+
