@@ -1,0 +1,35 @@
+body{
+    background-color: rgba(11, 75, 75, 0.65);
+}
+
+#sec-one>div{
+    border: #35e5e5 1px solid;
+}
+
+#sec-one{
+    height: 60px;
+}
+
+#sec-two{
+    height: 60px;
+}
+
+#sec-two>div{
+    border: #35e5e5 1px solid;
+}
+
+#sec-three{
+    height: 500px;
+}
+
+#sec-three>div{
+    border: #35e5e5 1px solid;
+}
+
+#sec-four{
+    height: 500px;
+}
+
+#sec-four>div{
+    border: #35e5e5 1px solid;
+}
