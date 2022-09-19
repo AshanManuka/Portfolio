@@ -13,77 +13,40 @@
     <link rel="stylesheet" href="../event/style/customer.css">
 </head>
 <body>
-<header class="jumbotron bg-primary text-white p-3"  id="head">
-    <h1 class="position-absolute" id="nav"></h1>
-    <ul class="list-group list-group-horizontal text-danger justify-content-end font-weight-bold" id="ulist">
-        <li class="list-group-item bg-danger text-white" id="lnkCustomer"><a class="text-white" href="#">Customer</a></li>
-        <li class="list-group-item bg-white" id="lnkItem"><a href="#">Item</a></li>
-        <li class="list-group-item bg-white" id="lnkOrders"><a href="#">Orders</a></li>
-    </ul>
-</header>
-    <section class="row" id="searchLine">
-             <div class="input-group"  class="row">
-            <button id="send-btn"><b>All Customers</b></button>
-            <div id="sBar" class="form-outline" class="row">
-                <input type="search" id="form1" class="form-control" />
-            </div>
-            <button type="button" class="btn btn-primary">
-                search<i class="fas fa-search"></i>
-            </button>
-        </div>
-    </section>
+<main class="container-fluid">
 
-<main class="container-fluid" id="customerContent">
-    <section class="row">
-        <div class="col-4">
+<section class="row" id="sec-one">
+    <div class="col-2"></div>
+    <div class="col-3"></div>
+    <div class="col-2"></div>
+    <div class="col-2"></div>
+    <div class="col-2"></div>
+    <div class="col-1"></div>
+</section>
 
-            <div class="form-group">
-                <label for="txtCustomerID">Customer ID</label>
-                <input class="form-control" id="txtCustomerID" required type="text">
-                <span class="control-error" id="lblcusid"></span>
-            </div>
-            <div class="form-group">
-                <label for="txtCustomerName">Customer Name</label>
-                <input class="form-control" id="txtCustomerName" type="text">
-                <span class="control-error" id="lblcusname"></span>
-            </div>
-            <div class="form-group">
-                <label for="txtCustomerAddress">Customer Address</label>
-                <input class="form-control" id="txtCustomerAddress" type="text">
-                <span class="control-error" id="lblcusaddress"></span>
-            </div>
-            <div class="form-group">
-                <label for="txtCustomerSalry">Customer Salary</label>
-                <input class="form-control" id="txtCustomerSalry" type="text">
-                <span class="control-error" id="lblcussalary"></span>
-            </div>
-            <!--<div class="btn-group">
-                <button class="btn btn-primary" id="btnCustomer">Save Customer</button>
-                <button class="btn btn-danger" id="btnCusDelete">Remove</button>
-                <button class="btn btn-warning" id="btnUpdate">Update</button>
-                <button class="btn btn-success">Get All</button>
-                <button class="btn btn-danger" id="btn-clear1">Clear All</button>
-            </div>-->
+<section class="row" id="sec-two">
+    <div class="col-2"></div>
+    <div class="col-3"></div>
+    <div class="col-5"></div>
+    <div class="col-2"></div>
+</section>
 
-        </div>
-        <div class="col-8">
-            <table class="table table-bordered table-hover">
-                <thead class="bg-danger text-white">
-                <tr>
-                    <th>Customer ID</th>
-                    <th>Customer Name</th>
-                    <th>Customer Address</th>
-                    <th>Customer Salary</th>
-                </tr>
-                </thead>
-                <tbody id="tblCustomer">
+<section class="row" id="sec-three">
+    <div class="col-1"></div>
+    <div class="col-7"></div>
+    <div class="col-3"></div>
+    <div class="col-1"></div>
+</section>
 
-                </tbody>
-            </table>
-        </div>
-    </section>
+<section class="row" id="sec-four">
+    <div class="col-1"></div>
+    <div class="col-10"></div>
+    <div class="col-1"></div>
+</section>
 
 </main>
 
+<!--Import js for bootstrap-->
+<script src="../event/js/bootstrap.min.js"></script>
 </body>
 </html>
