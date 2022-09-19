@@ -40,19 +40,24 @@ body{
     margin-left: 20px;
 }
 
+#sec-free-two{
+    height: 50px;
+}
 
 #sec-three{
     height: 500px;
 }
 
-#sec-three>div{
-    border: #35e5e5 1px solid;
+#update, #Add, #delete{
+    width: 80%;
+    height: 50px;
+    border-radius: 40px;
+    border: #f6b3b7;
+    margin-top: 35px;
+    margin-left: 20px;
+    background-color: #f6b3b7;
 }
 
 #sec-four{
     height: 500px;
-}
-
-#sec-four>div{
-    border: #35e5e5 1px solid;
 }
