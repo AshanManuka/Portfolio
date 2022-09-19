@@ -41,15 +41,28 @@ body{
     margin: auto;
 }
 
-#lg-sec{
+#lg-sec {
     position: relative;
     left: 15%;
     width: 70%;
     top: 30em;
-    background-color: rgba(28, 17, 17, 0.41);
+    background-color: rgba(135, 107, 107, 0.41);
     border-radius: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#lg-sec>div{
+    position: relative;
+    width: 50%;
+    height: 98%;
+    left: 25%;
+}
+
+#lg-sec>div>div:nth-child(1)>h1{
+    color: #130303;
+    text-align: center;
+    font-weight: bold;
 }
 
 

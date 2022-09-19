@@ -24,15 +24,22 @@
     </div>
 
     <section class="col" id="lg-sec">
+        <div>
         <div class="row"><h1>Log In</h1></div>
         <div class="row">
             <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Username :</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Username">
+                <div class="form-group">
+                    <label for="userName">Customer ID</label>
+                    <input class="form-control" id="userName" required type="text">
+                    <span class="control-error" id="user"></span>
+                </div>
             </div>
             <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Password :</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Password">
+                <div class="form-group">
+                    <label for="password">Customer ID</label>
+                    <input class="form-control" id="password" required type="text">
+                    <span class="control-error" id="pass"></span>
+                </div>
             </div>
             <br>
         </div>
@@ -46,6 +53,7 @@
             <br>
             <br>
             <a href="#">Forgot Password</a>
+        </div>
         </div>
     </section>
 
