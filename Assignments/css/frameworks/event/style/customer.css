@@ -1,0 +1,20 @@
+body{
+    background-color: #34e283;
+}
+
+#head>{
+    background-color: #2cad67; !important;
+}
+
+#head>#ulist>li{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+#head>#ulist>li>a{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}

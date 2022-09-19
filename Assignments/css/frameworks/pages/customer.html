@@ -10,8 +10,27 @@
     <meta name="owner" content="Ashan Manuka">
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
     <link rel="stylesheet" href="../event/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../event/style/customer.css">
 </head>
 <body>
+<header class="jumbotron bg-primary text-white p-3"  id="head">
+    <h1 class="position-absolute" id="nav"></h1>
+    <ul class="list-group list-group-horizontal text-danger justify-content-end font-weight-bold" id="ulist">
+        <li class="list-group-item bg-danger text-white" id="lnkCustomer"><a class="text-white" href="#">Customer</a></li>
+        <li class="list-group-item bg-white" id="lnkItem"><a href="#">Item</a></li>
+        <li class="list-group-item bg-white" id="lnkOrders"><a href="#">Orders</a></li>
+    </ul>
+</header>
+    <section class="row" id="searchLine">
+        <div class="input-group">
+            <div class="form-outline">
+                <input type="search" id="form1" class="form-control" />
+            </div>
+            <button type="button" class="btn btn-primary">
+                search<i class="fas fa-search"></i>
+            </button>
+        </div>
+    </section>
 
 </body>
 </html>

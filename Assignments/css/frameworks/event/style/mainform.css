@@ -1,11 +1,11 @@
 body{
-    background-color: #55eac7;
+    background-color: #2cad67;
 }
 
 /*######### Head Section #########*/
 
  #head-sec{
-     background-color: rgba(95, 255, 191, 0.65);
+     background-color: rgba(0, 0, 0, 0.1);
      border-bottom: 3px solid rgba(30, 87, 104, 0.6);
  }
 
@@ -20,7 +20,7 @@ body{
     height: 90%;
     border-radius: 100px;
     border: rgba(26, 14, 14, 0.25) 2px solid;
-    background-color: rgba(11, 16, 29, 0.25);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 #head-sec>div>.bt-div>h1{
