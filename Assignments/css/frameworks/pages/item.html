@@ -16,31 +16,101 @@
 <main class="container-fluid">
 
     <section class="row" id="sec-one">
-        <div class="col-2"></div>
-        <div class="col-3"></div>
-        <div class="col-2"></div>
-        <div class="col-2"></div>
-        <div class="col-2"></div>
+        <div class="col-2">
+            <img src="../event/images/gift-img.png" alt="gift" id="im">
+        </div>
+        <div class="col-3">
+            <h1>Items</h1>
+        </div>
+        <div class="col-3">
+            <button id="cust-btn"><b>Customer</b></button>
+        </div>
+        <div class="col-3">
+            <button id="order-btn"><b>Orders</b></button>
+        </div>
         <div class="col-1"></div>
     </section>
 
+    <section class="row" id="free-sec">
+        <div class="col-12"></div>
+    </section>
+
     <section class="row" id="sec-two">
-        <div class="col-2"></div>
-        <div class="col-3"></div>
-        <div class="col-5"></div>
-        <div class="col-2"></div>
+        <div class="col-1"></div>
+        <div class="col-3">
+            <button id="all-search"><b>All Items</b></button>
+        </div>
+        <div class="col-5">
+            <label for="txtCustomerName"></label>
+            <input class="form-control" id="txtCustomerName" type="text">
+        </div>
+        <div class="col-2">
+            <button id="search-btn"><b>Search</b></button>
+        </div>
+        <div class="col-1"></div>
+    </section>
+
+    <section id="sec-free-two" class="row">
+        <div class="col-12"></div>
     </section>
 
     <section class="row" id="sec-three">
         <div class="col-1"></div>
-        <div class="col-7"></div>
-        <div class="col-3"></div>
+        <div class="col-7">
+            <div class="form-group">
+                <label for="txtItemID">Item ID</label>
+                <input class="form-control" id="txtItemID" required type="text">
+                <span class="control-error" id="lblItemid"></span>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="txtItemName">Item Name</label>
+                <input class="form-control" id="txtItemName" type="text">
+                <span class="control-error" id="lblItemname"></span>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="txtItemQty">Quantity</label>
+                <input class="form-control" id="txtItemQty" type="text">
+                <span class="control-error" id="lblQty"></span>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="txtUnitPrice">Unit Price</label>
+                <input class="form-control" id="txtUnitPrice" type="text">
+                <span class="control-error" id="lblPrice"></span>
+            </div>
+            <br>
+        </div>
+        <div class="col-3">
+            <button id="Add"><b>Add</b></button>
+            <br>
+            <br>
+            <button id="update"><b>Update</b></button>
+            <br>
+            <br>
+            <button id="delete"><b>Delete</b></button>
+        </div>
         <div class="col-1"></div>
     </section>
 
     <section class="row" id="sec-four">
         <div class="col-1"></div>
-        <div class="col-10"></div>
+        <div class="col-10">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-info text-black">
+                <tr>
+                    <th>Item ID</th>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                </tr>
+                </thead>
+                <tbody id="tblItem">
+
+                </tbody>
+            </table>
+        </div>
         <div class="col-1"></div>
     </section>
 
