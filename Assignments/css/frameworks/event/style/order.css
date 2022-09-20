@@ -39,3 +39,26 @@ body{
     margin-top: -12px;
     margin-left: 20px;
 }
+
+#sec-free-two{
+    height: 50px;
+}
+
+#sec-three{
+    height: 600px;
+}
+
+#div-in{
+    height: 600px;
+}
+
+#divR-one{
+    background-color: rgba(241, 233, 233, 0.19);
+}
+
+#cust-id{
+    border-radius: 6px;
+    width: 50%;
+    font-size: 25px;
+    margin-top: 15px;
+}
