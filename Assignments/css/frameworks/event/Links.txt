@@ -1,7 +1,0 @@
-# POS UI Assignment
-
-Site map : https://www.gloomaps.com/bReddp4Qi3
-
-Wire Frame : https://wireframe.cc/zrgrra
-
-Figma Link : https://www.figma.com/file/N8tafoGyB0RqDyR5xf9DiH/Untitled?node-id=5%3A75
