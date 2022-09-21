@@ -21,7 +21,7 @@
             <img src="event/image/gift-img.png" alt="gift" id="im">
         </div>
         <div class="col-3">
-            <h1>Customer</h1>
+            <h1 id="hm">Customer</h1>
         </div>
         <div class="col-2">
             <a href="#"><button id="customer-btn"><b>Customer</b></button></a>
@@ -211,6 +211,7 @@
 <!--End main section two-->
 
 <!--Begin main section three-->
+<section id="main-three-sec">
 
     <section class="row" id="free-sec-order">
         <div class="col-12"></div>
@@ -401,6 +402,7 @@
             </table>
         </div>
     </section>
+</section>
 
 <!--End main section three-->
 
@@ -412,10 +414,23 @@
 <script>
     document.getElementById("item-btn").addEventListener("click", function () {
         document.getElementById("main-one-sec").style.display="none";
+        document.getElementById("main-three-sec").style.display="none";
+        document.getElementById("main-two-sec").style.display="inline";
+        document.getElementById("hm").innerText="Items";
     })
 
     document.getElementById("customer-btn").addEventListener("click", function () {
         document.getElementById("main-two-sec").style.display="none";
+        document.getElementById("main-three-sec").style.display="none";
+        document.getElementById("main-one-sec").style.display="inline";
+        document.getElementById("hm").innerText="Customer";
+    })
+
+    document.getElementById("order-btn").addEventListener("click", function () {
+        document.getElementById("main-one-sec").style.display="none";
+        document.getElementById("main-two-sec").style.display="none";
+        document.getElementById("main-three-sec").style.display="inline";
+        document.getElementById("hm").innerText="Orders";
     })
 </script>
 
