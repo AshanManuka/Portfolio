@@ -21,7 +21,7 @@ body{
 #item-btn, #order-btn, #all-search, #search-btn{
     border-radius: 40px;
     background-color: rgba(123, 250, 250, 0.71);
-    border: 1px solid rgba(43, 187, 187, 0.71);
+    border: 1px solid rgba(6, 38, 38, 0.71);
     width: 100%;
     height: 80%;
     margin-top: 5px;

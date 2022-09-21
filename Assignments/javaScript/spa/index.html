@@ -15,6 +15,7 @@
 <body>
 <main class="container-fluid">
 
+
     <section class="row" id="sec-one">
         <div class="col-2">
             <img src="event/image/gift-img.png" alt="gift" id="im">
@@ -23,19 +24,115 @@
             <h1>Customer</h1>
         </div>
         <div class="col-2">
+            <a href="#"><button id="customer-btn"><b>Customer</b></button></a>
+        </div>
+        <div class="col-2">
             <a href="#"><button id="item-btn"><b>Items</b></button></a>
         </div>
         <div class="col-2">
             <a href="#"><button id="order-btn"><b>Orders</b></button></a>
         </div>
+        <div class="col-1"></div>
+    </section>
+
+<!--Begin main section one-->
+<section id="main-one-sec">
+    <section class="row" id="free-sec">
+        <div class="col-12"></div>
+    </section>
+
+    <section class="row" id="sec-two">
+        <div class="col-1"></div>
+        <div class="col-3">
+            <a href="#sec-four"><button id="all-search"><b>All Customers</b></button></a>
+        </div>
+        <div class="col-5">
+            <label for="txtCustomerName"></label>
+            <input class="form-control" id="txtCustomerName" type="text">
+        </div>
         <div class="col-2">
-            <a href="#"><button id="customer-btn"><b>Orders</b></button></a>
+            <a href="#sec-four"><button id="search-btn"><b>Search</b></button></a>
         </div>
         <div class="col-1"></div>
     </section>
 
+    <section id="sec-free-two" class="row">
+        <div class="col-12"></div>
+    </section>
+
+    <section class="row" id="sec-three">
+        <div class="col-1"></div>
+        <div class="col-7">
+            <div class="form-group">
+                <label for="txtCustomerID">Customer ID</label>
+                <input class="form-control" id="txtCustomerID" required type="text">
+                <span class="control-error" id="lblcusid"></span>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="txtCusName">Customer Name</label>
+                <input class="form-control" id="txtCusName" type="text">
+                <span class="control-error" id="lblcusname"></span>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="txtCustomerAddress">Customer Address</label>
+                <input class="form-control" id="txtCustomerAddress" type="text">
+                <span class="control-error" id="lblcusaddress"></span>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="txtCustomerSalry">Customer Salary</label>
+                <input class="form-control" id="txtCustomerSalry" type="text">
+                <span class="control-error" id="lblcussalary"></span>
+            </div>
+            <br>
+        </div>
+        <div class="col-3">
+            <button id="Add"><b>Add</b></button>
+            <br>
+            <br>
+            <button id="update"><b>Update</b></button>
+            <br>
+            <br>
+            <button id="delete"><b>Delete</b></button>
+        </div>
+        <div class="col-1"></div>
+    </section>
+
+    <section class="row" id="sec-four">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-info text-black">
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>Customer Salary</th>
+                </tr>
+                </thead>
+                <tbody id="tblCustomer">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-1"></div>
+    </section>
+
+</section>
+<!--end main section one -->
+
+
+
 </main>
 <!--Import js for bootstrap-->
 <script src="event/js/bootstrap.min.js"></script>
+<script>
+    document.getElementById("item-btn").addEventListener("click", function () {
+        document.getElementById("main-one-sec").style.display="none";
+    })
+</script>
+
 </body>
 </html>
