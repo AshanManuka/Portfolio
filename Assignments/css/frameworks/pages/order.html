@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MJ Stores</title>
+    <title>Order</title>
     <link rel="icon" href="../event/images/mjFav.png">
     <meta name="keywords" content="restaurant, food, drinks, order">
     <meta name="description" content="online food ordering site">
@@ -23,10 +23,10 @@
             <h1>Order</h1>
         </div>
         <div class="col-3">
-            <button id="cust-btn"><b>Customer</b></button>
+            <a href="customer.html"><button id="cust-btn"><b>Customer</b></button></a>
         </div>
         <div class="col-3">
-            <button id="order-btn"><b>Items</b></button>
+            <a href="item.html"><button id="order-btn"><b>Items</b></button></a>
         </div>
         <div class="col-1"></div>
     </section>
@@ -72,7 +72,7 @@
                             <span class="control-error" id="lblcusName"></span>
                         </div>
                     </div>
-                    <div class="col-12"><h1>6</h1></div>
+                    <div class="col-12" id="sp1"></div>
                     <div class="col-6">
                         <form action="#">
                             <label for="cust-id"><b>Select Item : </b></label>
@@ -92,7 +92,7 @@
                             <span class="control-error" id="lblItemId"></span>
                         </div>
                     </div>
-                    <div class="col-12"><h4>1</h4></div>
+                    <div class="col-12" id="sp2"></div>
 
                     <div class="col-2"></div>
                     <div class="col-4">
@@ -110,7 +110,7 @@
                           </div>
                     </div>
                     <div class="col-2"></div>
-                    <div class="col-12"><h6>5</h6></div>
+                    <div class="col-12" id="sp3"></div>
                     <div class="col-4"></div>
                     <div class="col-4">
                         <div class="form-group">
@@ -136,7 +136,7 @@
                             <div class="col-6"><h3 style="margin-top: 20px" >Total : </h3></div>
                             <div class="col-4"></div>
                             <div class="col-8"><h3 style="margin-top: 20px" >Sub Total : </h3></div>
-                            <div class="col-12"><h4>1</h4></div>
+                            <div class="col-12" id="sp4"></div>
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="cashPrice">Cash : </label>
@@ -144,7 +144,7 @@
                                     <span class="control-error" id="cashTotal"></span>
                                 </div>
                             </div>
-                            <div class="col-12"><h4>4</h4></div>
+                            <div class="col-12" id="sp5"></div>
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="balancePrice">Balance : </label>
@@ -172,7 +172,7 @@
                                     <span class="control-error" id="lblSubTotal"></span>
                                 </div>
                             </div>
-                            <div class="col-12"><h4>4</h4></div>
+                            <div class="col-12" id="sp6"></div>
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="discountPrice">Discount : </label>
@@ -180,14 +180,14 @@
                                     <span class="control-error" id="discountTotal"></span>
                                 </div>
                             </div>
-                            <div class="col-12"><h4>4</h4></div>
+                            <div class="col-12" id="sp7"></div>
                             <div class="col-12">
                                 <button type="button" class="btn btn-dark" style="margin-top: 25px">Complete Order</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6"><h2>1</h2></div>
+                <div class="col-6" id="sp8"></div>
                 <div class="row" style="background-color: rgba(203,4,49,0.56)">
                     <div class="col-1"></div>
                     <div class="col-6"><h2 style="margin-left: 25px">Order Id : </h2></div>

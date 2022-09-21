@@ -43,7 +43,7 @@ main>#sec-3>div:nth-child(2)>div{
     left: 15%;
 }
 
-main>#sec-3>div:nth-child(2)>div>#log-btn{
+#log-btn{
     width: 99%;
     border-radius: 50px;
     background-color: #49ee6c;

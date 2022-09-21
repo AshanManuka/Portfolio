@@ -71,3 +71,8 @@ body{
     font-size: 25px;
     margin-top: 15px;
 }
+
+#sp1, #sp2, #sp3, #sp4, #sp5, #sp6, #sp7, #sp8{
+    height: 35px;
+}
+
