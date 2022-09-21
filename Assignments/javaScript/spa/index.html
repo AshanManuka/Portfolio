@@ -123,6 +123,93 @@
 </section>
 <!--end main section one -->
 
+<!--Begin main section two-->
+    <section id="main-two-sec">
+        <section class="row" id="free-sec-item">
+            <div class="col-12"></div>
+        </section>
+
+        <section class="row" id="sec-two-item">
+            <div class="col-1"></div>
+            <div class="col-3">
+                <a href="#sec-four"><button id="all-search-item"><b>All Items</b></button></a>
+            </div>
+            <div class="col-5">
+                <label for="txtItemName"></label>
+                <input class="form-control" id="txtItemName-item" type="text">
+            </div>
+            <div class="col-2">
+                <a href="#sec-four"><button id="search-btn-item"><b>Search</b></button></a>
+            </div>
+            <div class="col-1"></div>
+        </section>
+
+        <section id="sec-free-two-item" class="row">
+            <div class="col-12"></div>
+        </section>
+
+        <section class="row" id="sec-three-item">
+            <div class="col-1"></div>
+            <div class="col-7">
+                <div class="form-group">
+                    <label for="txtItemID">Item ID</label>
+                    <input class="form-control" id="txtItemID" required type="text">
+                    <span class="control-error" id="lblItemid"></span>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="txtItemName">Item Name</label>
+                    <input class="form-control" id="txtItemName" type="text">
+                    <span class="control-error" id="lblItemname"></span>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="txtItemQty">Quantity</label>
+                    <input class="form-control" id="txtItemQty" type="text">
+                    <span class="control-error" id="lblQty"></span>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="txtUnitPrice">Unit Price</label>
+                    <input class="form-control" id="txtUnitPrice" type="text">
+                    <span class="control-error" id="lblPrice"></span>
+                </div>
+                <br>
+            </div>
+            <div class="col-3">
+                <button id="Add-item"><b>Add</b></button>
+                <br>
+                <br>
+                <button id="update-item"><b>Update</b></button>
+                <br>
+                <br>
+                <button id="delete-item"><b>Delete</b></button>
+            </div>
+            <div class="col-1"></div>
+        </section>
+
+        <section class="row" id="sec-four-item">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <table class="table table-bordered table-hover">
+                    <thead class="bg-info text-black">
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Item Name</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tblItem">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-1"></div>
+        </section>
+    </section>
+<!--End main section two-->
+
 
 
 </main>

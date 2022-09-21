@@ -63,7 +63,76 @@ body{
     height: 500px;
 }
 
-
-
-
 /*====== customer page ============*/
+
+
+/*====== Item page ============*/
+
+#all-search-item, #search-btn-item{
+    border-radius: 40px;
+    background-color: rgba(123, 250, 250, 0.71);
+    border: 1px solid rgba(6, 38, 38, 0.71);
+    width: 100%;
+    height: 80%;
+    margin-top: 5px;
+}
+
+#free-sec-item{
+    height: 30px;
+}
+
+#sec-two-item{
+    height: 60px;
+}
+
+#txtItemName-item{
+    margin-top: -12px;
+    margin-left: 20px;
+}
+
+#sec-free-two-item{
+    height: 50px;
+}
+
+#sec-three-item{
+    height: 500px;
+}
+
+#update-item, #Add-item, #delete-item{
+    width: 80%;
+    height: 50px;
+    border-radius: 40px;
+    border: #f6b3b7;
+    margin-top: 35px;
+    margin-left: 20px;
+    background-color: #f6b3b7;
+}
+
+#sec-four-item{
+    height: 500px;
+}
+
+
+/*====== Item page ============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
