@@ -210,6 +210,200 @@
     </section>
 <!--End main section two-->
 
+<!--Begin main section three-->
+
+    <section class="row" id="free-sec-order">
+        <div class="col-12"></div>
+    </section>
+
+    <section class="row" id="sec-two-order">
+        <div class="col-1"></div>
+        <div class="col-3">
+            <a href="#sec-four"><button id="all-search-order"><b>All Orders</b></button></a>
+        </div>
+        <div class="col-5">
+            <label for="txtOrderId"></label>
+            <input class="form-control" id="txtOrderId" type="text">
+        </div>
+        <div class="col-2">
+            <a href="#sec-four"><button id="search-btn-order"><b>Search</b></button></a>
+        </div>
+        <div class="col-1"></div>
+    </section>
+
+    <section id="sec-free-two-order" class="row">
+        <div class="col-12"></div>
+    </section>
+
+    <section class="container" id="sec-three-order">
+        <div class="row" id="div-in">
+            <div class="col-7" id="divR-one">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="txtCustomerId">Customer Id :</label>
+                            <input class="form-control" id="txtCustomerId-order" type="text">
+                            <span class="control-error" id="lblcusId-order"></span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="txtCustName">Customer Name :</label>
+                            <input class="form-control" id="txtCustName" type="text">
+                            <span class="control-error" id="lblcusName-order"></span>
+                        </div>
+                    </div>
+                    <div class="col-12" id="sp1"></div>
+                    <div class="col-6">
+                        <form action="#">
+                            <label for="cust-id"><b>Select Item : </b></label>
+                            <select name="id" id="cust-id">
+                                <option value="volvo">I001</option>
+                                <option value="saab">I002</option>
+                                <option value="opel">I003</option>
+                                <option value="audi">I004</option>
+                            </select>
+                            <br><br>
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="itemId">Item Id :</label>
+                            <input class="form-control" id="itemId" type="text">
+                            <span class="control-error" id="lblItemId-order"></span>
+                        </div>
+                    </div>
+                    <div class="col-12" id="sp2"></div>
+
+                    <div class="col-2"></div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="uniPrice">Unit Price :</label>
+                            <input class="form-control" id="uniPrice" type="text">
+                            <span class="control-error" id="lblPrice-order"></span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="qty">Qty On Hand :</label>
+                            <input class="form-control" id="qty" type="text">
+                            <span class="control-error" id="lblQty-order"></span>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-12" id="sp3"></div>
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="orderQty">Order Qty :</label>
+                            <input class="form-control" id="orderQty" type="text">
+                            <span class="control-error" id="lblOrderQty"></span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-dark" style="margin-top: 25px">ADD</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--            invoice part-->
+            <div class="col-5" style="background-color: rgba(203,4,49,0.4)">
+
+                <!--                invoice part one-->
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-6"></div>
+                            <div class="col-6"><h3 style="margin-top: 20px" >Total : </h3></div>
+                            <div class="col-4"></div>
+                            <div class="col-8"><h3 style="margin-top: 20px" >Sub Total : </h3></div>
+                            <div class="col-12" id="sp4"></div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="cashPrice">Cash : </label>
+                                    <input class="form-control" id="cashPrice" type="text">
+                                    <span class="control-error" id="cashTotal"></span>
+                                </div>
+                            </div>
+                            <div class="col-12" id="sp5"></div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="balancePrice">Balance : </label>
+                                    <input class="form-control" id="balancePrice" type="text">
+                                    <span class="control-error" id="balancetotal"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--                    invoice pRT 2-->
+                    <div class="col" >
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="totalPrice"></label>
+                                    <input class="form-control" id="totalPrice" type="text">
+                                    <span class="control-error" id="lbltotal"></span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="subTotalPrice"></label>
+                                    <input class="form-control" id="subTotalPrice" type="text">
+                                    <span class="control-error" id="lblSubTotal"></span>
+                                </div>
+                            </div>
+                            <div class="col-12" id="sp6"></div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="discountPrice">Discount : </label>
+                                    <input class="form-control" id="discountPrice" type="text">
+                                    <span class="control-error" id="discountTotal"></span>
+                                </div>
+                            </div>
+                            <div class="col-12" id="sp7"></div>
+                            <div class="col-12">
+                                <button type="button" class="btn btn-dark" style="margin-top: 25px">Complete Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6" id="sp8"></div>
+                <div class="row" style="background-color: rgba(203,4,49,0.56)">
+                    <div class="col-1"></div>
+                    <div class="col-6"><h2 style="margin-left: 25px">Order Id : </h2></div>
+                    <div class="col-4"><h2>O00X</h2></div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-free-three" class="row">
+        <div class="col-12"></div>
+    </section>
+
+    <section id="sec-four-order" class="container">
+        <div class="col-md-12 mt-4" style="height:600px; overflow-y: scroll" >
+            <table class="table table-bordered text-black">
+                <thead class="bg-info text-black">
+                <tr>
+                    <th>Item ID</th>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+                </thead>
+                <tbody class="bg-light text-dark" id="orderTable">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+<!--End main section three-->
+
 
 
 </main>
@@ -218,6 +412,10 @@
 <script>
     document.getElementById("item-btn").addEventListener("click", function () {
         document.getElementById("main-one-sec").style.display="none";
+    })
+
+    document.getElementById("customer-btn").addEventListener("click", function () {
+        document.getElementById("main-two-sec").style.display="none";
     })
 </script>
 

@@ -112,8 +112,61 @@ body{
     height: 500px;
 }
 
-
 /*====== Item page ============*/
+
+
+
+
+/*====== Order page ============*/
+#all-search-order, #search-btn-order{
+    border-radius: 40px;
+    background-color: rgba(123, 250, 250, 0.71);
+    border: 1px solid rgba(43, 187, 187, 0.71);
+    width: 100%;
+    height: 80%;
+    margin-top: 15px;
+}
+
+#free-sec-order{
+    height: 30px;
+}
+
+#sec-two-order{
+    height: 60px;
+}
+
+#txtCustomerName{
+    margin-top: -12px;
+    margin-left: 20px;
+}
+
+#sec-free-two-order{
+    height: 50px;
+}
+
+#sec-three-order{
+    height: 400px;
+}
+
+#div-in{
+    height: 400px;
+}
+
+#divR-one{
+    background-color: rgba(241, 233, 233, 0.19);
+}
+
+#cust-id{
+    border-radius: 6px;
+    width: 50%;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+#sp1, #sp2, #sp3, #sp4, #sp5, #sp6, #sp7, #sp8{
+    height: 35px;
+}
+/*====== Order page ============*/
 
 
 
