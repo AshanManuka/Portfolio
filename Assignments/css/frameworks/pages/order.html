@@ -20,13 +20,13 @@
             <img src="../event/images/gift-img.png" alt="gift" id="im">
         </div>
         <div class="col-3">
-            <h1>Items</h1>
+            <h1>Order</h1>
         </div>
         <div class="col-3">
             <button id="cust-btn"><b>Customer</b></button>
         </div>
         <div class="col-3">
-            <button id="order-btn"><b>Orders</b></button>
+            <button id="order-btn"><b>Items</b></button>
         </div>
         <div class="col-1"></div>
     </section>
@@ -124,7 +124,70 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5" style="background-color: #0dcaf0"><h1>5</h1></div>
+
+<!--            invoice part-->
+            <div class="col-5" style="background-color: rgba(203,4,49,0.4)">
+
+<!--                invoice part one-->
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-6"></div>
+                            <div class="col-6"><h3 style="margin-top: 20px" >Total : </h3></div>
+                            <div class="col-4"></div>
+                            <div class="col-8"><h3 style="margin-top: 20px" >Sub Total : </h3></div>
+                            <div class="col-12"><h4>1</h4></div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="cashPrice">Cash : </label>
+                                    <input class="form-control" id="cashPrice" type="text">
+                                    <span class="control-error" id="cashTotal"></span>
+                                </div>
+                            </div>
+                            <div class="col-12"><h4>4</h4></div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="balancePrice">Balance : </label>
+                                    <input class="form-control" id="balancePrice" type="text">
+                                    <span class="control-error" id="balancetotal"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<!--                    invoice pRT 2-->
+                    <div class="col" >
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="totalPrice"></label>
+                                    <input class="form-control" id="totalPrice" type="text">
+                                    <span class="control-error" id="lbltotal"></span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="subTotalPrice"></label>
+                                    <input class="form-control" id="subTotalPrice" type="text">
+                                    <span class="control-error" id="lblSubTotal"></span>
+                                </div>
+                            </div>
+                            <div class="col-12"><h4>4</h4></div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="discountPrice">Discount : </label>
+                                    <input class="form-control" id="discountPrice" type="text">
+                                    <span class="control-error" id="discountTotal"></span>
+                                </div>
+                            </div>
+                            <div class="col-12"><h4>4</h4></div>
+                            <div class="col-12">
+                                <button type="button" class="btn btn-dark" style="margin-top: 25px">Complete Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
