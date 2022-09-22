@@ -1,3 +1,12 @@
+
+#main-two-sec{
+    display: none;
+}
+#main-three-sec{
+    display: none;
+}
+
+
 /*====== customer page ============*/
 body{
     background-color: rgba(11, 75, 75, 0.65);
