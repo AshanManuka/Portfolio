@@ -11,16 +11,6 @@
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
     <link rel="stylesheet" href="event/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/main.css">
-
-    <style>
-        main{
-            background-color: #35e5e5;
-        }
-
-        #main-frame{
-            border:red 2px solid;
-        }
-    </style>
 </head>
 <body>
 
@@ -35,11 +25,15 @@
 <main class="container">
     <section class="container" id="main-frame">
        <section class="row">
-
-           <div class="col-2" id="clear-btn"><h3>btn</h3></div>
-           <div class="col-10" id="display-area"><h1>display area</h1></div>
+           <div class="col-2" id="clear-btn">
+               <button class="Button" id="cls-btn"><b>clear</b></button>
+           </div>
+           <div class="col-10" id="display-area">
+               <input class="form-control" id="display" type="text">
+           </div>
+           <div class="col-12" id="free-area"></div>
           <!--button area-->
-           <div class="col-12">
+           <div class="col-12" id="r-one">
                <div class="row">
                    <div class="col-3"><h2>+</h2></div>
                    <div class="col-3"><h2>+</h2></div>
@@ -47,7 +41,7 @@
                    <div class="col-3"><h2>+</h2></div>
                </div>
            </div>
-           <div class="col-12">
+           <div class="col-12" id="r-two">
                <div class="row">
                    <div class="col-3"><h2>+</h2></div>
                    <div class="col-3"><h2>+</h2></div>
@@ -55,7 +49,7 @@
                    <div class="col-3"><h2>+</h2></div>
                </div>
            </div>
-           <div class="col-12">
+           <div class="col-12" id="r-three">
                <div class="row">
                    <div class="col-3"><h2>+</h2></div>
                    <div class="col-3"><h2>+</h2></div>
@@ -63,7 +57,7 @@
                    <div class="col-3"><h2>+</h2></div>
                </div>
            </div>
-           <div class="col-12">
+           <div class="col-12" id="r-four">
                <div class="row">
                    <div class="col-3"><h2>+</h2></div>
                    <div class="col-3"><h2>+</h2></div>

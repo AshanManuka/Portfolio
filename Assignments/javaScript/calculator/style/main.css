@@ -17,6 +17,59 @@ header>div>h1{
 }
 
 #free-sec{
-    height: 100px;
+    height: 70px;
 }
+
+main{
+    background-color: rgba(27, 40, 40, 0.41);
+    height: 450px;
+}
+
+#main-frame{
+    background-color: rgba(131, 90, 226, 0.88);
+    width: 70%;
+    height: 100%;
+
+}
+
+#free-area{
+    height: 30px;
+}
+
+#r-one, #r-two, #r-three, #r-four{
+    height: 90px;
+}
+
+.Button {
+    background-color: #f51414;
+    box-shadow: -1px 1px #3e0a15;
+    border: 1px solid #392705;
+    border-radius: 10px;
+    width: 90%;
+    height: 85%;
+    margin-top: 10%;
+}
+
+#display{
+    height: 125%;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
