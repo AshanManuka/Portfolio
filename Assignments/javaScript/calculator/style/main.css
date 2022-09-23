@@ -17,41 +17,62 @@ header>div>h1{
 }
 
 #free-sec{
-    height: 70px;
+    height: 30px;
 }
 
 main{
     background-color: rgba(27, 40, 40, 0.41);
-    height: 450px;
+    height: 500px;
+    border-radius: 10px;
 }
 
 #main-frame{
     background-color: rgba(131, 90, 226, 0.88);
-    width: 70%;
+    width: 65%;
     height: 100%;
-
+    border-radius: 10px;
 }
 
 #free-area{
-    height: 30px;
+    height: 10px;
 }
 
 #r-one, #r-two, #r-three, #r-four{
+    height: 100px;
+}
+
+#main-frame>section>div>div>div{
+    height: 80px;
+}
+
+#clear-btn, #display-area{
     height: 90px;
 }
 
-.Button {
+.bButton {
     background-color: #f51414;
     box-shadow: -1px 1px #3e0a15;
     border: 1px solid #392705;
     border-radius: 10px;
     width: 90%;
-    height: 85%;
+    height: 65%;
     margin-top: 10%;
+    margin-left: 5%;
+}
+
+.Button {
+    background-color: rgba(174, 245, 126, 0.73);
+    box-shadow: -1px 1px #3e0a15;
+    border: 1px solid #392705;
+    border-radius: 10px;
+    width: 90%;
+    height: 100%;
+    margin-top: 10%;
+    margin-left: 5%;
 }
 
 #display{
-    height: 125%;
+    height: 90%;
     margin-top: 5px;
 }
 
