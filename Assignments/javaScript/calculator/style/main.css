@@ -75,9 +75,19 @@ main{
     background-color: rgba(81, 165, 25, 0.73);
 }
 
-#display{
+#display-one{
+    display: inline;
     height: 90%;
+    width: 75%;
     margin-top: 5px;
+}
+
+#display-two{
+    display: inline;
+    height: 90%;
+    width: 15%;
+    margin-top: 5px;
+    margin-left: -15px;
 }
 
 

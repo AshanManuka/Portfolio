@@ -29,7 +29,8 @@
                <button class="bButton" id="cls-btn"><b>clear</b></button>
            </div>
            <div class="col-10" id="display-area">
-               <input class="form-control" id="display" type="text">
+               <input class="form-control" id="display-one" type="text">
+               <input class="form-control" id="display-two" type="text">
            </div>
            <div class="col-12" id="free-area"></div>
           <!--button area-->
@@ -183,6 +184,8 @@
             largeNumber = "0";
         }else{
             largeNumber = largeNumber+""+num;
+            dNum = parseInt(largeNumber);
+            $("#display-one").val(dNum);
             console.log(largeNumber);
         }
     }
