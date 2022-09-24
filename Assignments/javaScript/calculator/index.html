@@ -171,28 +171,59 @@
         bigNumber(".");
     });
 
+    $("#btEqual").click(function () {
+        bigNumber("=");
+    });
+
 
 
     var largeNumber = "0";
+    var cNum = 0;
+
+
     function bigNumber(num){
         var sel = num;
         if (sel==="+" || sel==="-" || sel ==="*" || sel ==="/"){
             console.log("selected non integer");
             var icon = sel;
+            $("#display-two").val(sel);
             console.log("sent "+largeNumber);
             calculation(largeNumber);
+            largeNumber = "0";
+        }else if (sel === "="){
+            lastCal(largeNumber);
             largeNumber = "0";
         }else{
             largeNumber = largeNumber+""+num;
             dNum = parseInt(largeNumber);
             $("#display-one").val(dNum);
+
+/*
+            if (num === "."){
+                var wDot = dNum.toString();
+                wDot = wDot+""+num;
+                $("#display-one").val(wDot);
+            }
+*/
+
             console.log(largeNumber);
         }
     }
 
     function calculation(dig){
-        var cNum = parseInt(dig);
+        cNum = parseInt(dig);
         console.log("after converting : "+cNum);
+    }
+
+    function lastCal(nLast){
+      var cNumTwo = parseInt(nLast);
+      var operator = $("#display-two").val();
+
+      if(operator === "+"){
+          var total = cNum + cNumTwo;
+          $("#display-one").val("   "+total);
+      }
+
     }
 
 
