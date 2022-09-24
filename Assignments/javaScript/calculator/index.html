@@ -36,64 +36,64 @@
            <div class="col-12" id="r-one">
                <div class="row">
                    <div class="col-3">
-                       <button class="Button"><b>7</b></button>
+                       <button class="Button" id="bt7"><b>7</b></button>
                    </div>
                    <div class="col-3">
-                       <button class="Button"><b>8</b></button>
+                       <button class="Button" id="bt8"><b>8</b></button>
                    </div>
                    <div class="col-3">
-                       <button class="Button"><b>9</b></button>
+                       <button class="Button" id="bt9"><b>9</b></button>
                    </div>
                    <div class="col-3">
-                       <button class="Button"><b>+</b></button>
+                       <button class="Button" id="btPlus"><b>+</b></button>
                    </div>
                </div>
            </div>
            <div class="col-12" id="r-two">
                <div class="row">
                    <div class="col-3">
-                       <button class="Button"><b>4</b></button>
+                       <button class="Button" id="bt4"><b>4</b></button>
                    </div>
                    <div class="col-3">
-                       <button class="Button"><b>5</b></button>
+                       <button class="Button" id="bt5"><b>5</b></button>
                    </div>
                    <div class="col-3">
-                       <button class="Button"><b>6</b></button>
+                       <button class="Button" id="bt6"><b>6</b></button>
                    </div>
                    <div class="col-3">
-                       <button class="Button"><b>-</b></button>
+                       <button class="Button" id="btMinus"><b>-</b></button>
                    </div>
                </div>
            </div>
            <div class="col-12" id="r-three">
                <div class="row">
                    <div class="col-3">
-                       <button class="Button"><b>1</b></button>
+                       <button class="Button" id="bt1"><b>1</b></button>
                    </div>
                    <div class="col-3">
-                       <button class="Button"><b>2</b></button>
+                       <button class="Button" id="bt2"><b>2</b></button>
                    </div>
                    <div class="col-3">
-                       <button class="Button"><b>3</b></button>
+                       <button class="Button" id="bt3"><b>3</b></button>
                    </div>
                    <div class="col-3">
-                       <button class="Button"><b>/</b></button>
+                       <button class="Button" id="btDevide"><b>/</b></button>
                    </div>
                </div>
            </div>
            <div class="col-12" id="r-four">
                <div class="row">
                    <div class="col-3">
-                       <button class="Button"><b>0</b></button>
+                       <button class="Button" id="bt0"><b>0</b></button>
                    </div>
                    <div class="col-3">
-                       <button class="Button"><b>.</b></button>
+                       <button class="Button" id="btDot"><b>.</b></button>
                    </div>
                    <div class="col-3">
-                       <button class="Button"><b>=</b></button>
+                       <button class="Button" id="btEqual"><b>=</b></button>
                    </div>
                    <div class="col-3">
-                       <button class="Button"><b>*</b></button>
+                       <button class="Button" id="btMult"><b>*</b></button>
                    </div>
                </div>
            </div>
@@ -109,6 +109,86 @@
 <script src="event/jQuery/jquery-3.6.1.min.js"></script>
 <!--Logics-->
 <script>
+    //Assign Numbers to textfield
+    $("#bt0").click(function () {
+      bigNumber("0");
+    });
+
+    $("#bt1").click(function () {
+        bigNumber("1");
+    });
+
+    $("#bt2").click(function () {
+        bigNumber("2");
+    });
+
+    $("#bt3").click(function () {
+        bigNumber("3");
+    });
+
+    $("#bt4").click(function () {
+        bigNumber("4");
+    });
+
+    $("#bt5").click(function () {
+        bigNumber("5");
+    });
+
+    $("#bt6").click(function () {
+        bigNumber("6");
+    });
+
+    $("#bt7").click(function () {
+        bigNumber("7");
+    });
+
+    $("#bt8").click(function () {
+        bigNumber("8");
+    });
+
+    $("#bt9").click(function () {
+        bigNumber("9");
+    });
+
+    $("#btDevide").click(function () {
+        bigNumber("/");
+    });
+
+    $("#btMult").click(function () {
+        bigNumber("*");
+    });
+
+    $("#btMinus").click(function () {
+        bigNumber("-");
+    });
+
+    $("#btPlus").click(function () {
+        bigNumber("+");
+    });
+
+    $("#btDot").click(function () {
+        bigNumber(".");
+    });
+
+
+
+    var largeNumber = "0";
+    function bigNumber(num){
+        var sel = num;
+        if (sel==="+" || sel==="-" || sel ==="*" || sel ==="/"){
+            console.log("selected non integer");
+            var icon = sel;
+            console.log(largeNumber);
+            largeNumber = "0";
+            console.log(largeNumber);
+
+        }else{
+            largeNumber = largeNumber+""+num;
+            console.log(largeNumber);
+        }
+    }
+
+
 
 </script>
 </body>
