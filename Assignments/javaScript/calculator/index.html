@@ -178,14 +178,18 @@
         if (sel==="+" || sel==="-" || sel ==="*" || sel ==="/"){
             console.log("selected non integer");
             var icon = sel;
-            console.log(largeNumber);
+            console.log("sent "+largeNumber);
+            calculation(largeNumber);
             largeNumber = "0";
-            console.log(largeNumber);
-
         }else{
             largeNumber = largeNumber+""+num;
             console.log(largeNumber);
         }
+    }
+
+    function calculation(dig){
+        var cNum = parseInt(dig);
+        console.log("after converting : "+cNum);
     }
 
 
