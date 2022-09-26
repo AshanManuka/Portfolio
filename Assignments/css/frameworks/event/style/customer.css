@@ -56,6 +56,7 @@ body{
     margin-top: 35px;
     margin-left: 20px;
     background-color: #f6b3b7;
+    border: 1px solid rgba(6, 38, 38, 0.71);
 }
 
 #sec-four{

@@ -123,6 +123,7 @@
 
     var customerList = [];
 
+    /*Add Customer function*/
     $("#Add").click(function () {
         let cusId = $("#txtCustomerID").val();
         let cusName = $("#txtCustomerName").val();
@@ -152,9 +153,21 @@
             var row= `<tr><td>${cust.id}</td><td>${cust.name}</td><td>${cust.address}</td><td>${cust.salary}</td></tr>`;
             $("#tblCustomer").append(row);
         }
-
-
     }
+
+    /*search customer function*/
+    $("#search-btn").click(function(){
+        var searchId = $("#txtSearch").val();
+
+        for(var cust of customerList){
+            if(cust.id === searchId){
+                console.log("search result : "+ cust.id+"|"+cust.name+"|"+cust.address+"|"+cust.salary);
+            }
+        }
+
+
+    });
+
 
 
 
