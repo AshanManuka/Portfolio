@@ -45,7 +45,7 @@
         <input class="form-control" id="txtSearch" type="text">
     </div>
     <div class="col-2">
-        <a href="#sec-four"><button id="search-btn"><b>Search</b></button></a>
+        <a href="#"><button id="search-btn"><b>Search</b></button></a>
     </div>
     <div class="col-1"></div>
 </section>
@@ -166,15 +166,12 @@
 
         for(var cust of customerList){
             if(cust.id === searchId){
-/*                console.log("search result : "+ cust.id+"|"+cust.name+"|"+cust.address+"|"+cust.salary);*/
                 $("#txtCustomerID").val(cust.id);
                 $("#txtCustomerName").val(cust.name);
                 $("#txtCustomerAddress").val(cust.address);
                 $("#txtCustomerSalary").val(cust.salary);
             }
         }
-
-
     });
 
 
