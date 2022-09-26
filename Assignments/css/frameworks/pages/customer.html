@@ -41,8 +41,8 @@
         <a href="#sec-four"><button id="all-search"><b>All Customers</b></button></a>
     </div>
     <div class="col-5">
-        <label for="txtCustomerName"></label>
-        <input class="form-control" id="txtCustomerName" type="text">
+        <label for="txtSearch"></label>
+        <input class="form-control" id="txtSearch" type="text">
     </div>
     <div class="col-2">
         <a href="#sec-four"><button id="search-btn"><b>Search</b></button></a>
@@ -64,8 +64,8 @@
         </div>
         <br>
         <div class="form-group">
-            <label for="txtCusName">Customer Name</label>
-            <input class="form-control" id="txtCusName" type="text">
+            <label for="txtCustomerName">Customer Name</label>
+            <input class="form-control" id="txtCustomerName" type="text">
             <span class="control-error" id="lblcusname"></span>
         </div>
         <br>
@@ -76,8 +76,8 @@
         </div>
         <br>
         <div class="form-group">
-            <label for="txtCustomerSalry">Customer Salary</label>
-            <input class="form-control" id="txtCustomerSalry" type="text">
+            <label for="txtCustomerSalary">Customer Salary</label>
+            <input class="form-control" id="txtCustomerSalary" type="text">
             <span class="control-error" id="lblcussalary"></span>
         </div>
         <br>
@@ -121,6 +121,29 @@
 <script src="../event/jQuery/jquery-3.6.1.min.js"></script>
 <script>
 
+    var customerList = [];
+
+    $("#Add").click(function () {
+        var cusId = $("#txtCustomerID").val();
+        var cusName = $("#txtCustomerName").val();
+        var cusAddress = $("#txtCustomerAddress").val();
+        var cusSalary = $("#txtCustomerSalary").val();
+
+        var customer = {
+            id : cusId,
+            name : cusName,
+            address : cusAddress,
+            salary : cusSalary
+        }
+
+        console.log("input customer details is : "+customer);
+        console.log("input customer details is : "+customer.id);
+        console.log("input customer details is : "+customer.name);
+        console.log("input customer details is : "+customer.address);
+        console.log("input customer details is : "+customer.salary);
+
+
+    })
 
 
 
