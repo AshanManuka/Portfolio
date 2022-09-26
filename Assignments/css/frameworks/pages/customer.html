@@ -140,6 +140,11 @@
         customerList.push(customer);
         loadAllCustomer();
 
+        $("#txtCustomerID").val(" ");
+        $("#txtCustomerName").val(" ");
+        $("#txtCustomerAddress").val(" ");
+        $("#txtCustomerSalary").val(" ");
+
     });
 
     $("#all-search").click(function () {
@@ -161,7 +166,11 @@
 
         for(var cust of customerList){
             if(cust.id === searchId){
-                console.log("search result : "+ cust.id+"|"+cust.name+"|"+cust.address+"|"+cust.salary);
+/*                console.log("search result : "+ cust.id+"|"+cust.name+"|"+cust.address+"|"+cust.salary);*/
+                $("#txtCustomerID").val(cust.id);
+                $("#txtCustomerName").val(cust.name);
+                $("#txtCustomerAddress").val(cust.address);
+                $("#txtCustomerSalary").val(cust.salary);
             }
         }
 
