@@ -124,10 +124,10 @@
     var customerList = [];
 
     $("#Add").click(function () {
-        var cusId = $("#txtCustomerID").val();
-        var cusName = $("#txtCustomerName").val();
-        var cusAddress = $("#txtCustomerAddress").val();
-        var cusSalary = $("#txtCustomerSalary").val();
+        let cusId = $("#txtCustomerID").val();
+        let cusName = $("#txtCustomerName").val();
+        let cusAddress = $("#txtCustomerAddress").val();
+        let cusSalary = $("#txtCustomerSalary").val();
 
         var customer = {
             id : cusId,
@@ -136,14 +136,19 @@
             salary : cusSalary
         }
 
-        console.log("input customer details is : "+customer);
-        console.log("input customer details is : "+customer.id);
-        console.log("input customer details is : "+customer.name);
-        console.log("input customer details is : "+customer.address);
-        console.log("input customer details is : "+customer.salary);
+        customerList.push(customer);
+        loadAllCustomer();
+
+    });
+
+    $("#all-search").click(function () {
+        loadAllCustomer();
+    });
+
+    function loadAllCustomer() {
 
 
-    })
+    }
 
 
 
