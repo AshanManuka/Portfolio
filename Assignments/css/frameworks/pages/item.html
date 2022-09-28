@@ -41,8 +41,8 @@
             <a href="#sec-four"><button id="all-search"><b>All Items</b></button></a>
         </div>
         <div class="col-5">
-            <label for="txtCustomerName"></label>
-            <input class="form-control" id="txtCustomerName" type="text">
+            <label for="txtSearchCode"></label>
+            <input class="form-control" id="txtSearchCode" type="text">
         </div>
         <div class="col-2">
             <a href="#sec-four"><button id="search-btn"><b>Search</b></button></a>
@@ -121,6 +121,55 @@
 <script src="../event/jQuery/jquery-3.6.1.min.js"></script>
 <script>
 
+    var itemList = [];
+
+    $("#Add").click(function () {
+        let itemCode = $("#txtItemID").val();
+        let itemName = $("#txtItemName").val();
+        let itemQty = $("#txtItemQty").val();
+        let itemUnitPrice = $("#txtUnitPrice").val();
+
+        var item = {
+            code : itemCode,
+            name : itemName,
+            qty : itemQty,
+            price : itemUnitPrice
+        }
+
+        itemList.push(item);
+        loadAllItem();
+
+
+    });
+
+
+    function loadAllItem(){
+        $("#tblItem").empty();
+
+        for (var itemElement of itemList) {
+            var row =   `<tr><td>${itemElement.code}</td><td>${itemElement.name}</td><td>${itemElement.qty}</td><td>${itemElement.price}</td></tr>`;
+            $("#tblItem").append(row);
+        }
+
+
+    }
+
+
+
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
