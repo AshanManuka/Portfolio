@@ -142,6 +142,10 @@
 
     });
 
+    $("#all-search").click(function () {
+        loadAllItem();
+    })
+
 
     function loadAllItem(){
         $("#tblItem").empty();
@@ -150,9 +154,21 @@
             var row =   `<tr><td>${itemElement.code}</td><td>${itemElement.name}</td><td>${itemElement.qty}</td><td>${itemElement.price}</td></tr>`;
             $("#tblItem").append(row);
         }
-
-
     }
+
+    $("#search-btn").click(function(){
+       var inCode = $("#txtSearchCode").val();
+
+        for (searchElement of itemList) {
+            if(inCode === searchElement.code){
+                $("#txtItemID").val(searchElement.code);
+                $("#txtItemName").val(searchElement.name);
+                $("#txtItemQty").val(searchElement.qty);
+                $("#txtUnitPrice").val(searchElement.price);
+            }
+        }
+    });
+
 
 
 
