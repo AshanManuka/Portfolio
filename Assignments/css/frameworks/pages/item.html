@@ -45,7 +45,7 @@
             <input class="form-control" id="txtSearchCode" type="text">
         </div>
         <div class="col-2">
-            <a href="#sec-four"><button id="search-btn"><b>Search</b></button></a>
+            <a href="#"><button id="search-btn"><b>Search</b></button></a>
         </div>
         <div class="col-1"></div>
     </section>
@@ -139,6 +139,10 @@
         itemList.push(item);
         loadAllItem();
 
+        $("#txtItemID").val(" ");
+        $("#txtItemName").val(" ");
+        $("#txtItemQty").val(" ");
+        $("#txtUnitPrice").val(" ");
 
     });
 
