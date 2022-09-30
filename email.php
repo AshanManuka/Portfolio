@@ -1,26 +1,27 @@
 <?php
+
+$name = $_POST['txtName'];
+$email = $_POST['txtEmail'];
+$msg = $_POST['txtMessage'];
+
 $subject = 'You Got Message From Portfolio';
 $to = 'manukajayarathne.coma@gmail.com';
-$emailTo = $_REQUEST['txtEmail'];
+$from = $email;
+$header = "from : ";
 
-$name = $_REQUEST['txtName'];
-$email = $_REQUEST['txtEmail'];
-$msg = $_REQUEST['txtMessage'];
-
-$email_from = $name.'<'.$email.'>';
 
 $message .= 'Name : ' . $name . "\n";
 $message .= 'Email : ' . $email . "\n";
 $message .= 'Message : ' . $msg;
 
-if (@mail($to, $subject, $message, $email_from))
-{
-    echo 'sent';
+$sendMail = mail($to,$subject,$msg,$header);
+
+if($sendMail){
+  echo "Email was sent...";
+}else{
+    echo "something went wrong";
 }
-else
-{
-    echo 'failed';
-}
+
 ?>
 
 
