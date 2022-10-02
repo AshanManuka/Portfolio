@@ -1410,6 +1410,10 @@ button#project-btn:hover{
         width: 90%;
         left: -5%;
     }
+
+    #imm{
+        margin-left: 20%;
+    }
 /*    End Header*/
 
 /*    Begin section project*/
@@ -1483,7 +1487,7 @@ button#project-btn:hover{
        position: absolute;
        width: 45%;
        height: 95%;
-       top: 0;
+       top: 5%;
        left: 10%;
        display: flex;
        flex-direction: column;
@@ -1493,7 +1497,7 @@ button#project-btn:hover{
        position: absolute;
        width: 45%;
        height: 95%;
-       top: 0;
+       top: 10%;
        left: 47%;
        display: flex;
        flex-direction: column;
