@@ -158,6 +158,7 @@
             var row =   `<tr><td>${itemElement.code}</td><td>${itemElement.name}</td><td>${itemElement.qty}</td><td>${itemElement.price}</td></tr>`;
             $("#tblItem").append(row);
         }
+        selectFromTbl();
     }
 
     $("#search-btn").click(function(){
@@ -172,6 +173,23 @@
             }
         }
     });
+
+    function selectFromTbl(){
+
+        $("#tblItem>tr").click(function(){
+            let code = $(this).children(":eq(0)").text();
+            let name = $(this).children(":eq(1)").text();
+            let qty = $(this).children(":eq(2)").text();
+            let price = $(this).children(":eq(3)").text();
+            console.log(code+" "+name+" "+qty+" "+price);
+
+            $("#txtItemID").val(code);
+            $("#txtItemName").val(name);
+            $("#txtItemQty").val(qty);
+            $("#txtUnitPrice").val(price);
+        });
+
+    }
 
 
 
