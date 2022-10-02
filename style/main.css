@@ -1077,7 +1077,6 @@ button#project-btn:hover{
 
         /* Begin header*/
         #nav-bar {
-            height: 23px;
             display: none;
         }
 
@@ -1110,13 +1109,13 @@ button#project-btn:hover{
         #content-frame>h1:nth-child(1) {
             color: #eeeeee;
             left: 5%;
-            top: -8%;
+            top: -5%;
         }
 
         #content-frame>h1:nth-child(2) {
             color: #e75778;
             left: 5%;
-            top: 2%;
+            top: 3%;
         }
 
         #content-frame>#about-me{
@@ -1126,17 +1125,23 @@ button#project-btn:hover{
 
         #content-frame>#cv{
             top: 115%;
-            left: 12%;
+            left: 10%;
         }
 
         button#download-btn {
             position: absolute;
-            left: 20%;
+            left: 12%;
         }
 
         #profile-image{
             top: 20%;
-            left: 6%;
+            left: 20%;
+        }
+
+        #imm{
+            width : 250px;
+            left: 50%;
+            margin-top: 20%;
         }
 
         button#start-btn {
@@ -1195,7 +1200,7 @@ button#project-btn:hover{
 
         button#project-btn {
             left: 25%;
-            bottom: 15%;
+            bottom: 12%;
         }
       /*End project Section*/
 
@@ -1209,7 +1214,7 @@ button#project-btn:hover{
             position: absolute;
             width: 45%;
             height: 95%;
-            top: 0;
+            top: 5%;
             left: 10%;
             display: flex;
             flex-direction: column;
@@ -1219,16 +1224,15 @@ button#project-btn:hover{
             position: absolute;
             width: 45%;
             height: 95%;
-            top: 0;
+            top: 10%;
             left: 55%;
             display: flex;
             flex-direction: column;
         }
 
-        #skill-section>h2:nth-last-child(1){
-            position: absolute;
-            left: 20%;
-            bottom: -4%;
+
+        #skill-section>h2{
+            top: 85%;
         }
 /*        End Skill section*/
       /*Begin Edu section*/
