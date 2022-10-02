@@ -145,8 +145,6 @@
         $("#txtCustomerAddress").val(" ");
         $("#txtCustomerSalary").val(" ");
 
-        selectFromTbl();
-
     });
 
     $("#all-search").click(function () {
@@ -160,6 +158,7 @@
             var row= `<tr><td>${cust.id}</td><td>${cust.name}</td><td>${cust.address}</td><td>${cust.salary}</td></tr>`;
             $("#tblCustomer").append(row);
         }
+        selectFromTbl();
     }
 
     /*search customer function*/
