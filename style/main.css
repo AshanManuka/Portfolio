@@ -301,7 +301,9 @@ button#project-btn:hover{
     width: 120px;
     height: 120px;
     left: 14%;
-    border: #8c8cd5 solid 5px;
+    border: #133c6f solid 5px;
+    /*border-top: #4e8ed5 solid 5px;*/
+    border-bottom: #466990 solid 5px;
     border-radius: 100%;
     display: inline-block;
     margin: 30px;
@@ -315,6 +317,17 @@ button#project-btn:hover{
     left: 2%;
     top: 2%;
 }
+
+#skill-section>div>div:hover{
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+#skill-section>div>div>.logo-image:hover{
+    transform: rotate(-360deg);
+    transition: all 1s;
+}
+
 
 #skill-section>h2{
     position: relative;
