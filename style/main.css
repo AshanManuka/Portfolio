@@ -626,7 +626,6 @@ button#project-btn:hover{
 /*================Media==================*/
 
 /*style for 1024 Laptop size*/
-
 @media all and (max-width: 1024px) {
 
 /*    Begin Header*/
@@ -688,10 +687,10 @@ button#project-btn:hover{
 
 
 }
+/*End for 1024 Laptop size*/
 
 
 /*style for 768 tablet size*/
-
 @media all and (max-width: 768px) {
 /*    Begin Header*/
     button#start-btn{
@@ -820,7 +819,6 @@ button#project-btn:hover{
 
 
 /*style for 425 Mobile size*/
-
 @media all and (max-width: 425px) {
 
     /* Begin header*/
@@ -1072,8 +1070,8 @@ button#project-btn:hover{
 
 
 
-    /*style for 375 Mobile size*/
-    @media all and (max-width: 375px) {
+/*style for 375 Mobile size*/
+@media all and (max-width: 375px) {
 
         /* Begin header*/
         #nav-bar {
@@ -1344,7 +1342,6 @@ button#project-btn:hover{
         /*   End footer*/
 
     }
-
 /*End display size 375px*/
 
 
@@ -1628,10 +1625,10 @@ button#project-btn:hover{
 /*                     End footer*/
 
                      }
+/*End display size 375px*/
 
-                     /*End display size 375px*/
 
-
+/*================Media==================*/
 
 
 
