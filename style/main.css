@@ -302,7 +302,6 @@ button#project-btn:hover{
     height: 120px;
     left: 14%;
     border: #133c6f solid 5px;
-    /*border-top: #4e8ed5 solid 5px;*/
     border-bottom: #466990 solid 5px;
     border-radius: 100%;
     display: inline-block;
@@ -370,6 +369,9 @@ button#project-btn:hover{
     height: 120px;
     border: rgb(176, 183, 248) solid 5px;
     border-radius: 100%;
+    animation-name: edu-animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 
 #edu-section>div>.edu-logo>.logo-e{
@@ -399,6 +401,24 @@ button#project-btn:hover{
 #edu-section>div>h3:nth-child(2){
     color: #c3f5b2;
     bottom: 40%;
+}
+
+@keyframes edu-animation {
+    0%{
+        border-color: #d4d3e5;
+    }
+    25%{
+        border-color: #7b7be3;
+    }
+    50%{
+        border-color: #1c4c9e;
+    }
+    75%{
+        border-color: #081d84;
+    }
+    100%{
+        border-color: #04073b;
+    }
 }
 
 /*End Education section*/
