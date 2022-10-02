@@ -54,3 +54,17 @@ main>#sec-3>div>div{
     width: 70%;
     height: 60%;
 }
+
+#im-Sec{
+    width: 50%;
+}
+
+#im-bg{
+    position: relative;
+    top: 50px;
+    width: 90%;
+    height: 350px;
+    opacity: 80%;
+    border-radius: 10px;
+    border: rgba(11, 75, 75, 0.65) solid 2px;
+}
