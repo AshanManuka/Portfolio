@@ -183,7 +183,11 @@
             let address = $(this).children(":eq(2)").text();
             let salary = $(this).children(":eq(3)").text();
             console.log(id+" "+name+" "+address+" "+salary);
-            alert("dum dum");
+
+            $("#txtCustomerID").val(id);
+            $("#txtCustomerName").val(name);
+            $("#txtCustomerAddress").val(address);
+            $("#txtCustomerSalary").val(salary);
         });
 
     }
