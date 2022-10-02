@@ -755,6 +755,13 @@ button#project-btn:hover{
         left: 1%;
         top: 1%;
     }
+
+    #skill-section>h2{
+        left: 32%;
+        top: 10%;
+    }
+
+
 /* End skill section*/
 
 /* begin Education section*/
@@ -942,7 +949,7 @@ button#project-btn:hover{
         position: absolute;
         width: 45%;
         height: 95%;
-        top: 0;
+        top: 5%;
         left: 15%;
         display: flex;
         flex-direction: column;
@@ -952,7 +959,7 @@ button#project-btn:hover{
         position: absolute;
         width: 45%;
         height: 95%;
-        top: 0;
+        top: 10%;
         left: 50%;
         display: flex;
         flex-direction: column;
@@ -962,6 +969,10 @@ button#project-btn:hover{
         position: absolute;
         left: 20%;
         bottom: -4%;
+    }
+
+    #skill-section>h2{
+        top: 80%;
     }
 
     /*    End Skill section*/
