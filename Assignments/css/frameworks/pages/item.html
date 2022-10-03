@@ -119,6 +119,7 @@
 <!--Import js for bootstrap-->
 <script src="../event/js/bootstrap.min.js"></script>
 <script src="../event/jQuery/jquery-3.6.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
 
     var itemList = [];
@@ -137,6 +138,15 @@
         }
 
         itemList.push(item);
+
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Data has been Saved !',
+            showConfirmButton: false,
+            timer: 1500
+        });
+
         loadAllItem();
 
         $("#txtItemID").val(" ");
@@ -190,6 +200,28 @@
         });
 
     }
+
+    $("#delete").click(function () {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                )
+            }
+        });
+    });
+
+
 
 
 
