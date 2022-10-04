@@ -200,9 +200,19 @@
             $("#txtCustomerSalary").val(salary);
         });
 
+        $("#tblCustomer").on('dblclick',function () {
+            deleteCustomer();
+        });
+
     }
 
     $("#delete").click(function () {
+       deleteCustomer();
+    });
+
+
+
+    function deleteCustomer(){
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -220,7 +230,7 @@
                 )
             }
         });
-    });
+    }
 
 
 
