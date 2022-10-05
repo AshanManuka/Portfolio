@@ -58,7 +58,7 @@
     <div class="col-1"></div>
     <div class="col-7">
         <div class="form-group">
-            <label for="txtCustomerID">Customer ID</label>
+            <label for="txtCustomerID" id="lblOne">Customer ID</label>
             <input class="form-control" id="txtCustomerID" required type="text">
             <span class="control-error" id="lblcusid"></span>
         </div>
@@ -124,10 +124,54 @@
 
     var customerList = [];
 
+    // Using RegEx from Inputs
     var cId = /^(C)[0-9]{3}$/;
     var cName = /^[a-z ]{3,30}$/;
     var cAddress = /^[a-z0-9 ,]{5,40}$/;
     var cSalary = /^[1-9][0-9]*(.[0-9]{2})?$/
+
+    $("#txtCustomerID").on('keyup',function () {
+        var inId = $("#txtCustomerID").val();
+        var checkId = cId.test(inId);
+
+        if(checkId){
+            $("#lblOne").css("color", "green");
+            $("#txtCustomerID").css("border", "green solid 3px");
+
+        }
+        else{
+            $("#lblOne").css("color", "red");
+            $("#txtCustomerID").css("border", "red solid 3px");
+        }
+    });
+
+    $("#txtCustomerName").on('keyup',function () {
+        var inName = $("#txtCustomerName").val();
+
+        var checkName = cName.test(inName);
+        console.log(checkName);
+    });
+
+    $("#txtCustomerAddress").on('keyup',function () {
+        var inAddress = $("#txtCustomerAddress").val();
+
+        var checkAddress = cAddress.test(inAddress);
+        console.log(checkAddress);
+    });
+
+    $("#txtCustomerSalary").on('keyup',function () {
+        var inSalary = $("#txtCustomerSalary").val();
+
+        var checkSalary = cSalary.test(inSalary);
+        console.log(checkSalary);
+    });
+
+
+
+
+   /* var checkName = cName.test(cusName);
+    var checkAddress = cAddress.test(cusAddress);
+    var checkSalary = cSalary.test(cusSalary);*/
 
     /*Add Customer function*/
     $("#Add").click(function () {
@@ -138,7 +182,10 @@
 
 
 
-        var checking = cId.test(cusId);
+
+
+
+
         console.log(cusId);
         console.log("checking result is : "+checking);
 
