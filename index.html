@@ -318,11 +318,13 @@
 
         //Automate header
         var name = $("#anC").text();
-        $("#anC").text(" ");
+        infinit();
 
-
-        for (let i=0; i<22; i++) {
-            task(i);
+        function infinit(){
+            $("#anC").text(" ");
+            for (let i=0; i<22; i++) {
+                task(i);
+            }
         }
 
         function task(i) {
@@ -333,6 +335,7 @@
                 $("#anC").append(c);
             }, 300 * i);
         }
+
 
 
 

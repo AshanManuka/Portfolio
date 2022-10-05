@@ -58,7 +58,7 @@ header{
 
 li>a:hover{
     cursor: pointer;
-    color: #3e0213;
+    color: #1d0000;
     transition: 0.5s;
 }
 
@@ -107,6 +107,7 @@ li>a:hover{
 
 #content-frame>h1:nth-child(2){
     color: #e75778;
+    font-size: 50px;
     left: 8%;
 }
 
@@ -185,12 +186,12 @@ main>#pane-one{
 main>#pane-one>div{
     width: 100%;
     height: 100%;
-    border: #000000 solid 1px;
+    border: #050000 solid 1px;
     cursor: pointer;
 }
 
 main>#pane-one>div:hover{
-    border: #26070a solid 3px;
+    border: #0a0000 solid 3px;
 }
 
 main>#pane-one>div>.hs>a{
@@ -218,7 +219,7 @@ main>#pane-two{
 }
 
 main>#pane-two>div:hover{
-    border: #26070a solid 3px;
+    border: #070001 solid 3px;
 }
 
 main>#pane-two>div{
