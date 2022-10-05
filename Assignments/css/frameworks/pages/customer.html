@@ -123,7 +123,6 @@
 <script>
 
     var customerList = [];
-    var n = -1;
 
     // Using RegEx from Inputs
     var cId = /^(C)[0-9]{3}$/;
@@ -301,14 +300,12 @@
         });
     }
 
-    $("#Add").click(function () {
-        $("#anC").text(" ");
 
-        for (let i=0; i<9; i++) {
-            task(i);
-        }
+    $("#anC").text(" ");
 
-    });
+    for (let i=0; i<9; i++) {
+        task(i);
+    }
 
 
 

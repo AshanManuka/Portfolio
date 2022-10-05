@@ -26,7 +26,7 @@
 
         <div id="content-frame">
             <h1>I'm Ashan Manuka</h1>
-            <h1>A Full Stack DEVELOPER</h1>
+            <h1 id="anC">A Full Stack DEVELOPER</h1>
             <br>
             <ul id="about-me">
                 <li class="about-list">My name is Ashan Manuka Jayarathna</li>
@@ -316,6 +316,23 @@
     <script src="assets/jQuery/jquery-3.6.1.min.js"></script>
     <script>
 
+        //Automate header
+        var name = $("#anC").text();
+        $("#anC").text(" ");
+
+
+        for (let i=0; i<22; i++) {
+            task(i);
+        }
+
+        function task(i) {
+
+            setTimeout(function() {
+                var c = name.charAt(i);
+                console.log(name.charAt(i));
+                $("#anC").append(c);
+            }, 300 * i);
+        }
 
 
 
