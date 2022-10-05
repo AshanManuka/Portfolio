@@ -64,19 +64,19 @@
         </div>
         <br>
         <div class="form-group">
-            <label for="txtCustomerName">Customer Name</label>
+            <label for="txtCustomerName" id="lblTwo">Customer Name</label>
             <input class="form-control" id="txtCustomerName" type="text">
             <span class="control-error" id="lblcusname"></span>
         </div>
         <br>
         <div class="form-group">
-            <label for="txtCustomerAddress">Customer Address</label>
+            <label for="txtCustomerAddress" id="lblThree">Customer Address</label>
             <input class="form-control" id="txtCustomerAddress" type="text">
             <span class="control-error" id="lblcusaddress"></span>
         </div>
         <br>
         <div class="form-group">
-            <label for="txtCustomerSalary">Customer Salary</label>
+            <label for="txtCustomerSalary" id="lblFour">Customer Salary</label>
             <input class="form-control" id="txtCustomerSalary" type="text">
             <span class="control-error" id="lblcussalary"></span>
         </div>
@@ -135,35 +135,61 @@
         var checkId = cId.test(inId);
 
         if(checkId){
-            $("#lblOne").css("color", "green");
-            $("#txtCustomerID").css("border", "green solid 3px");
+            $("#lblOne").css("color", "#26de81");
+            $("#txtCustomerID").css("border", "#26de81 solid 3px");
 
         }
         else{
-            $("#lblOne").css("color", "red");
-            $("#txtCustomerID").css("border", "red solid 3px");
+            $("#lblOne").css("color", "#EA2027");
+            $("#txtCustomerID").css("border", "#EA2027 solid 3px");
         }
     });
 
     $("#txtCustomerName").on('keyup',function () {
         var inName = $("#txtCustomerName").val();
-
         var checkName = cName.test(inName);
-        console.log(checkName);
+
+        if(checkName){
+            $("#lblTwo").css("color", "#26de81");
+            $("#txtCustomerName").css("border", "#26de81 solid 3px");
+
+        }
+        else{
+            $("#lblTwo").css("color", "#EA2027");
+            $("#txtCustomerName").css("border", "#EA2027 solid 3px");
+        }
     });
 
     $("#txtCustomerAddress").on('keyup',function () {
         var inAddress = $("#txtCustomerAddress").val();
-
         var checkAddress = cAddress.test(inAddress);
-        console.log(checkAddress);
+
+        if(checkAddress){
+            $("#lblThree").css("color", "#26de81");
+            $("#txtCustomerAddress").css("border", "#26de81 solid 3px");
+
+        }
+        else{
+            $("#lblThree").css("color", "#EA2027");
+            $("#txtCustomerAddress").css("border", "#EA2027 solid 3px");
+        }
+
     });
 
     $("#txtCustomerSalary").on('keyup',function () {
         var inSalary = $("#txtCustomerSalary").val();
-
         var checkSalary = cSalary.test(inSalary);
-        console.log(checkSalary);
+
+        if(checkSalary){
+            $("#lblFour").css("color", "#26de81");
+            $("#txtCustomerSalary").css("border", "#26de81 solid 3px");
+
+        }
+        else{
+            $("#lblFour").css("color", "#EA2027");
+            $("#txtCustomerSalary").css("border", "#EA2027 solid 3px");
+        }
+
     });
 
 
