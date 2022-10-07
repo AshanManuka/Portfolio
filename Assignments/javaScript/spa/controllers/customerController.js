@@ -13,26 +13,75 @@ $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on('
     }
 });
 
-$("#txtCustomerID").on('keydown',function (event) {
-    if(event.key === "Enter"){
-        $("#txtCustomerName").focus();
+$("#txtCustomerID").on('keyup',function (event) {
+    var inId = $("#txtCustomerID").val();
+    var checkId = cId.test(inId);
+    if(checkId){
+        $("#lblOne").css("color", "#26de81");
+        $("#txtCustomerID").css("border", "#26de81 solid 3px");
+
+        if(event.key === "Enter"){
+            $("#txtCustomerName").focus();
+        }
+    }
+    else{
+        $("#lblOne").css("color", "#EA2027");
+        $("#txtCustomerID").css("border", "#EA2027 solid 3px");
     }
 });
 
-$("#txtCustomerName").on('keydown',function (event) {
-    if(event.key === "Enter"){
-        $("#txtCustomerAddress").focus();
+$("#txtCustomerName").on('keyup',function (event) {
+    var inName = $("#txtCustomerName").val();
+    var checkName = cName.test(inName);
+
+    if(checkName){
+        $("#lblTwo").css("color", "#26de81");
+        $("#txtCustomerName").css("border", "#26de81 solid 3px");
+
+        if(event.key === "Enter"){
+            $("#txtCustomerAddress").focus();
+        }
+    }
+    else{
+        $("#lblTwo").css("color", "#EA2027");
+        $("#txtCustomerName").css("border", "#EA2027 solid 3px");
     }
 });
 
-$("#txtCustomerAddress").on('keydown',function (event) {
-    if(event.key === "Enter"){
-        $("#txtCustomerSalary").focus();
+$("#txtCustomerAddress").on('keyup',function (event) {
+    var inAddress = $("#txtCustomerAddress").val();
+    var checkAddress = cAddress.test(inAddress);
+
+    if(checkAddress){
+        $("#lblThree").css("color", "#26de81");
+        $("#txtCustomerAddress").css("border", "#26de81 solid 3px");
+
+        if(event.key === "Enter"){
+            $("#txtCustomerSalary").focus();
+        }
+
+    }
+    else{
+        $("#lblThree").css("color", "#EA2027");
+        $("#txtCustomerAddress").css("border", "#EA2027 solid 3px");
     }
 });
 
-$("#txtCustomerSalary").on('keydown',function (event) {
-    if(event.key === "Enter"){
-        $("#Add").focus();
+$("#txtCustomerSalary").on('keyup',function (event) {
+    var inSalary = $("#txtCustomerSalary").val();
+    var checkSalary = cSalary.test(inSalary);
+
+    if(checkSalary){
+        $("#lblFour").css("color", "#26de81");
+        $("#txtCustomerSalary").css("border", "#26de81 solid 3px");
+
+        if(event.key === "Enter"){
+            $("#Add").focus();
+        }
+
+    }
+    else{
+        $("#lblFour").css("color", "#EA2027");
+        $("#txtCustomerSalary").css("border", "#EA2027 solid 3px");
     }
 });
