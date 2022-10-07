@@ -156,6 +156,20 @@ function clearFields(){
     $("#txtCustomerSalary").val(" ");
 }
 
+/*search customer function*/
+$("#search-btn").click(function(){
+    var searchId = $("#txtSearchId").val();
+
+    for(var cust of customerList){
+        if(cust.id === searchId){
+            $("#txtCustomerID").val(cust.id);
+            $("#txtCustomerName").val(cust.name);
+            $("#txtCustomerAddress").val(cust.address);
+            $("#txtCustomerSalary").val(cust.salary);
+        }
+    }
+});
+
 
 
 
