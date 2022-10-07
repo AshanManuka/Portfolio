@@ -1,3 +1,5 @@
+var customerList = [];
+
 
 // Using RegEx from Inputs
 var cId = /^(C)[0-9]{3}$/;
@@ -94,10 +96,43 @@ $("#Add").on('keyup',function (event) {
     if(event.key === "Enter"){
         addCustomer();
     }
-
 });
 
 
 function addCustomer(){
-    alert(" in add customer method");
+    let cusId = $("#txtCustomerID").val();
+    let cusName = $("#txtCustomerName").val();
+    let cusAddress = $("#txtCustomerAddress").val();
+    let cusSalary = $("#txtCustomerSalary").val();
+
+    var customer = {
+        id : cusId,
+        name : cusName,
+        address : cusAddress,
+        salary : cusSalary
+    }
+
+    customerList.push(customer);
+
+    // Data submit alert
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Data has been saved',
+        showConfirmButton: false,
+        timer: 1500
+    })
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
