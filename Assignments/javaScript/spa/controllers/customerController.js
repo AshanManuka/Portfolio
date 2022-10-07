@@ -85,3 +85,19 @@ $("#txtCustomerSalary").on('keyup',function (event) {
         $("#txtCustomerSalary").css("border", "#EA2027 solid 3px");
     }
 });
+
+$("#Add").on('click',function () {
+    addCustomer();
+});
+
+$("#Add").on('keyup',function (event) {
+    if(event.key === "Enter"){
+        addCustomer();
+    }
+
+});
+
+
+function addCustomer(){
+    alert(" in add customer method");
+}
