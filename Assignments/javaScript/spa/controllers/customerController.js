@@ -126,6 +126,9 @@ function addCustomer(){
     //calling to function
     loadAllCustomer();
 
+    // Clear text fields
+    clearFields();
+
 }
 
 // clickable all search button
@@ -146,7 +149,12 @@ function loadAllCustomer() {
 }
 
 
-
+function clearFields(){
+    $("#txtCustomerID").val(" ");
+    $("#txtCustomerName").val(" ");
+    $("#txtCustomerAddress").val(" ");
+    $("#txtCustomerSalary").val(" ");
+}
 
 
 
