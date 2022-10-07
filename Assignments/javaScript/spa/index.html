@@ -411,28 +411,8 @@
 </main>
 <!--Import js for bootstrap-->
 <script src="event/js/bootstrap.min.js"></script>
-<script>
-    document.getElementById("item-btn").addEventListener("click", function () {
-        document.getElementById("main-one-sec").style.display="none";
-        document.getElementById("main-three-sec").style.display="none";
-        document.getElementById("main-two-sec").style.display="inline";
-        document.getElementById("hm").innerText="Items";
-    })
+<script src="controllers/mainController.js"></script>
 
-    document.getElementById("customer-btn").addEventListener("click", function () {
-        document.getElementById("main-two-sec").style.display="none";
-        document.getElementById("main-three-sec").style.display="none";
-        document.getElementById("main-one-sec").style.display="inline";
-        document.getElementById("hm").innerText="Customer";
-    })
-
-    document.getElementById("order-btn").addEventListener("click", function () {
-        document.getElementById("main-one-sec").style.display="none";
-        document.getElementById("main-two-sec").style.display="none";
-        document.getElementById("main-three-sec").style.display="inline";
-        document.getElementById("hm").innerText="Orders";
-    })
-</script>
 
 </body>
 </html>
