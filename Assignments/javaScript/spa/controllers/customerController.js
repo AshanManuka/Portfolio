@@ -121,9 +121,41 @@ function addCustomer(){
         title: 'Data has been saved',
         showConfirmButton: false,
         timer: 1500
-    })
+    });
+
+    //calling to function
+    loadAllCustomer();
 
 }
+
+// clickable all search button
+$("#all-search-customer").click(function () {
+    loadAllCustomer();
+});
+
+
+// load All customer to table
+function loadAllCustomer() {
+    $("#tblCustomer").empty();
+
+    for(var cust of customerList){
+        var row= `<tr><td>${cust.id}</td><td>${cust.name}</td><td>${cust.address}</td><td>${cust.salary}</td></tr>`;
+        $("#tblCustomer").append(row);
+    }
+    selectFromTbl();
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
