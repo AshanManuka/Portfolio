@@ -28,7 +28,7 @@ body{
     margin-top: 7px;
 }
 
-#item-btn, #order-btn, #customer-btn, #all-search, #search-btn{
+#item-btn, #order-btn, #customer-btn, #all-search-customer, #search-btn{
     border-radius: 40px;
     background-color: rgba(123, 250, 250, 0.71);
     border: 1px solid rgba(6, 38, 38, 0.71);
@@ -43,11 +43,6 @@ body{
 
 #sec-two{
     height: 60px;
-}
-
-#txtCustomerName{
-    margin-top: -12px;
-    margin-left: 20px;
 }
 
 #sec-free-two{
@@ -142,11 +137,6 @@ body{
 
 #sec-two-order{
     height: 60px;
-}
-
-#txtCustomerName{
-    margin-top: -12px;
-    margin-left: 20px;
 }
 
 #sec-free-two-order{
