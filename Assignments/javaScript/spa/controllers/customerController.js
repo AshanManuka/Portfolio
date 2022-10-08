@@ -1,5 +1,9 @@
 var customerList = [];
 
+// disable add button
+$("#Add").prop("disabled",true);
+
+
 
 // Using RegEx from Inputs
 var cId = /^(C)[0-9]{3}$/;
@@ -76,6 +80,7 @@ $("#txtCustomerSalary").on('keyup',function (event) {
     if(checkSalary){
         $("#lblFour").css("color", "#26de81");
         $("#txtCustomerSalary").css("border", "#26de81 solid 3px");
+        $("#Add").prop("disabled",false);
 
         if(event.key === "Enter"){
             $("#Add").focus();
