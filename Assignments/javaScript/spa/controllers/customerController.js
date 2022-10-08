@@ -167,8 +167,6 @@ function clearFields(){
 
     $("#lblOne,#lblTwo,#lblThree,#lblFour").css("color", "#000000");
     $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").css("border", "#000000 solid 1px");
-
-
 }
 
 /*search customer function*/
@@ -184,6 +182,66 @@ $("#search-btn").click(function(){
         }
     }
 });
+
+
+function selectFromTbl(){
+
+    $("#tblCustomer>tr").click(function(){
+        let id = $(this).children(":eq(0)").text();
+        let name = $(this).children(":eq(1)").text();
+        let address = $(this).children(":eq(2)").text();
+        let salary = $(this).children(":eq(3)").text();
+
+        $("#txtCustomerID").val(id);
+        $("#txtCustomerName").val(name);
+        $("#txtCustomerAddress").val(address);
+        $("#txtCustomerSalary").val(salary);
+    });
+
+    $("#tblCustomer").on('dblclick',function () {
+        deleteCustomer();
+    });
+
+}
+
+$("#delete").click(function () {
+    deleteCustomer();
+});
+
+function deleteCustomer(){
+
+
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#4b9ce8',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete !'
+    }).then((result) => {
+
+
+        if (result.isConfirmed) {
+
+            let delId = $("#txtCustomerID").val();
+            for(var cust of customerList){
+                if(cust.id === delId){
+                    var inNo = customerList.indexOf(cust);
+                    customerList.splice(inNo,1);
+                    loadAllCustomer();
+                    clearFields();
+                }
+            }
+
+            Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+            )
+        }
+    });
+}
 
 
 
