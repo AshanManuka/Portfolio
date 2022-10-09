@@ -39,5 +39,5 @@ function clearFields() {
     $("#txtUnitPrice").val('');
 
     $("#lblOne,#lblTwo,#lblThree,#lblFour,#lblIOne,#lblITwo,#lblIThree,#lblIFour").css("color", "#000000");
-    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary,#txtItemID,#txtItemName,#txtItemQty,#txtUnitPrice").css("border", "#000000 solid 1px");
+    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary,#txtItemId,#txtItemName,#txtItemQty,#txtUnitPrice").css("border", "#000000 solid 1px");
 }

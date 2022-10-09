@@ -1,7 +1,5 @@
 disable();
 
-/*var customerList = [];*/
-
 // disable add button
 function disable(){
     $("#Add").prop("disabled",true);
@@ -124,8 +122,8 @@ function addCustomer(){
     });
 
     //calling to function
-   // clearFields();
-    //disable();
+    clearFields();
+    disable();
     loadAllCustomer();
 
 }

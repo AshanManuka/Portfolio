@@ -11,12 +11,12 @@ var iName = /^[a-z ]{3,30}$/;
 var iQty = /^[0-9]{1,4}$/;
 var iPrice = /^[1-9][0-9]*(.[0-9]{2})?$/;
 
-$("#txtItemID").on('keyup',function (event) {
-    var inId = $("#txtItemID").val();
+$("#txtItemId").on('keyup',function (event) {
+    var inId = $("#txtItemId").val();
     var checkId = iId.test(inId);
     if(checkId){
         $("#lblIOne").css("color", "#26de81");
-        $("#txtItemID").css("border", "#26de81 solid 3px");
+        $("#txtItemId").css("border", "#26de81 solid 3px");
 
         if(event.key === "Enter"){
             $("#txtItemName").focus();
@@ -24,7 +24,7 @@ $("#txtItemID").on('keyup',function (event) {
     }
     else{
         $("#lblIOne").css("color", "#EA2027");
-        $("#txtItemID").css("border", "#EA2027 solid 3px");
+        $("#txtItemId").css("border", "#EA2027 solid 3px");
     }
 });
 
@@ -95,7 +95,7 @@ $("#Add-item").on('keyup',function (event) {
 
 
 function addItem(){
-    let itemCode = $("#txtItemID").val();
+    let itemCode = $("#txtItemId").val();
     let itemName = $("#txtItemName").val();
     let itemQty = $("#txtItemQty").val();
     let itemUnitPrice = $("#txtUnitPrice").val();
