@@ -9,6 +9,7 @@ function disable(){
 
 
 
+
 // Using RegEx from Inputs
 var cId = /^(C)[0-9]{3}$/;
 var cName = /^[a-z ]{3,30}$/;
@@ -164,6 +165,7 @@ function clearFields(){
     $("#txtCustomerName").val('');
     $("#txtCustomerAddress").val('');
     $("#txtCustomerSalary").val('');
+    $("#txtSearchId").val('');
 
     $("#lblOne,#lblTwo,#lblThree,#lblFour").css("color", "#000000");
     $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").css("border", "#000000 solid 1px");
@@ -183,7 +185,7 @@ $("#search-btn").click(function(){
     }
 });
 
-
+// select data from table function
 function selectFromTbl(){
 
     $("#tblCustomer>tr").click(function(){
@@ -208,9 +210,9 @@ $("#delete").click(function () {
     deleteCustomer();
 });
 
+
+// customer delete function
 function deleteCustomer(){
-
-
     Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
@@ -220,10 +222,7 @@ function deleteCustomer(){
         cancelButtonColor: '#d33',
         confirmButtonText: 'Yes, delete !'
     }).then((result) => {
-
-
         if (result.isConfirmed) {
-
             let delId = $("#txtCustomerID").val();
             for(var cust of customerList){
                 if(cust.id === delId){
@@ -233,7 +232,6 @@ function deleteCustomer(){
                     clearFields();
                 }
             }
-
             Swal.fire(
                 'Deleted!',
                 'Your file has been deleted.',
@@ -244,7 +242,29 @@ function deleteCustomer(){
 }
 
 
+// customer update function
+$("#update").on('click',function(){
+   updateCustomer();
+});
 
+function updateCustomer(){
+    let upId = $("#txtCustomerID").val();
+    let upName = $("#txtCustomerName").val();
+    let upAddress = $("#txtCustomerAddress").val();
+    let upSalary = $("#txtCustomerSalary").val();
+
+    for (var upCust of customerList) {
+        if(upCust.id === upId){
+            upCust.name = upName;
+            upCust.address = upAddress;
+            upCust.salary = upSalary;
+
+            loadAllCustomer();
+            clearFields();
+        }
+    }
+
+}
 
 
 
