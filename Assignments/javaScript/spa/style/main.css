@@ -155,7 +155,7 @@ body{
     background-color: rgba(241, 233, 233, 0.19);
 }
 
-#cust-id{
+#cust-id,#itm-name{
     border-radius: 6px;
     width: 50%;
     font-size: 25px;

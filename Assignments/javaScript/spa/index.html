@@ -36,6 +36,7 @@
     </section>
 
 <!--Begin main section one-->
+<!--Customer Area-->
 <section id="main-one-sec">
     <section class="row" id="free-sec">
         <div class="col-12"></div>
@@ -124,6 +125,7 @@
 <!--end main section one -->
 
 <!--Begin main section two-->
+<!--Item Area-->
     <section id="main-two-sec">
         <section class="row" id="free-sec-item">
             <div class="col-12"></div>
@@ -211,13 +213,14 @@
 <!--End main section two-->
 
 <!--Begin main section three-->
+<!--Order Area-->
 <section id="main-three-sec">
 
-    <section class="row" id="free-sec-order">
+  <!--  <section class="row" id="free-sec-order">
         <div class="col-12"></div>
-    </section>
+    </section>-->
 
-    <section class="row" id="sec-two-order">
+    <!--<section class="row" id="sec-two-order">
         <div class="col-1"></div>
         <div class="col-3">
             <a href="#sec-four"><button id="all-search-order"><b>All Orders</b></button></a>
@@ -230,7 +233,7 @@
             <a href="#sec-four"><button id="search-btn-order"><b>Search</b></button></a>
         </div>
         <div class="col-1"></div>
-    </section>
+    </section>-->
 
     <section id="sec-free-two-order" class="row">
         <div class="col-12"></div>
@@ -242,9 +245,8 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="form-group">
-                            <label for="txtCustomerId">Customer Id :</label>
-                            <input class="form-control" id="txtCustomerId-order" type="text">
-                            <span class="control-error" id="lblcusId-order"></span>
+                            <label for="cust-id"><b>Select Item : </b></label>
+                            <select name="id" id="cust-id"></select>
                         </div>
                     </div>
                     <div class="col-6">
@@ -256,16 +258,9 @@
                     </div>
                     <div class="col-12" id="sp1"></div>
                     <div class="col-6">
-                        <form action="#">
-                            <label for="cust-id"><b>Select Item : </b></label>
-                            <select name="id" id="cust-id">
-                                <option value="volvo">I001</option>
-                                <option value="saab">I002</option>
-                                <option value="opel">I003</option>
-                                <option value="audi">I004</option>
-                            </select>
+                            <label for="itm-name"><b>Select Item : </b></label>
+                            <select name="id" id="itm-name"></select>
                             <br><br>
-                        </form>
                     </div>
                     <div class="col-6">
                         <div class="form-group">
