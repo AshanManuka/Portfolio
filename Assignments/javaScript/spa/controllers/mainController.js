@@ -18,3 +18,10 @@ document.getElementById("order-btn").addEventListener("click", function () {
     document.getElementById("main-three-sec").style.display="inline";
     document.getElementById("hm").innerText="Orders";
 });
+
+// Disable key TAB to disable function move over textFields
+$("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary,#txtItemID,#txtItemName,#txtItemQty,#txtUnitPrice").on('keydown',function(event){
+    if(event.key === "Tab"){
+        event.preventDefault();
+    }
+});

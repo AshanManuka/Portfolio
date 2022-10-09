@@ -12,13 +12,6 @@ var cAddress = /^[a-z0-9 ,]{5,40}$/;
 var cSalary = /^[1-9][0-9]*(.[0-9]{2})?$/;
 
 
-// Disable key TAB to disable function move over textFields
-$("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on('keydown',function(event){
-    if(event.key === "Tab"){
-       event.preventDefault();
-    }
-});
-
 $("#txtCustomerID").on('keyup',function (event) {
     var inId = $("#txtCustomerID").val();
     var checkId = cId.test(inId);
