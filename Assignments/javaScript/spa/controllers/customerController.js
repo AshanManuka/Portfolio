@@ -224,13 +224,13 @@ $("#update").on('click',function(){
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, Update it!'
+        confirmButtonText: 'Yes, Update Customer!'
     }).then((result) => {
         if (result.isConfirmed) {
             updateCustomer();
             Swal.fire(
                 'Updated!',
-                'Data has been Updated.',
+                'Item has been Updated.',
                 'success'
             )
         }

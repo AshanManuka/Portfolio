@@ -195,6 +195,48 @@ function deleteItem(){
 }
 
 
+// customer update function
+$("#update-item").on('click',function(){
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, Update Item!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            updateItem();
+            Swal.fire(
+                'Updated!',
+                'Item has been Updated.',
+                'success'
+            )
+        }
+    })
+});
+
+function updateItem(){
+    let upId = $("#txtItemId").val();
+    let upName = $("#txtItemName").val();
+    let upQty = $("#txtItemQty").val();
+    let upUnitPrice = $("#txtUnitPrice").val();
+
+    for (var upItm of itemList) {
+        if(upItm.code === upId){
+            upItm.name = upName;
+            upItm.qty = upQty;
+            upItm.price = upUnitPrice;
+
+            loadAllItem();
+            clearFields();
+        }
+    }
+
+}
+
+
 
 
 
