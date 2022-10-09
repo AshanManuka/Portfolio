@@ -1,6 +1,6 @@
 
 // Customers data Array
-    var customerList = [];
+     var customerList = [];
 // Items data Array
     var itemList = [];
 // Orders data Array

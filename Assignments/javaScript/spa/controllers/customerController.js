@@ -1,5 +1,7 @@
 disable();
 
+/*var customerList = [];*/
+
 // disable add button
 function disable(){
     $("#Add").prop("disabled",true);
@@ -116,17 +118,15 @@ function addCustomer(){
     Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'Data has been saved',
+        title: 'Customer has been saved',
         showConfirmButton: false,
         timer: 1500
     });
 
     //calling to function
-    clearFields();
-    disable();
+   // clearFields();
+    //disable();
     loadAllCustomer();
-
-
 
 }
 
@@ -145,18 +145,6 @@ function loadAllCustomer() {
         $("#tblCustomer").append(row);
     }
     selectFromTbl();
-}
-
-
-function clearFields(){
-    $("#txtCustomerID").val('');
-    $("#txtCustomerName").val('');
-    $("#txtCustomerAddress").val('');
-    $("#txtCustomerSalary").val('');
-    $("#txtSearchId").val('');
-
-    $("#lblOne,#lblTwo,#lblThree,#lblFour").css("color", "#000000");
-    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").css("border", "#000000 solid 1px");
 }
 
 /*search customer function*/

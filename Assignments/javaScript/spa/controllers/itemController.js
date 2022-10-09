@@ -95,5 +95,52 @@ $("#Add-item").on('keyup',function (event) {
 
 
 function addItem(){
+    let itemCode = $("#txtItemID").val();
+    let itemName = $("#txtItemName").val();
+    let itemQty = $("#txtItemQty").val();
+    let itemUnitPrice = $("#txtUnitPrice").val();
 
+    var item = {
+        code : itemCode,
+        name : itemName,
+        qty : itemQty,
+        price : itemUnitPrice
+    }
+
+    itemList.push(item);
+
+    // Data submit alert
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Item has been saved',
+        showConfirmButton: false,
+        timer: 1500
+    });
+
+    //calling to function
+    clearFields();
+    disable();
+    loadAllItem();
+
+}
+
+// clickable all search button
+$("#all-search-item").click(function () {
+    loadAllItem();
+});
+
+function loadAllItem() {
+    $("#tblItem").empty();
+
+    for (var itemElement of itemList) {
+        var row =   `<tr><td>${itemElement.code}</td><td>${itemElement.name}</td><td>${itemElement.qty}</td><td>${itemElement.price}</td></tr>`;
+        $("#tblItem").append(row);
+    }
+    selectFromTbl();
+}
+
+
+function selectFromItemTbl() {
+    alert("select from item table");
 }
