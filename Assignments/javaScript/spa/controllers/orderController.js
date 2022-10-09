@@ -118,6 +118,14 @@ function fillTable() {
 
     // insert data to tbl Array
     tblArray.push(tblObj);
+
+    $("#orderTable").empty();
+
+    for(var ord of tblArray){
+        var row= `<tr><td>${ord.id}</td><td>${ord.name}</td><td>${ord.price}</td><td>${ord.qty}</td><td>${ord.amount}</td></tr>`;
+        $("#orderTable").append(row);
+    }
+    selectFromTbl();
 }
 
 
