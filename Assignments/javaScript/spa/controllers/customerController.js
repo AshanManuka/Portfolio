@@ -1,14 +1,9 @@
-var customerList = [];
 disable();
 
 // disable add button
 function disable(){
     $("#Add").prop("disabled",true);
 }
-
-
-
-
 
 // Using RegEx from Inputs
 var cId = /^(C)[0-9]{3}$/;
@@ -234,7 +229,7 @@ function deleteCustomer(){
             }
             Swal.fire(
                 'Deleted!',
-                'Your file has been deleted.',
+                'Data has been deleted.',
                 'success'
             )
         }
