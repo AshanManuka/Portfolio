@@ -1,6 +1,5 @@
-
 var totalArray = [];
-
+var tblArray = [];
 
 // Order Variables
 var orderId;
@@ -14,6 +13,7 @@ var orderAmount = 0;
 $("#order-btn").on('click',function(){
    loadCustomerList();
    loadItemList();
+
 });
 
 // select customer id from dropdown box
@@ -67,6 +67,9 @@ function searchItemToFill(value){
 // Add order item button
 $("#addTo").on('click',function () {
     makeTotal();
+    calculateTotal();
+    manageItem();
+    fillTable();
 
 
     // clearF();
@@ -74,21 +77,12 @@ $("#addTo").on('click',function () {
 
 
 
-function clearF() {
-    $("#itemId").val('');
-    $("#uniPrice").val('');
-    $("#qty").val('');
-    $("#orderQty").val('');
-}
-
 function makeTotal(){
     var subTotal =   $("#uniPrice").val() * $("#orderQty").val();
     $("#subTotalPrice").val(subTotal);
 
     // Set Total to array
     totalArray.push(subTotal);
-    
-    calculateTotal();
 }
 
 
@@ -99,7 +93,45 @@ function calculateTotal() {
     }
     $("#totalPrice").val(total)
     orderAmount = total;
+}
 
+// For manage item because added to order
+function manageItem(){
+
+}
+
+//load data to order table
+function fillTable() {
+    var oIId = $("#itemId").val();
+    var oIName = $("#itm-name").val();
+    var oPrice = $("#uniPrice").val();
+    var oQty = $("#orderQty").val();
+
+    //tbArray object
+    var tblObj = {
+        id : oIId,
+        name : oIName,
+        price : oPrice,
+        qty : oQty,
+        amount : orderAmount
+    }
+
+    // insert data to tbl Array
+    tblArray.push(tblObj);
+}
+
+
+
+
+
+
+
+
+function clearF() {
+    $("#itemId").val('');
+    $("#uniPrice").val('');
+    $("#qty").val('');
+    $("#orderQty").val('');
 }
 
 

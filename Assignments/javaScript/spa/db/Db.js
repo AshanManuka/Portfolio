@@ -10,3 +10,6 @@
 
 // select Items when purchasing data Array
     var selectedItemList = [];
+
+// Order full amount Array
+//     var totalArray = [];
