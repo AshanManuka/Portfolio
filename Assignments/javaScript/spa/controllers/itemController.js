@@ -137,10 +137,76 @@ function loadAllItem() {
         var row =   `<tr><td>${itemElement.code}</td><td>${itemElement.name}</td><td>${itemElement.qty}</td><td>${itemElement.price}</td></tr>`;
         $("#tblItem").append(row);
     }
-    selectFromTbl();
+    selectFromItemTbl();
 }
 
 
 function selectFromItemTbl() {
-    alert("select from item table");
+    $("#tblItem>tr").click(function(){
+        let code = $(this).children(":eq(0)").text();
+        let name = $(this).children(":eq(1)").text();
+        let qty = $(this).children(":eq(2)").text();
+        let price = $(this).children(":eq(3)").text();
+
+        $("#txtItemId").val(code);
+        $("#txtItemName").val(name);
+        $("#txtItemQty").val(qty);
+        $("#txtUnitPrice").val(price);
+    });
+
+    $("#tblItem").on('dblclick',function () {
+        deleteItem();
+    });
 }
+
+$("#delete-item").on('click',function () {
+    deleteItem();
+});
+
+
+// customer delete function
+function deleteItem(){
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#4b9ce8',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete !'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            let delId = $("#txtItemId").val();
+            for(var itm of itemList){
+                if(itm.code === delId){
+                    var inNo = itemList.indexOf(itm);
+                    itemList.splice(inNo,1);
+                    loadAllItem();
+                    clearFields();
+                }
+            }
+            Swal.fire(
+                'Deleted!',
+                'Item has been deleted.',
+                'success'
+            )
+        }
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -177,7 +177,6 @@ function selectFromTbl(){
     $("#tblCustomer").on('dblclick',function () {
         deleteCustomer();
     });
-
 }
 
 $("#delete").click(function () {
@@ -208,7 +207,7 @@ function deleteCustomer(){
             }
             Swal.fire(
                 'Deleted!',
-                'Data has been deleted.',
+                'Customer has been deleted.',
                 'success'
             )
         }
