@@ -97,7 +97,7 @@ function calculateTotal() {
 
 // For manage item because added to order
 function manageItem(){
-
+// need to do this function
 }
 
 //load data to order table
