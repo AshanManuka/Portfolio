@@ -24,7 +24,11 @@ function loadItemList(){
 }
 
 function searchItemToFill(value){
-    alert(value);
+    for (cus of customerList) {
+        if (cus.id === value){
+            $("#txtCustName").val(cus.name);
+        }
+    }
 }
 
 
