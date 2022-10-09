@@ -1,4 +1,16 @@
 
+var totalArray = [];
+
+
+// Order Variables
+var orderId;
+var orderDate;
+var orderCustomerId;
+var orderAmount = 0;
+
+
+
+
 $("#order-btn").on('click',function(){
    loadCustomerList();
    loadItemList();
@@ -48,10 +60,56 @@ function searchItemToFill(value){
             $("#itemId").val(itm.code);
             $("#uniPrice").val(itm.price);
             $("#qty").val(itm.qty);
-
         }
     }
 }
+
+// Add order item button
+$("#addTo").on('click',function () {
+    makeTotal();
+
+
+    // clearF();
+});
+
+
+
+function clearF() {
+    $("#itemId").val('');
+    $("#uniPrice").val('');
+    $("#qty").val('');
+    $("#orderQty").val('');
+}
+
+function makeTotal(){
+    var subTotal =   $("#uniPrice").val() * $("#orderQty").val();
+    $("#subTotalPrice").val(subTotal);
+
+    // Set Total to array
+    totalArray.push(subTotal);
+    
+    calculateTotal();
+}
+
+
+function calculateTotal() {
+    let total =0;
+    for (var i=0; i<totalArray.length; i++ ){
+            total += totalArray[i];
+    }
+    $("#totalPrice").val(total)
+    orderAmount = total;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
