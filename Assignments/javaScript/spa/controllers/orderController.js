@@ -138,6 +138,21 @@ function fillTable() {
     selectFromTbl();
 }
 
+//make discount
+$("#discountPrice").on('keyup',function(event){
+    if(event.key === "Enter"){
+        $("#complte-btn").focus();
+    }
+});
+
+$("#complte-btn").on('click',function () {
+    completeOrder();
+});
+
+function completeOrder(){
+    alert("complete order");
+}
+
 
 
 
