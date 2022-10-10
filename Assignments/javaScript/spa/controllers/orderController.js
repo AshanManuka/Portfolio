@@ -60,20 +60,30 @@ function searchItemToFill(value){
             $("#itemId").val(itm.code);
             $("#uniPrice").val(itm.price);
             $("#qty").val(itm.qty);
+            $("#orderQty").focus();
         }
     }
 }
 
+//enter button in orderQty
+$("#orderQty").on('keyup',function (event) {
+    if(event.key === "Enter"){
+        $("#addTo").focus();
+    }
+});
+
 // Add order item button
 $("#addTo").on('click',function () {
+    addOrder();
+    // clearF();
+});
+
+function addOrder() {
     makeTotal();
     calculateTotal();
     manageItem();
     fillTable();
-
-
-    // clearF();
-});
+}
 
 
 
