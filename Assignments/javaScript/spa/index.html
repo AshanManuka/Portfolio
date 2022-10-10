@@ -216,10 +216,6 @@
 <!--Order Area-->
 <section id="main-three-sec">
 
-  <!--  <section class="row" id="free-sec-order">
-        <div class="col-12"></div>
-    </section>-->
-
     <!--<section class="row" id="sec-two-order">
         <div class="col-1"></div>
         <div class="col-3">
@@ -288,7 +284,13 @@
                     </div>
                     <div class="col-2"></div>
                     <div class="col-12" id="sp3"></div>
-                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="subTot">Sub TOTAL :</label>
+                            <input class="form-control" id="subTot" type="text">
+                            <span class="control-error" id="lblSubTot"></span>
+                        </div>
+                    </div>
                     <div class="col-4">
                         <div class="form-group">
                             <label for="orderQty">Order Qty :</label>
@@ -302,78 +304,88 @@
                 </div>
             </div>
 
-            <!--            invoice part-->
+            <!--invoice part-->
             <div class="col-5" style="background-color: rgba(203,4,49,0.4)">
 
                 <!--invoice part one-->
                 <div class="row">
                     <div class="col">
                         <div class="row">
-                            <div class="col-6"></div>
-                            <div class="col-6"><h3 style="margin-top: 20px" >Total : </h3></div>
-                            <div class="col-4"></div>
-                            <div class="col-8"><h3 style="margin-top: 20px" >Sub Total : </h3></div>
-                            <div class="col-12" id="sp4"></div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="cashPrice">Cash : </label>
-                                    <input class="form-control" id="cashPrice" type="text">
-                                    <span class="control-error" id="cashTotal"></span>
-                                </div>
-                            </div>
-                            <div class="col-12" id="sp5"></div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="balancePrice">Balance : </label>
-                                    <input class="form-control" id="balancePrice" type="text">
-                                    <span class="control-error" id="balancetotal"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--invoice pRT 2-->
-                    <div class="col" >
-                        <div class="row">
-                            <div class="col-12">
+                            <div class="col-2"></div>
+                            <div class="col-4"><h3>Order Id : </h3></div>
+                            <div class="col-4"><h3>O00x</h3></div>
+                            <div class="col-2"></div>
+                            <div class="col-12"><h2> </h2></div>
+                            <!--total-->
+                            <div class="col-2"></div>
+                            <div class="col-3"><h2 style="margin-top: 20px">Total :</h2></div>
+                            <div class="col-6">
                                 <div class="form-group">
                                     <label for="totalPrice"></label>
                                     <input class="form-control" id="totalPrice" type="text">
                                     <span class="control-error" id="lbltotal"></span>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-1"></div>
+                            <div class="col-12"><h4></h4></div>
+                            <!--discount-->
+                            <div class="col-1"></div>
+                            <div class="col-4"><h3 style="margin-top: 20px">Discount :</h3></div>
+                            <div class="col-6">
                                 <div class="form-group">
-                                    <label for="subTotalPrice"></label>
-                                    <input class="form-control" id="subTotalPrice" type="text">
-                                    <span class="control-error" id="lblSubTotal"></span>
-                                </div>
-                            </div>
-                            <div class="col-12" id="sp6"></div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="discountPrice">Discount : </label>
+                                    <label for="discountPrice"></label>
                                     <input class="form-control" id="discountPrice" type="text">
                                     <span class="control-error" id="discountTotal"></span>
                                 </div>
                             </div>
-                            <div class="col-12" id="sp7"></div>
-                            <div class="col-12">
+                            <div class="col-1"></div>
+                            <div class="col-12"><h4></h4></div>
+
+                            <!--Amount-->
+                            <div class="col-1"></div>
+                            <div class="col-4"><h3 style="margin-top: 20px">Amount :</h3></div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="fullAmount"></label>
+                                    <input class="form-control" id="fullAmount" type="text">
+                                    <span class="control-error" id="amount"></span>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-12"><h4></h4></div>
+
+
+                            <!--cash-->
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="cashPrice">Cash : </label>
+                                    <input class="form-control" id="cashPrice" type="text">
+                                    <span class="control-error" id="cashTotal"></span>
+                                </div>
+                            </div>
+                            <!--balance-->
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="balancePrice">Balance : </label>
+                                    <input class="form-control" id="balancePrice" type="text">
+                                    <span class="control-error" id="balancetotal"></span>
+                                </div>
+                            </div>
+
+                            <!--button-->
+                            <div class="col-4"></div>
+                            <div class="col-6">
                                 <button type="button" class="btn btn-dark" style="margin-top: 25px">Complete Order</button>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6" id="sp8"></div>
-                <div class="row" style="background-color: rgba(203,4,49,0.56)">
-                    <div class="col-1"></div>
-                    <div class="col-6"><h2 style="margin-left: 25px">Order Id : </h2></div>
-                    <div class="col-4"><h2>O00X</h2></div>
-                    <div class="col-1"></div>
-                </div>
-            </div>
+                            <div class="col-2"></div>
+
+              </div>
+           </div>
         </div>
+       </div>
+      </div>
     </section>
+
 
     <section id="sec-free-three" class="row">
         <div class="col-12"></div>

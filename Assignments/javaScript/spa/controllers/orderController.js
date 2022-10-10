@@ -79,7 +79,7 @@ $("#addTo").on('click',function () {
 
 function makeTotal(){
     var subTotal =   $("#uniPrice").val() * $("#orderQty").val();
-    $("#subTotalPrice").val(subTotal);
+    $("#subTot").val(subTotal);
 
     // Set Total to array
     totalArray.push(subTotal);
