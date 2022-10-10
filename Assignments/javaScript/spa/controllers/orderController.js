@@ -142,7 +142,14 @@ function fillTable() {
 $("#discountPrice").on('keyup',function(event){
     if(event.key === "Enter"){
         makeDiscount();
+        $("#cashPrice").focus();
+    }
+});
 
+$("#cashPrice").on('keyup',function(event){
+    if(event.key === "Enter"){
+        makeBalance();
+        $("#complte-btn").focus();
     }
 });
 
@@ -150,15 +157,28 @@ $("#complte-btn").on('click',function () {
     completeOrder();
 });
 
+
+
+// making discount
 function makeDiscount(){
     var dis = $("#discountPrice").val();
     $("#fullAmount").val(orderAmount - dis);
 }
 
+function makeBalance() {
+    var bal = $("#cashPrice").val() - $("#fullAmount").val();
+    $("#balancePrice").val(bal);
+}
 
 // order complete function
 function completeOrder(){
-
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Order Completed !',
+        showConfirmButton: false,
+        timer: 1500
+    });
 }
 
 
