@@ -141,7 +141,8 @@ function fillTable() {
 //make discount
 $("#discountPrice").on('keyup',function(event){
     if(event.key === "Enter"){
-        $("#complte-btn").focus();
+        makeDiscount();
+
     }
 });
 
@@ -149,8 +150,15 @@ $("#complte-btn").on('click',function () {
     completeOrder();
 });
 
+function makeDiscount(){
+    var dis = $("#discountPrice").val();
+    $("#fullAmount").val(orderAmount - dis);
+}
+
+
+// order complete function
 function completeOrder(){
-    alert("complete order");
+
 }
 
 
