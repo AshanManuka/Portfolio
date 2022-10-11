@@ -115,6 +115,7 @@ function manageItem(){
             let newQ = itm.qty - orQty;
             itm.qty = newQ;
             loadAllItem();
+            loadItemList();
 
         }
     }
