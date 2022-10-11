@@ -107,7 +107,18 @@ function calculateTotal() {
 
 // For manage item because added to order
 function manageItem(){
-// need to do this function
+    var itCode = $("#itemId").val();
+    var orQty = $("#orderQty").val();
+
+    for (itm of itemList) {
+        if (itm.code === itCode){
+            let newQ = itm.qty - orQty;
+            itm.qty = newQ;
+            loadAllItem();
+
+        }
+    }
+
 }
 
 //load data to order table
