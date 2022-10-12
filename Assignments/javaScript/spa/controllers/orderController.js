@@ -195,6 +195,10 @@ function completeOrder(){
         showConfirmButton: false,
         timer: 1500
     });
+
+    tblArray.length = 0;
+    $("#orderTable").empty();
+
 }
 
 
