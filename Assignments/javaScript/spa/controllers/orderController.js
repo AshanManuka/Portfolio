@@ -75,7 +75,6 @@ $("#orderQty").on('keyup',function (event) {
 // Add order item button
 $("#addTo").on('click',function () {
     addOrder();
-    // clearF();
 });
 
 function addOrder() {
@@ -83,6 +82,7 @@ function addOrder() {
     calculateTotal();
     manageItem();
     fillTable();
+    clearF1();
 }
 
 
@@ -167,6 +167,7 @@ $("#cashPrice").on('keyup',function(event){
 
 $("#complte-btn").on('click',function () {
     completeOrder();
+    clearF2();
 });
 
 
@@ -184,6 +185,9 @@ function makeBalance() {
 
 // order complete function
 function completeOrder(){
+    orderAmount = 0;
+    totalArray.length = 0;
+
     Swal.fire({
         position: 'center',
         icon: 'success',
@@ -196,15 +200,21 @@ function completeOrder(){
 
 
 
-
-
-
-
-function clearF() {
+function clearF1(){
     $("#itemId").val('');
     $("#uniPrice").val('');
     $("#qty").val('');
     $("#orderQty").val('');
+}
+
+
+function clearF2() {
+    $("#totalPrice").val('');
+    $("#fullAmount").val('');
+    $("#discountPrice").val('');
+    $("#cashPrice").val('');
+    $("#balancePrice").val('');
+    $("#subTot").val('');
 }
 
 
