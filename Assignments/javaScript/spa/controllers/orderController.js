@@ -8,7 +8,8 @@ var orderCustomerId;
 var orderAmount = 0;
 
 
-
+//assign 0 to order id
+$("#genOrderId").val("O001");
 
 $("#order-btn").on('click',function(){
    loadCustomerList();
@@ -198,8 +199,39 @@ function completeOrder(){
 
     tblArray.length = 0;
     $("#orderTable").empty();
+    generateOrderId();
 
 }
+
+
+
+//generate order id
+function generateOrderId(){
+    var orId = $("#genOrderId").val();
+    var nwPart = orId.substr(1);
+    var inPart = parseInt(nwPart);
+    inPart++;
+    if (10 > inPart){
+        nwOrderId = "O00"+inPart;
+        $("#genOrderId").val(nwOrderId);
+    }else {
+        nwOrderId = "O0"+inPart;
+        $("#genOrderId").val(nwOrderId);
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -210,7 +242,6 @@ function clearF1(){
     $("#qty").val('');
     $("#orderQty").val('');
 }
-
 
 function clearF2() {
     $("#totalPrice").val('');
