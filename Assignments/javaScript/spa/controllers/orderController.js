@@ -14,11 +14,13 @@ var payment = /^[1-9][0-9]*(.[0-9]{2})?$/;
 
 var totalArray = [];
 var tblArray = [];
+var orderArray = [];
 
 
 // Order Variables
 var valueId;
-var orderAmount = 0;
+var orderAmount = 0
+var selectedCustomer;
 
 
 //assign 0 to order id
@@ -36,6 +38,7 @@ $("#order-btn").on('click',function(){
 $('#cust-id').on('change', function() {
     var valueId = $(this).val();
     searchCustomerToFill(valueId);
+    selectedCustomer = $(this).val();
 });
 
 
@@ -252,7 +255,6 @@ function completeOrder(){
 }
 
 
-
 //generate order id
 function generateOrderId(){
     var orId = $("#genOrderId").val();
@@ -272,16 +274,21 @@ function generateOrderId(){
 
 function fillOrderTable(){
     var orderI = $("#genOrderId").val();
-    var selectCustId = valueId;
+    var selectCustId = selectedCustomer;
     var date = setdate();
     var orderTotal = orderAmount;
 
-    /*console.log(orderI+" , "+selectCustId+" , "+date+" , "+orderTotal);*/
+    var lastOrder = {
+        id : orderI,
+        cusId : selectCustId,
+        orDate : date,
+        orAmount : orderTotal
+    }
 
-    
+    /*console.log(lastOrder.id, lastOrder.cusId, lastOrder.orDate, lastOrder.orAmount);*/
+    orderArray.push(lastOrder);
 
-
-
+    loadAllOrder();
 
 }
 
@@ -295,14 +302,21 @@ function setdate(){
     {
         dd='0'+dd;
     }
-
     if(mm<10)
     {
         mm='0'+mm;
     }
     today = dd+'-'+mm+'-'+yyyy;
-
     return today;
+}
+
+function loadAllOrder(){
+    $("#FullOrderTable").empty();
+
+    for(var ord of orderArray){
+        var row= `<tr><td>${ord.id}</td><td>${ord.cusId}</td><td>${ord.orDate}</td><td>${ord.orAmount}</td></tr>`;
+        $("#FullOrderTable").append(row);
+    }
 }
 
 
