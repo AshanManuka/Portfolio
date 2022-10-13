@@ -233,6 +233,7 @@ function makeBalance() {
 
 // order complete function
 function completeOrder(){
+    fillOrderTable();
     orderAmount = 0;
     totalArray.length = 0;
 
@@ -248,8 +249,6 @@ function completeOrder(){
     $("#orderTable").empty();
     disableCompleteBtn();
     generateOrderId();
-
-
 }
 
 
@@ -267,13 +266,44 @@ function generateOrderId(){
         nwOrderId = "O-0"+inPart;
         $("#genOrderId").val(nwOrderId);
     }
-
-
 }
 
 
 
+function fillOrderTable(){
+    var orderI = $("#genOrderId").val();
+    var selectCustId = valueId;
+    var date = setdate();
+    var orderTotal = orderAmount;
 
+    /*console.log(orderI+" , "+selectCustId+" , "+date+" , "+orderTotal);*/
+
+    
+
+
+
+
+}
+
+function setdate(){
+    var today = new Date();
+    var dd = today.getDate();
+
+    var mm = today.getMonth()+1;
+    var yyyy = today.getFullYear();
+    if(dd<10)
+    {
+        dd='0'+dd;
+    }
+
+    if(mm<10)
+    {
+        mm='0'+mm;
+    }
+    today = dd+'-'+mm+'-'+yyyy;
+
+    return today;
+}
 
 
 
