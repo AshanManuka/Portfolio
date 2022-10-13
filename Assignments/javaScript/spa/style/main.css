@@ -140,11 +140,15 @@ body{
 }
 
 #sec-free-two-order{
-    height: 50px;
+    height: 100px;
 }
 
 #sec-three-order{
     height: 400px;
+}
+
+#sec-free-four{
+    height: 100px;
 }
 
 #div-in{
@@ -165,9 +169,15 @@ body{
 #sp1, #sp2, #sp3, #sp4, #sp5, #sp6, #sp7, #sp8{
     height: 35px;
 }
+
+
 /*====== Order page ============*/
 
-
+#all-order-btn{
+    width: 100%;
+    height : 50px;
+    background-color: rgba(27, 40, 40, 0.66);
+}
 
 
 

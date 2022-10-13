@@ -66,6 +66,7 @@ $("#discountPrice").on('keyup',function(event){
         if(event.key === "Enter"){
             makeDiscount();
             $("#cashPrice").focus();
+            $("#discountPrice").css("border", "#000000");
         }
     }else {
         $("#discountPrice").css("border", "#EA2027 solid 3px");
@@ -81,6 +82,7 @@ $("#cashPrice").on('keyup',function(event){
         if(event.key === "Enter"){
             makeDiscount();
             $("#complte-btn").focus();
+            $("#cashPrice").css("border", "#000000");
         }
     }else {
         $("#cashPrice").css("border", "#EA2027 solid 3px");
