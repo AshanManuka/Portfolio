@@ -7,6 +7,13 @@ Wire Frame : https://wireframe.cc/fTbXnP
 
 Mock up : https://www.figma.com/file/WrZW3iOxQqCaEqR1lrWGD0/Untitled?node-id=0%3A1
 
+
+Git HUb page URL : https://ashanmanuka.github.io/Portfolio/
+
+InfinityFree Web Host : http://manukasfolio.epizy.com
+
+
+ 
 ======================================================
 
 # Assignment POS
