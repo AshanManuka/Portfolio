@@ -8,20 +8,68 @@
     <meta name="author" content="Ashan Manuka Jayarathne">
     <meta name="owner" content="Ashan Manuka">
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+
+    <style>
+        #main-sec{
+            position: absolute;
+            width: 60%;
+            height: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .colo-div{
+            position: relative;
+            width: 150px;
+            height: 60px;
+            display: inline-block;
+            border: black 2px solid;
+            /*background-color: #1a1e21;*/
+        }
+
+    </style>
 </head>
 <body>
 <main>
     <section id="main-sec">
+
+        <br>
+        <br>
+        <br>
+        <br>
+
         <div id="txt-f">
             <label for="txtName"><b>Enter Name : </b></label>
             <input class="form-control" id="txtName" type="text">
         </div>
 
+        <br>
+        <br>
+        <br>
+
         <div id="color-box">
-            <label for="colorList"><b>Select Colour : </b></label>
-            <select name="id" id="colorList"></select>
+            <label for="colourList"><b>Select Colour : </b></label>
+            <select name="id" id="colourList"></select>
             <br><br>
         </div>
+
+        <div id="bnt-div">
+            <button type="button"  id="addTo" style="margin-top: 25px">ADD</button>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="colo-div"><h2 id="b1"></h2></div>
+        <div class="colo-div"><h2 id="b2"></h2></div>
+        <div class="colo-div"><h2 id="b3"></h2></div>
+        <div class="colo-div"><h2 id="b4"></h2></div>
+
+
     </section>
 </main>
 
@@ -29,6 +77,37 @@
 
 <script src="event/jQuery/jquery-3.6.1.min.js"></script>
 <script>
+    var nameList = ["Ashan", "Manuka", "Abishek", "Shanuka"];
+    var colorList = ["red", "blue", "green", "orange", "pink", "purple", "yellow", "black"];
+    var selectedColor;
+    var emp = true;
+
+    for (let i = 0; i<colorList.length; i++ ) {
+        $("#colourList").append(`<option>${colorList[i]}</option>`);
+    }
+
+    $('#colourList').on('change', function() {
+        selectedColor = $(this).val();
+
+
+    });
+
+    $("#addTo").on("click",function () {
+       getDetails();
+    });
+
+    function getDetails(){
+        var name = $("#txtName").val();
+/*        console.log("name "+ name);
+        console.log("colour "+ selectedColor);*/
+
+        setObject(name);
+    }
+
+    function setObject(name){
+
+    }
+
 
 </script>
 </body>
