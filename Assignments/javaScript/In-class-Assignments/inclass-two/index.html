@@ -21,14 +21,17 @@
             margin: auto;
         }
 
-        .colo-div{
-            position: relative;
-            width: 150px;
-            height: 60px;
-            display: inline-block;
-            border: black 2px solid;
-            /*background-color: #1a1e21;*/
+        #contianer>div{
+           border : black 2px solid;
+           width: 150px;
+           position: relative;
+           display: inline-block;
         }
+
+        #contianer>div>h1{
+            margin-left: 30px;
+        }
+
 
     </style>
 </head>
@@ -63,10 +66,7 @@
         <br>
         <br>
         <br>
-
-        <div id="bb1" class="colo-div"><h2 id="b1">manuka</h2></div>
-        <div id="bb2" class="colo-div"><h2 id="b2">ashan</h2></div>
-        <div id="bb3" class="colo-div"><h2 id="b3">abishek</h2></div>
+        <section id="contianer"> </section>
 
 
     </section>
@@ -78,10 +78,7 @@
 <script>
    // var nameList = ["Ashan", "Manuka", "Abishek"];
     var colorList = ["red", "blue", "green", "orange", "pink", "purple", "yellow", "black"];
-    var  obList = [];
     var selectedColor;
-    var emp = true;
-    let k = 0;
 
     for (let i = 0; i<colorList.length; i++ ) {
         $("#colourList").append(`<option>${colorList[i]}</option>`);
@@ -90,6 +87,10 @@
     $('#colourList').on('change', function() {
         selectedColor = $(this).val();
     });
+
+   var  obList = [
+
+   ];
 
     $("#addTo").on("click",function () {
        getDetails();
@@ -103,7 +104,7 @@
         setObject(name,colo);
     }
 
-    function setObject(name,colo){
+    /*function setObject(name,colo){
         var man = {
             manName : name,
             manColor : colo
@@ -112,8 +113,16 @@
         setBoxOne();
     }
 
-   function tmOut(){
+   function tmOutOne(){
        setTimeout(setBoxOne,10000);
+   }
+
+   function tmOutTwo(){
+       setTimeout(setBoxTwo,10000);
+   }
+
+   function tmOutThree(){
+       setTimeout(setBoxThree,10000);
    }
 
     function setBoxOne(){
@@ -122,7 +131,7 @@
             $("#b1").text(newOb.manName);
             $("#bb1").css('background-color',newOb.manColor);
             k++;
-            tmOut();
+            tmOutOne();
             if (k === obList.length){
                 k = 0;
             }
@@ -130,22 +139,23 @@
     }
 
     function setBoxTwo(){
-        if (k - 1 >= 0 ){
-            var secondOb = obList[k];
+        if (obList.length> 2){
+            var secondOb = obList[k-1];
             $("#b2").text(secondOb.manName);
             $("#bb2").css('background-color',secondOb.manColor);
             setBoxThree();
         }
+
     }
 
-    function setBoxThree(){
-        if (k - 2 >= 0 ){
-            var thirdOb = obList[k];
+    function setBoxThree() {
+        if (obList.length > 3) {
+            var thirdOb = obList[k - 2];
             $("#b3").text(thirdOb.manName);
-            $("#bb3").css('background-color',thirdOb.manColor);
-        }
+            $("#bb3").css('background-color', thirdOb.manColor);
 
-    }
+        }
+    }*/
 
 
 
