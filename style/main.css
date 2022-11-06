@@ -1109,7 +1109,7 @@ button#project-btn:hover{
         #content-frame>h1:nth-child(2) {
             color: #e75778;
             left: 5%;
-            top: 3%;
+            top: -2%;
         }
 
         #content-frame>#about-me{
@@ -1124,7 +1124,7 @@ button#project-btn:hover{
 
         button#download-btn {
             position: absolute;
-            left: 12%;
+            left: 17%;
         }
 
         #profile-image{
@@ -1226,7 +1226,7 @@ button#project-btn:hover{
 
 
         #skill-section>h2{
-            top: 85%;
+            top: 87%;
         }
 /*        End Skill section*/
       /*Begin Edu section*/
@@ -1303,6 +1303,10 @@ button#project-btn:hover{
         #contact-section>#social-logo{
             width: 99%;
             left: 0;
+        }
+
+        #contact-section>h2{
+            display : none;
         }
       /*End contact section*/
 
