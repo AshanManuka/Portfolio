@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>color Changer</title>
+    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+    <link rel="stylesheet" href="style/normalize.css">
+    <style>
+
+        #boxId{
+            width: 600px;
+            height: 500px;
+            background-color: #f5eded;
+            border: black 2px solid;
+            position: relative;
+            left: 400px;
+            top: 60px ;
+        }
+
+        #startButton,#stopButton{
+            width: 100px;
+            height: 50px;
+            background-color: darkslategray;
+            position: relative;
+        }
+
+        #startButton{
+            left: 400px;
+            top: 100px;
+        }
+
+        #stopButton{
+            left: 500px;
+            top: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+<main>
+    <div id="boxId"></div>
+
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+</main>
+
+
+
+<script src="jQuery/jquery-3.6.1.min.js"></script>
+<script>
+    var color = ["red","green","blue","yellow","pink","black"];
+    let n =0;
+    var cond = true;
+    var i = 0;
+
+    $("#startButton").on('click',function () {
+            ndd();
+    });
+
+
+
+    function ndd(){
+        setTimeout(goLoop,500);
+    }
+
+   function goLoop(){
+
+                var col = color[i];
+                $("#boxId").css('background-color',col);
+                i++;
+                ndd();
+                if (i === 7){
+                    i = 0;
+                }
+    }
+
+
+/*    function task(i) {
+
+       /!* setTimeout(function() {
+            var col = color[i];
+            $("#boxId").css('background-color',col);
+        },1200 *i );*!/
+    }*/
+
+
+    function infinit(){
+
+        alert("in infinit");
+        // goLoop(0);
+    }
+
+
+
+
+
+
+</script>
+</body>
+</html>

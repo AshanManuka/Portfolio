@@ -64,10 +64,9 @@
         <br>
         <br>
 
-        <div class="colo-div"><h2 id="b1"></h2></div>
-        <div class="colo-div"><h2 id="b2"></h2></div>
-        <div class="colo-div"><h2 id="b3"></h2></div>
-        <div class="colo-div"><h2 id="b4"></h2></div>
+        <div class="colo-div"><h2 id="b1">manuka</h2></div>
+        <div class="colo-div"><h2 id="b2">ashan</h2></div>
+        <div class="colo-div"><h2 id="b3">abishek</h2></div>
 
 
     </section>
@@ -77,8 +76,9 @@
 
 <script src="event/jQuery/jquery-3.6.1.min.js"></script>
 <script>
-    var nameList = ["Ashan", "Manuka", "Abishek", "Shanuka"];
+    var nameList = ["Ashan", "Manuka", "Abishek"];
     var colorList = ["red", "blue", "green", "orange", "pink", "purple", "yellow", "black"];
+    var  obList = [];
     var selectedColor;
     var emp = true;
 
@@ -105,7 +105,34 @@
     }
 
     function setObject(name){
+        var man = {
+            manName : name,
+            selectColor : selectedColor
+        }
+        obList.push(name);
+        setBox();
+    }
 
+    function setBox(){
+        $("#b1").text(" ");
+        $("#b2").text(" ");
+        $("#b3").text(" ");
+
+/*        for (let k = 0; k<obList.length[k]; k++){
+
+        }*/
+
+        for (const oneOb of obList) {
+            var l = oneOb.manName;
+            // $("#b1").ext("oneOb.manName");
+            console.log(l);
+        }
+       /* var nn = $("b1").text();*/
+       // var nn =  $("#b2").text();
+       //  console.log(nn);
+    /*    if ( ){
+
+        }*/
     }
 
 
