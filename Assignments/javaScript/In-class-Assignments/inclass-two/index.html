@@ -79,6 +79,7 @@
    // var nameList = ["Ashan", "Manuka", "Abishek"];
     var colorList = ["red", "blue", "green", "orange", "pink", "purple", "yellow", "black"];
     var selectedColor;
+   var remData;
 
     for (let i = 0; i<colorList.length; i++ ) {
         $("#colourList").append(`<option>${colorList[i]}</option>`);
@@ -89,19 +90,36 @@
     });
 
    var  obList = [
-
+         {name : "Ashan" , color : "red" },
+         {name : "Manuka" , color : "blue"},
+         {name : "Gota" , color : "green"}
    ];
 
+
+   function makeBox(){
+       $("#contianer").empty();
+       for (let i=0; i<obList.length; i++ ){
+           $("#contianer").append(`<div style="background-color:${obList[i].color} "><h1>${obList[i].name}</div></h1>`)
+       }
+   }
+
+   makeBox();
+
     $("#addTo").on("click",function () {
-       getDetails();
+        remData = obList.pop();
+        obList.unshift(remData);
+        getDetails();
+        makeBox();
     });
 
 
     function getDetails(){
         var colo = selectedColor;
-        var name = $("#txtName").val();
+        var pName = $("#txtName").val();
 
-        setObject(name,colo);
+       obList.unshift({name: pName, color: colo});
+
+
     }
 
     /*function setObject(name,colo){
