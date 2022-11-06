@@ -109,14 +109,14 @@
             manColor : colo
         }
         obList.push(man);
-        setBox();
+        setBoxOne();
     }
 
    function tmOut(){
-       setInterval(setBox,10000);
+       setTimeout(setBoxOne,10000);
    }
 
-    function setBox(){
+    function setBoxOne(){
            var newOb = obList[k];
 
             $("#b1").text(newOb.manName);
@@ -126,7 +126,28 @@
             if (k === obList.length){
                 k = 0;
             }
+            setBoxTwo();
     }
+
+    function setBoxTwo(){
+        if (k - 1 >= 0 ){
+            var secondOb = obList[k];
+            $("#b2").text(secondOb.manName);
+            $("#bb2").css('background-color',secondOb.manColor);
+            setBoxThree();
+        }
+    }
+
+    function setBoxThree(){
+        if (k - 2 >= 0 ){
+            var thirdOb = obList[k];
+            $("#b3").text(thirdOb.manName);
+            $("#bb3").css('background-color',thirdOb.manColor);
+        }
+
+    }
+
+
 
 
 
