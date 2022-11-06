@@ -64,9 +64,9 @@
         <br>
         <br>
 
-        <div class="colo-div"><h2 id="b1">manuka</h2></div>
-        <div class="colo-div"><h2 id="b2">ashan</h2></div>
-        <div class="colo-div"><h2 id="b3">abishek</h2></div>
+        <div id="bb1" class="colo-div"><h2 id="b1">manuka</h2></div>
+        <div id="bb2" class="colo-div"><h2 id="b2">ashan</h2></div>
+        <div id="bb3" class="colo-div"><h2 id="b3">abishek</h2></div>
 
 
     </section>
@@ -76,11 +76,12 @@
 
 <script src="event/jQuery/jquery-3.6.1.min.js"></script>
 <script>
-    var nameList = ["Ashan", "Manuka", "Abishek"];
+   // var nameList = ["Ashan", "Manuka", "Abishek"];
     var colorList = ["red", "blue", "green", "orange", "pink", "purple", "yellow", "black"];
     var  obList = [];
     var selectedColor;
     var emp = true;
+    let k = 0;
 
     for (let i = 0; i<colorList.length; i++ ) {
         $("#colourList").append(`<option>${colorList[i]}</option>`);
@@ -88,52 +89,46 @@
 
     $('#colourList').on('change', function() {
         selectedColor = $(this).val();
-
-
     });
 
     $("#addTo").on("click",function () {
        getDetails();
     });
 
-    function getDetails(){
-        var name = $("#txtName").val();
-/*        console.log("name "+ name);
-        console.log("colour "+ selectedColor);*/
 
-        setObject(name);
+    function getDetails(){
+        var colo = selectedColor;
+        var name = $("#txtName").val();
+
+        setObject(name,colo);
     }
 
-    function setObject(name){
+    function setObject(name,colo){
         var man = {
             manName : name,
-            selectColor : selectedColor
+            manColor : colo
         }
-        obList.push(name);
+        obList.push(man);
         setBox();
     }
 
+   function tmOut(){
+       setInterval(setBox,10000);
+   }
+
     function setBox(){
-        $("#b1").text(" ");
-        $("#b2").text(" ");
-        $("#b3").text(" ");
+           var newOb = obList[k];
 
-/*        for (let k = 0; k<obList.length[k]; k++){
-
-        }*/
-
-        for (const oneOb of obList) {
-            var l = oneOb.manName;
-            // $("#b1").ext("oneOb.manName");
-            console.log(l);
-        }
-       /* var nn = $("b1").text();*/
-       // var nn =  $("#b2").text();
-       //  console.log(nn);
-    /*    if ( ){
-
-        }*/
+            $("#b1").text(newOb.manName);
+            $("#bb1").css('background-color',newOb.manColor);
+            k++;
+            tmOut();
+            if (k === obList.length){
+                k = 0;
+            }
     }
+
+
 
 
 </script>
