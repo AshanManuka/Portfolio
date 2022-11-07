@@ -79,7 +79,7 @@
    // var nameList = ["Ashan", "Manuka", "Abishek"];
     var colorList = ["red", "blue", "green", "orange", "pink", "purple", "yellow", "black"];
     var selectedColor;
-   var remData;
+    var remData;
 
     for (let i = 0; i<colorList.length; i++ ) {
         $("#colourList").append(`<option>${colorList[i]}</option>`);
@@ -101,9 +101,14 @@
        for (let i=0; i<obList.length; i++ ){
            $("#contianer").append(`<div style="background-color:${obList[i].color} "><h1>${obList[i].name}</div></h1>`)
        }
+       // goLoop();
    }
 
    makeBox();
+
+   // function ndd(){
+   //     setTimeout(goLoop,500);
+   // }
 
     $("#addTo").on("click",function () {
         remData = obList.pop();
@@ -112,73 +117,24 @@
         makeBox();
     });
 
+    function setBox(){
+        remData = obList.pop();
+        obList.unshift(remData);
+        makeBox();
+
+    }
 
     function getDetails(){
         var colo = selectedColor;
         var pName = $("#txtName").val();
 
        obList.unshift({name: pName, color: colo});
-
-
     }
 
-    /*function setObject(name,colo){
-        var man = {
-            manName : name,
-            manColor : colo
-        }
-        obList.push(man);
-        setBoxOne();
-    }
-
-   function tmOutOne(){
-       setTimeout(setBoxOne,10000);
-   }
-
-   function tmOutTwo(){
-       setTimeout(setBoxTwo,10000);
-   }
-
-   function tmOutThree(){
-       setTimeout(setBoxThree,10000);
-   }
-
-    function setBoxOne(){
-           var newOb = obList[k];
-
-            $("#b1").text(newOb.manName);
-            $("#bb1").css('background-color',newOb.manColor);
-            k++;
-            tmOutOne();
-            if (k === obList.length){
-                k = 0;
-            }
-            setBoxTwo();
-    }
-
-    function setBoxTwo(){
-        if (obList.length> 2){
-            var secondOb = obList[k-1];
-            $("#b2").text(secondOb.manName);
-            $("#bb2").css('background-color',secondOb.manColor);
-            setBoxThree();
-        }
-
-    }
-
-    function setBoxThree() {
-        if (obList.length > 3) {
-            var thirdOb = obList[k - 2];
-            $("#b3").text(thirdOb.manName);
-            $("#bb3").css('background-color', thirdOb.manColor);
-
-        }
-    }*/
-
-
-
-
-
+    // function goLoop(){
+    //     ndd();
+    //     setBox();
+    // }
 
 </script>
 </body>
