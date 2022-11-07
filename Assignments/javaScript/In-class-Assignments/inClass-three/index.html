@@ -8,8 +8,70 @@
     <meta name="author" content="Ashan Manuka Jayarathne">
     <meta name="owner" content="Ashan Manuka">
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+
+    <style>
+        main{
+            position : absolute;
+            width: 99%;
+            height: 600px;
+        }
+
+        #main-sec{
+            position: absolute;
+            width: 90%;
+            height: 16%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .box{
+            position: relative;
+            display: inline-block;
+            width: 19%;
+            height: 98%;
+            margin: -1px;
+            padding: -1px;
+            border: black 1px solid;
+        }
+
+        #button-sec{
+            position: relative;
+            width: 25%;
+            height: 7%;
+            top :60%;
+            left: 35%;
+        }
+
+        .btnn{
+            position: relative;
+            width: 48%;
+            height: 100%;
+            display: inline-block;
+        }
+
+
+
+
+    </style>
 </head>
 <body>
+
+<main>
+    <section id="main-sec">
+        <div class="box" id="b1"></div>
+        <div class="box" id="b2"></div>
+        <div class="box" id="b3"></div>
+        <div class="box" id="b4"></div>
+        <div class="box" id="b5"></div>
+    </section>
+    <section id="button-sec">
+        <button type="button" class="btnn" id="start-btn">Start</button>
+        <button type="button" class="btnn" id="end-btn">End</button>
+    </section>
+</main>
 
 
 <script src="../event/jQuery/jquery-3.6.1.min.js"></script>
