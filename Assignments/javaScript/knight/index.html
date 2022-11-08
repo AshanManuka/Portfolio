@@ -80,14 +80,27 @@
 <script src="../In-class-Assignments/event/jQuery/jquery-3.6.1.min.js"></script>
 <script>
 
-    var lightList = ["#6c0308", "#e31b1b", "#ea5d5d"];
+    var lightList = ["#6c0308", "#c10a0a", "#cd1010","#f81a1a"];
     var a = 0;
+    var b = 0;
+    var c = 0;
+    var d = 0;
+    var e = 0;
 
     function timeOut(){
-        setInterval(startRun,1000);
+        setInterval(startRun,500);
     }
     function timeoutTwo(){
-        setInterval(setSecond,1000);
+        setInterval(setSecond,500);
+    }
+    function timeoutThree(){
+        setInterval(setThird,500);
+    }
+    function timeoutFour(){
+        setInterval(setFour,500);
+    }
+    function timeoutFive(){
+        setInterval(setFive,500);
     }
 
     $("#start-btn").on('click',function(){
@@ -100,17 +113,46 @@
 
     function startRun(){
             $("#b1").css('background-color',lightList[a]);
+            timeoutTwo();
             a++;
             if (a === lightList.length){
                 a = 0;
-               timeoutTwo();
             }
-            timeOut();
     }
 
     function setSecond(){
-        $("#b2").css('background-color',lightList[a]);
-        a++;
+        $("#b2").css('background-color',lightList[b]);
+        b++;
+        timeoutThree()
+
+        if (b === lightList.length){
+            b = 0;
+        }
+    }
+
+    function setThird(){
+        $("#b3").css('background-color',lightList[c]);
+        timeoutFour();
+        c++;
+        if (c === lightList.length){
+            c = 0;
+        }
+    }
+
+    function setFour(){
+        $("#b4").css('background-color',lightList[d]);
+        timeoutFive();
+        d++;
+        if (d === lightList.length){
+            d = 0;
+        }
+    }
+    function setFive(){
+        $("#b5").css('background-color',lightList[e]);
+        e++;
+        if (e === lightList.length){
+            e = 0;
+        }
     }
 
 
