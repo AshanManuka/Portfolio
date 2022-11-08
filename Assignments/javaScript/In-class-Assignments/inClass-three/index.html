@@ -52,13 +52,17 @@
             display: inline-block;
         }
 
+        #start-btn{
+            background-color: #063478;
+        }
 
-
+        #end-btn{
+            background-color : #6d0303;
+        }
 
     </style>
 </head>
 <body>
-
 <main>
     <section id="main-sec">
         <div class="box" id="b1"></div>
@@ -73,9 +77,21 @@
     </section>
 </main>
 
-
 <script src="../event/jQuery/jquery-3.6.1.min.js"></script>
 <script>
+
+    var lightList = ["#c2030b", "#e31b1b", "#fc4646"];
+
+    $("#start-btn").on('click',function(){
+       startRun();
+    });
+
+    function startRun(){
+        for (let a = 0; a<lightList.length; a++){
+
+        }
+    }
+
 
 </script>
 </body>
