@@ -92,14 +92,10 @@
 <script src="../In-class-Assignments/event/jQuery/jquery-3.6.1.min.js"></script>
 <script>
 
-    var i;
+    var i = 0;
     var leftList = ["white", "white", "white", "white", "white", "white", "#6c0308", "#c10a0a", "#cd1010","#d92525","#FFF52C2C","#FFEE5252"];
     var rightList = ["white", "white", "white", "white", "white", "white", "rgba(243,83,83,0.17)", "rgb(250,59,59)", "#d92525","#cd1010","#c10a0a","#6c0308"];
     var tempArray = [];
-
-    // goLeft();
-    // goRight();
-
 
         function goLeft() {
             var lastColor = tempArray.pop();
@@ -110,10 +106,6 @@
             var firstColor = tempArray.unshift();
             tempArray.push(firstColor);
         }
-
-    goLoop();
-
-
 
     function goLoop(){
         i++;
@@ -137,8 +129,8 @@
 
         for (let n=0; n<tempArray.length/2; n++){
             $("#main-sec").append(`<div style="background-color: ${tempArray[n]}"></div>`);
-            goLoop();
         }
+        goLoop();
     }
 
     var id = setInterval(makeBox,90);
