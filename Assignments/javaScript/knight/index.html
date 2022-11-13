@@ -26,12 +26,13 @@
             margin : auto;
             width : 1000px;
             height : 150px;
-            border : black 2px solid;
+            border : black 1px solid;
         }
+
          #main-sec{
             position: absolute;
-            width: 90%;
-            height: 16%;
+            width: 100%;
+            height: 100%;
             top: 0;
             bottom: 0;
             left: 0;
@@ -40,8 +41,6 @@
             display: flex;
             gap : 10px;
         }
-
-
 
         main>section>#main-sec>div{
             width: 100%;
@@ -52,13 +51,13 @@
             position: relative;
             width: 25%;
             height: 7%;
-            top :60%;
-            left: 35%;
+            top :80%;
+            left: -4%;
         }
 
         .btnn{
             position: relative;
-            width: 48%;
+            width: 49%;
             height: 100%;
             display: inline-block;
         }
@@ -77,11 +76,6 @@
 <main>
     <section>
         <section id="main-sec" ></section>
-        <!--<div class="box" id="b1"></div>
-        <div class="box" id="b2"></div>
-        <div class="box" id="b3"></div>
-        <div class="box" id="b4"></div>
-        <div class="box" id="b5"></div>-->
     </section>
     <section id="button-sec">
         <button type="button" class="btnn" id="start-btn">Start</button>
@@ -94,7 +88,7 @@
 
     var i = 0;
     var leftList = ["white", "white", "white", "white", "white", "white", "#6c0308", "#c10a0a", "#cd1010","#d92525","#FFF52C2C","#FFEE5252"];
-    var rightList = ["white", "white", "white", "white", "white", "white", "rgba(243,83,83,0.17)", "rgb(250,59,59)", "#d92525","#cd1010","#c10a0a","#6c0308"];
+    var rightList = ["white", "white", "white", "white", "white", "white", "rgb(241,170,170)", "rgb(250,59,59)", "#d92525","#cd1010","#c10a0a","#6c0308"];
     var tempArray = [];
 
         function goLeft() {
