@@ -16,7 +16,19 @@
             height: 600px;
         }
 
-        #main-sec{
+
+        main>section{
+            position : absolute;
+            left: 0;
+            right : 0;
+            top : 0;
+            bottom : 0;
+            margin : auto;
+            width : 1000px;
+            height : 150px;
+            border : black 2px solid;
+        }
+         #main-sec{
             position: absolute;
             width: 90%;
             height: 16%;
@@ -25,16 +37,15 @@
             left: 0;
             right: 0;
             margin: auto;
+            display: flex;
+            gap : 10px;
         }
 
-        .box{
-            position: relative;
-            display: inline-block;
-            width: 19%;
-            height: 98%;
-            margin: -1px;
-            padding: -1px;
-            border: black 1px solid;
+
+
+        main>section>#main-sec>div{
+            width: 100%;
+            height: 100%;
         }
 
         #button-sec{
@@ -64,12 +75,13 @@
 </head>
 <body>
 <main>
-    <section id="main-sec">
-        <div class="box" id="b1"></div>
+    <section>
+        <section id="main-sec" ></section>
+        <!--<div class="box" id="b1"></div>
         <div class="box" id="b2"></div>
         <div class="box" id="b3"></div>
         <div class="box" id="b4"></div>
-        <div class="box" id="b5"></div>
+        <div class="box" id="b5"></div>-->
     </section>
     <section id="button-sec">
         <button type="button" class="btnn" id="start-btn">Start</button>
@@ -81,21 +93,27 @@
 <script>
 
     var i;
-    var leftList = ["#6c0308", "#c10a0a", "#cd1010","#d92525","#FFF52C2C","#FFEE5252"];
-    var rightList = ["rgb(246,48,48)", "rgb(245,40,58)", "#d92525","#cd1010","#c10a0a","#6c0308"];
+    var leftList = ["white", "white", "white", "white", "white", "white", "#6c0308", "#c10a0a", "#cd1010","#d92525","#FFF52C2C","#FFEE5252"];
+    var rightList = ["white", "white", "white", "white", "white", "white", "rgba(243,83,83,0.17)", "rgb(250,59,59)", "#d92525","#cd1010","#c10a0a","#6c0308"];
     var tempArray = [];
 
-    function goLeft(){
-        var lastColor = tempArray.pop();
-        tempArray.unshift(lastColor);
-    }
+    // goLeft();
+    // goRight();
 
-    function goRight(){
-        var firstColor = tempArray.unshift();
-        tempArray.push(firstColor);
-    }
+
+        function goLeft() {
+            var lastColor = tempArray.pop();
+            tempArray.unshift(lastColor);
+        }
+
+        function goRight() {
+            var firstColor = tempArray.unshift();
+            tempArray.push(firstColor);
+        }
 
     goLoop();
+
+
 
     function goLoop(){
         i++;
@@ -123,7 +141,7 @@
         }
     }
 
-    var id = setInterval(makeBox,100);
+    var id = setInterval(makeBox,90);
 
     $("#start-btn").on("click",function(){
        clearInterval(id);
@@ -133,7 +151,6 @@
     $("#end-btn").on("click",function () {
         clearInterval(id);
     });
-
 
 
 
