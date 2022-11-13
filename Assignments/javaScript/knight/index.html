@@ -80,80 +80,61 @@
 <script src="../In-class-Assignments/event/jQuery/jquery-3.6.1.min.js"></script>
 <script>
 
-    var lightList = ["#6c0308", "#c10a0a", "#cd1010","#f81a1a"];
-    var a = 0;
-    var b = 0;
-    var c = 0;
-    var d = 0;
-    var e = 0;
+    var i;
+    var leftList = ["#6c0308", "#c10a0a", "#cd1010","#d92525","#FFF52C2C","#FFEE5252"];
+    var rightList = ["rgb(246,48,48)", "rgb(245,40,58)", "#d92525","#cd1010","#c10a0a","#6c0308"];
+    var tempArray = [];
 
-    function timeOut(){
-        setInterval(startRun,500);
-    }
-    function timeoutTwo(){
-        setInterval(setSecond,500);
-    }
-    function timeoutThree(){
-        setInterval(setThird,500);
-    }
-    function timeoutFour(){
-        setInterval(setFour,500);
-    }
-    function timeoutFive(){
-        setInterval(setFive,500);
+    function goLeft(){
+        var lastColor = tempArray.pop();
+        tempArray.unshift(lastColor);
     }
 
-    $("#start-btn").on('click',function(){
-       run();
+    function goRight(){
+        var firstColor = tempArray.unshift();
+        tempArray.push(firstColor);
+    }
+
+    goLoop();
+
+    function goLoop(){
+        i++;
+
+        if (i <= leftList.length){
+            tempArray = leftList;
+            goLeft();
+        }else {
+            if (i >= rightList.length * 2){
+                i = 0;
+            }
+            tempArray = rightList;
+            goRight();
+        }
+    }
+
+    makeBox();
+
+    function makeBox(){
+        $("#main-sec").empty();
+
+        for (let n=0; n<tempArray.length/2; n++){
+            $("#main-sec").append(`<div style="background-color: ${tempArray[n]}"></div>`);
+            goLoop();
+        }
+    }
+
+    var id = setInterval(makeBox,100);
+
+    $("#start-btn").on("click",function(){
+       clearInterval(id);
+       id = setInterval(makeBox,100);
     });
 
-    function run(){
-        timeOut();
-    }
+    $("#end-btn").on("click",function () {
+        clearInterval(id);
+    });
 
-    function startRun(){
-            $("#b1").css('background-color',lightList[a]);
-            timeoutTwo();
-            a++;
-            if (a === lightList.length){
-                a = 0;
-            }
-    }
 
-    function setSecond(){
-        $("#b2").css('background-color',lightList[b]);
-        b++;
-        timeoutThree()
-
-        if (b === lightList.length){
-            b = 0;
-        }
-    }
-
-    function setThird(){
-        $("#b3").css('background-color',lightList[c]);
-        timeoutFour();
-        c++;
-        if (c === lightList.length){
-            c = 0;
-        }
-    }
-
-    function setFour(){
-        $("#b4").css('background-color',lightList[d]);
-        timeoutFive();
-        d++;
-        if (d === lightList.length){
-            d = 0;
-        }
-    }
-    function setFive(){
-        $("#b5").css('background-color',lightList[e]);
-        e++;
-        if (e === lightList.length){
-            e = 0;
-        }
-    }
 
 
 
