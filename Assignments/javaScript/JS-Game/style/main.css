@@ -1,0 +1,73 @@
+/* ===================== Start ===================== */
+body{
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+main{
+    position: absolute;
+    left: 0;
+    right : 0;
+    top : 0;
+    bottom : 0;
+    margin: auto;
+    width: 90%;
+    height: 600px;
+    /*border: #ee9099 2px solid;*/
+}
+
+#section-one{
+    position: relative;
+    width: 90%;
+    height: 100px;
+    left: 10%;
+    top : 10%;
+    /*border: #ff253a 2px solid;    */
+}
+
+#section-one>h1{
+    color: white;
+    font-size: 10vh;
+}
+
+#section-two{
+    position: relative;
+    width: 50%;
+    height: 150px;
+    left: 25%;
+    top : 30%;
+    /*border: #ff253a 2px solid;*/
+}
+
+#section-two>label{
+    color: white;
+    font-size: 5vh;
+}
+
+#section-two>input{
+    color: white;
+    font-size: 4vh;
+    border-radius: 10px;
+    border: #b7cef1 1px solid;
+    background-color: rgba(10, 0, 0, 0.1);
+}
+
+#section-three{
+    position: relative;
+    width: 25%;
+    height: 60px;
+    left: 35%;
+    top : 30%;
+    border-radius: 35px;
+    border: #e8ecec 1px solid;
+    background-color: #130101;
+}
+
+#section-three>h2{
+    position: absolute;
+    left: 35%;
+    top : 23%;
+    margin: auto;
+    color: white;
+
+}
+
