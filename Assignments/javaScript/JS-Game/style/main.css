@@ -29,6 +29,14 @@ main{
     font-size: 10vh;
 }
 
+#section-one>#tmImage{
+    position: relative;
+    width: 45%;
+    left: 54%;
+    top: -60%;
+
+}
+
 #section-two{
     position: relative;
     width: 50%;
