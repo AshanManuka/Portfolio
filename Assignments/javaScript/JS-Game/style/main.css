@@ -70,12 +70,15 @@ main{
     background-color: #130101;
 }
 
-#section-three>h2{
+#section>a{
+    text-decoration:noe;
+}
+
+#section-three>a>h2{
     position: absolute;
     left: 35%;
     top : 23%;
     margin: auto;
     color: white;
-
 }
 
