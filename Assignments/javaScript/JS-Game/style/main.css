@@ -70,8 +70,8 @@ main{
     background-color: #130101;
 }
 
-#section>a{
-    text-decoration:noe;
+#section-three>a{
+    text-decoration:none;
 }
 
 #section-three>a>h2{

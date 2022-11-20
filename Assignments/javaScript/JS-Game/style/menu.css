@@ -4,8 +4,64 @@ body{
 
 #first-heading{
     position: relative;
+    display: inline;
     left: 35%;
     top: 10%;
     font-size: 8vh;
     color: #e83939;
+}
+
+#sec-one{
+    position: absolute;
+    width : 90%;
+    height: 50vh;
+    top : 0;
+    left: 0;
+    bottom : 0;
+    right : 0;
+    margin: auto;
+    border: #111538 2px solid;
+    border-radius: 20px;
+    background-color: #06091f;
+}
+
+#sec-one>.land-div{
+    position: relative;
+    display: inline-block;
+    width: 15vw;
+    height: 30vh;
+    border: white 3px solid;
+    border-radius: 100px;
+    margin: 10vh;
+    left: 13vh;
+}
+
+.imgLands{
+    position: absolute;
+    width: 15vw;
+    height: 30vh;
+    border-radius: 100px;
+}
+
+#sec-two{
+    position: relative;
+    width: 25%;
+    height: 60px;
+    left: 35%;
+    top : 75vh;
+    border-radius: 35px;
+    border: #e8ecec 1px solid;
+    background-color: #130101;
+}
+
+#sec-two>a{
+    text-decoration:none;
+}
+
+#sec-two>a>h2{
+    position: absolute;
+    left: 25%;
+    top : 23%;
+    margin: auto;
+    color: white;
 }
