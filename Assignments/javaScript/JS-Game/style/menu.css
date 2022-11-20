@@ -1,0 +1,11 @@
+body{
+   background-color: black;
+}
+
+#first-heading{
+    position: relative;
+    left: 35%;
+    top: 10%;
+    font-size: 8vh;
+    color: #e83939;
+}
