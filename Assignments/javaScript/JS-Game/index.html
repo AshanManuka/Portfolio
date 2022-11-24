@@ -26,13 +26,12 @@
     </section>
 
     <section id="section-three">
-<!--        <a href="#"><h2>Let's GO</h2></a>-->
         <h2>Let's GO</h2>
     </section>
 </main>
 
 <section id="main-sec">
-    <h1 id="first-heading">Select Your Land</h1>
+    <h1 id="first-heading">Choose a Land</h1>
 
     <section id="sec-one">
         <div class="land-div" id="land-one"><img src="assets/images/nightLand.jpg" alt="nightLand" class="imgLands" id="imgLandOne"></div>
@@ -48,11 +47,12 @@
 
 <script src="assets/jQuery/jquery-3.6.1.min.js"></script>
 <script>
-    document.getElementById("main-sec").style.display = "none";
 
-    document.getElementById("section-three").addEventListener("click",function(){
-    document.getElementById("main-page").style.display = "none";
-    document.getElementById("main-sec").style.display = "inline";
+    $("#main-sec").css('display',"none");
+
+    $("#section-three").on('click',function(){
+       $("#main-page").css('display',"none");
+       $("#main-sec").css('display',"inline");
 
     });
 </script>

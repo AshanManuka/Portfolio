@@ -70,11 +70,7 @@ main{
     background-color: #130101;
 }
 
-#section-three>a{
-    text-decoration:none;
-}
-
-#section-three>a>h2{
+#section-three>h2{
     position: absolute;
     left: 35%;
     top : 23%;
