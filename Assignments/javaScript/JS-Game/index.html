@@ -11,9 +11,10 @@
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/menu.css">
 </head>
 <body>
-<main>
+<main id="main-page">
     <section id="section-one">
         <h1>Welcome to The WARRR !!!!!!</h1>
         <img src="assets/images/themeImg.png" alt="theme-image" id="tmImage">
@@ -25,12 +26,35 @@
     </section>
 
     <section id="section-three">
-        <a href="pages/menuPage.html"><h2>Let's GO</h2></a>
+<!--        <a href="#"><h2>Let's GO</h2></a>-->
+        <h2>Let's GO</h2>
     </section>
 </main>
 
+<section id="main-sec">
+    <h1 id="first-heading">Select Your Land</h1>
+
+    <section id="sec-one">
+        <div class="land-div" id="land-one"><img src="assets/images/nightLand.jpg" alt="nightLand" class="imgLands" id="imgLandOne"></div>
+        <div class="land-div" id="land-two"><img src="assets/images/rainyland.jpg" alt="rainyLand" class="imgLands" id="imgLandTwo"></div>
+        <div class="land-div" id="land-three"><img src="assets/images/summerLand.jpg" alt="summerLand" class="imgLands" id="imgLandThree"></div>
+    </section>
+
+    <section id="sec-two">
+        <a href="#"><h2>Go To The Battle</h2></a>
+    </section>
+
+</section>
 
 <script src="assets/jQuery/jquery-3.6.1.min.js"></script>
-<script></script>
+<script>
+    document.getElementById("main-sec").style.display = "none";
+
+    document.getElementById("section-three").addEventListener("click",function(){
+    document.getElementById("main-page").style.display = "none";
+    document.getElementById("main-sec").style.display = "inline";
+
+    });
+</script>
 </body>
 </html>
