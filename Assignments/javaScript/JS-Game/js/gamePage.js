@@ -7,6 +7,15 @@ function getNow(){
         if(nowMin < 50){
             nowMin += 10;
             countTime(nowHour,nowMin,nowSec);
+        }else if(nowMin === 50){
+            nowHour += 1;
+            nowMin = 0;
+            countTime(nowHour,nowMin,nowSec);
+        }else{
+            nowHour += 1;
+            var balanceMin = nowMin - 50;
+            nowMin = balanceMin;
+            countTime(nowHour,nowMin,nowSec);
         }
 
 }
