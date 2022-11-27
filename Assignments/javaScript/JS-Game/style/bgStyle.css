@@ -1,0 +1,20 @@
+
+body{
+    background-color: black;
+}
+
+#sec-one{
+    background-color: rgba(27, 40, 40, 0.5);
+    height: 8vh;
+    width: 100%;
+    margin: 0;
+}
+
+#sec-one>div{
+    margin-top : 1vh;
+}
+
+#sec-one>div>h2{
+    color : white;
+}
+
