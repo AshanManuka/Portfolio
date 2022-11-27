@@ -17,15 +17,10 @@ function getNow(){
             nowMin = balanceMin;
             countTime(nowHour,nowMin,nowSec);
         }
-
 }
-
-
-// countTime();
 
 function countTime(hh,mm,ss){
     var tDay = new Date().toDateString()
-    console.log(tDay);
     var lastTime = tDay+" "+hh+":"+mm+":"+ss;
     var countTime = new Date(lastTime).getTime();
     var x = setInterval(function() {
@@ -33,7 +28,12 @@ function countTime(hh,mm,ss){
         var distance = countTime - now;
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        console.log(minutes + " : " + seconds + "   ");
+        var forLbl = minutes+ ":" + seconds;
+        $("#timeId").text(forLbl);
+
+        if(minutes === 2){
+            $("#timeId").css('color',"red");
+        }
 
         if (distance < 0) {
             clearInterval(x);
