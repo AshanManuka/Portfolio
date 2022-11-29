@@ -78,3 +78,7 @@ main{
     color: white;
 }
 
+#section-three.table-hover{
+    cursor: pointer;
+}
+

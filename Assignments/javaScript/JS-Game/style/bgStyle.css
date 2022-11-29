@@ -1,6 +1,12 @@
 
 body{
-    background-color: black;
+
+}
+
+main>#bg{
+    position: absolute;
+    width: 100vw;
+    height: 92vh;
 }
 
 #sec-one{

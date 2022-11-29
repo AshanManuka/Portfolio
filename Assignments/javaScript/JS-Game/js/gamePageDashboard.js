@@ -37,7 +37,6 @@ function countTime(hh,mm,ss){
 
         if (distance < 0) {
             clearInterval(x);
-            // document.getElementById("emo").innerHTML = "EXPIRED";
         }
     }, 1000);
 }

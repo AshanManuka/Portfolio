@@ -54,6 +54,10 @@ body{
     background-color: #130101;
 }
 
+#sec-two.table-hover{
+    cursor: pointer;
+}
+
 #sec-two>a{
     text-decoration:none;
 }
