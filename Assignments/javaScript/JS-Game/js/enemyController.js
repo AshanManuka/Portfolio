@@ -12,6 +12,7 @@ function flowEnemyOne(){
 
     if(one === 410){
         one = 0;
+        checkPositionOne();
     }
 }
 
@@ -21,6 +22,7 @@ function flowEnemyTwo(){
 
     if(two === 410){
         two = 0;
+        checkPositionTwo();
     }
 }
 
@@ -30,6 +32,7 @@ function flowEnemyThree(){
 
     if(three === 410){
         three = 0;
+        checkPositionThree();
     }
 }
 
