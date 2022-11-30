@@ -69,7 +69,7 @@ main>#bg{
     position : absolute;
     display: inline;
     width : 200px;
-    height : 550px;
+    height : 600px;
     left: 25%;
     top : 5%;
     /*border: white 2px solid ;*/
@@ -79,7 +79,7 @@ main>#bg{
     position : absolute;
     display: inline;
     width : 200px;
-    height : 550px;
+    height : 600px;
     left: 45%;
     top : 5%;
     /*border: white 2px solid ;*/
@@ -89,7 +89,7 @@ main>#bg{
     position : absolute;
     display: inline;
     width : 200px;
-    height : 550px;
+    height : 600px;
     left: 65%;
     top : 5%;
     /*border: white 2px solid ;*/
@@ -101,19 +101,22 @@ main>#bg{
     height: 200px;
 }
 
-#playerArea{
-    position : absolute;
-    width : 800px;
-    height : 150px;
-    top : 70%;
-    left: 22%;
-    /*border : #35e5e5 2px solid;*/
-}
+/*#playerArea{*/
+/*    position : absolute;*/
+/*    width : 800px;*/
+/*    height : 150px;*/
+/*    top : 70%;*/
+/*    left: 22%;*/
+/*    display: inline-block;*/
+/*    !*border : #35e5e5 2px solid;*!*/
+/*}*/
 
 #playerImg{
     position : absolute;
-    width : 150px;
-    height : 200px;
+    width : 100px;
+    height : 150px;
+    left : 10%;
+    top : 75%;
 
 
 

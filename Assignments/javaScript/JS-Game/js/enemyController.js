@@ -10,7 +10,7 @@ function flowEnemyOne(){
     goEnemyOne(one);
     one += 5;
 
-    if(one === 405){
+    if(one === 410){
         one = 0;
     }
 }
@@ -19,7 +19,7 @@ function flowEnemyTwo(){
     goEnemyTwo(two);
     two += 5;
 
-    if(two === 405){
+    if(two === 410){
         two = 0;
     }
 }
@@ -28,7 +28,7 @@ function flowEnemyThree(){
     goEnemyThree(three);
     three += 5;
 
-    if(three === 405){
+    if(three === 410){
         three = 0;
     }
 }
