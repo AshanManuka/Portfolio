@@ -77,7 +77,7 @@ main>#bg{
     height : 550px;
     left: 25%;
     top : 10%;
-    border: white 2px solid ;
+    /*border: white 2px solid ;*/
 }
 
 #row-two{
@@ -87,7 +87,7 @@ main>#bg{
     height : 550px;
     left: 45%;
     top : 10%;
-    border: white 2px solid ;
+    /*border: white 2px solid ;*/
 }
 
 #row-three{
@@ -97,7 +97,7 @@ main>#bg{
     height : 550px;
     left: 65%;
     top : 10%;
-    border: white 2px solid ;
+    /*border: white 2px solid ;*/
 }
 
 .enemy{
