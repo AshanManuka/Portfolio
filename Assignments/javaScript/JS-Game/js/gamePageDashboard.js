@@ -35,8 +35,16 @@ function countTime(hh,mm,ss){
             $("#timeId").css('color',"red");
         }
 
-        if (distance < 0) {
+        if (distance === 0) {
             clearInterval(x);
+        //show section
         }
     }, 1000);
 }
+
+function showAlert(){
+
+}
+
+$("main").css('display',"none");
+// $("result-form").css('display',"inline");

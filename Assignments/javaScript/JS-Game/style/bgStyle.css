@@ -24,3 +24,39 @@ main>#bg{
     color : white;
 }
 
+#result-form{
+    position : relative;
+    background-color: #d51111;
+    width : 50vw;
+    top : 15vh;
+    border-radius: 20px;
+}
+
+#result-form>h1{
+    position: relative;
+    left : 25%;
+    margin-top : 10%;
+    font-size : 65px;
+}
+
+#result-form>#result-div{
+    width : 50%;
+}
+
+#result-form>#result-div>h3{
+    position : relative;
+    color : #3e0a15;
+    display : inline-block;
+}
+
+#result-form>#end-btn{
+    position : relative;
+    left : 25%;
+    margin-top : 5%;
+    margin-bottom : 5%;
+    width : 50%;
+    height : 50px;
+    border-radius: 20px;
+    background-color: #fa52cb;
+    font-size: 30px;
+}

@@ -43,7 +43,7 @@ body{
     border-radius: 100px;
 }
 
-#sec-two{
+#sec-twoo{
     position: relative;
     width: 25%;
     height: 60px;
@@ -54,15 +54,15 @@ body{
     background-color: #130101;
 }
 
-#sec-two.table-hover{
+#sec-twoo.table-hover{
     cursor: pointer;
 }
 
-#sec-two>a{
+#sec-twoo>a{
     text-decoration:none;
 }
 
-#sec-two>a>h2{
+#sec-twoo>a>h2{
     position: absolute;
     left: 25%;
     top : 23%;
