@@ -1,11 +1,14 @@
 
-body{
 
+main{
+    position : relative;
+    width: 100vw;
+    height: 100vh;
 }
 
 main>#bg{
-    position: absolute;
-    width: 100vw;
+    position : absolute;
+    width : 100vw;
     height: 92vh;
 }
 
@@ -60,3 +63,46 @@ main>#bg{
     background-color: #fa52cb;
     font-size: 30px;
 }
+
+#scope-id>#scope-img{
+    position : absolute;
+    width : 100px;
+    height : 100px;
+}
+
+#row-one{
+    position : absolute;
+    display: inline;
+    width : 200px;
+    height : 550px;
+    left: 25%;
+    top : 10%;
+    border: white 2px solid ;
+}
+
+#row-two{
+    position : absolute;
+    display: inline;
+    width : 200px;
+    height : 550px;
+    left: 45%;
+    top : 10%;
+    border: white 2px solid ;
+}
+
+#row-three{
+    position : absolute;
+    display: inline;
+    width : 200px;
+    height : 550px;
+    left: 65%;
+    top : 10%;
+    border: white 2px solid ;
+}
+
+.enemy{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+

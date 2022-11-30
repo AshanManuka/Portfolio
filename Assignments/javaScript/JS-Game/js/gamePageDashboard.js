@@ -1,3 +1,4 @@
+
 getNow();
 
 function getNow(){
@@ -38,6 +39,8 @@ function countTime(hh,mm,ss){
         if (distance === 0) {
             clearInterval(x);
         //show section
+            $("main").css('display',"none");
+            $("result-form").css('display',"inline");
         }
     }, 1000);
 }
@@ -46,5 +49,3 @@ function showAlert(){
 
 }
 
-$("main").css('display',"none");
-// $("result-form").css('display',"inline");
