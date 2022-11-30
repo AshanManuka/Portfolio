@@ -9,22 +9,23 @@ main{
 main>#bg{
     position : absolute;
     width : 100vw;
-    height: 92vh;
+    height: 100vh;
 }
 
-#sec-one{
-    background-color: rgba(27, 40, 40, 0.5);
-    height: 8vh;
-    width: 100%;
-    margin: 0;
-}
-
-#sec-one>div{
+#time-div{
+    position : absolute;
     margin-top : 1vh;
+    display: inline;
+    width: 100px;
+    height: 50px;
 }
 
-#sec-one>div>h2{
-    color : white;
+#time-div>h2{
+    position: relative;
+    color : #48ee0d;
+    margin-left: 30px;
+    font-size : 50px;
+    display: inline-block;
 }
 
 #result-form{
@@ -64,19 +65,13 @@ main>#bg{
     font-size: 30px;
 }
 
-#scope-id>#scope-img{
-    position : absolute;
-    width : 100px;
-    height : 100px;
-}
-
 #row-one{
     position : absolute;
     display: inline;
     width : 200px;
     height : 550px;
     left: 25%;
-    top : 10%;
+    top : 5%;
     /*border: white 2px solid ;*/
 }
 
@@ -86,7 +81,7 @@ main>#bg{
     width : 200px;
     height : 550px;
     left: 45%;
-    top : 10%;
+    top : 5%;
     /*border: white 2px solid ;*/
 }
 
@@ -96,7 +91,7 @@ main>#bg{
     width : 200px;
     height : 550px;
     left: 65%;
-    top : 10%;
+    top : 5%;
     /*border: white 2px solid ;*/
 }
 
