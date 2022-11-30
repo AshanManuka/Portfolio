@@ -29,10 +29,11 @@ main>#bg{
 }
 
 #result-form{
-    position : relative;
-    background-color: #d51111;
+    position : absolute;
+    background-color: #ee5864;
     width : 50vw;
     top : 15vh;
+    left: 30%;
     border-radius: 20px;
 }
 
@@ -48,12 +49,17 @@ main>#bg{
 }
 
 #result-form>#result-div>h3{
-    position : relative;
+    position : absolute;
     color : #3e0a15;
     display : inline-block;
 }
 
-#result-form>#end-btn{
+#result-form>#result-div>h2{
+    color: black;
+    font-size: 100px;
+}
+
+#result-form>a>#end-btn{
     position : relative;
     left : 25%;
     margin-top : 5%;

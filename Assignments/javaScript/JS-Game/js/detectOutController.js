@@ -2,18 +2,21 @@
 
 function checkPositionOne(){
     if(rowOne){
-        alert("1 happuna");
+        $("main").css('display',"none");
+        $("#result-form").css('display',"inline");
     }
 }
 
 function checkPositionTwo(){
     if(rowTwo){
-        alert("2 happuna");
+        $("main").css('display',"none");
+        $("#result-form").css('display',"inline");
     }
 }
 
 function checkPositionThree(){
     if(rowThree){
-        alert("3 happuna");
+        $("main").css('display',"none");
+        $("#result-form").css('display',"inline");
     }
 }

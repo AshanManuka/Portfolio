@@ -1,4 +1,4 @@
-
+var playerName;
 getNow();
 
 function getNow(){
@@ -36,16 +36,23 @@ function countTime(hh,mm,ss){
             $("#timeId").css('color',"red");
         }
 
-        if (distance === 0) {
+        if (distance < 0) {
             clearInterval(x);
         //show section
             $("main").css('display',"none");
-            $("result-form").css('display',"inline");
+            $("#result-form").css('display',"inline");
         }
     }, 1000);
 }
 
-function showAlert(){
 
+$("#sec-twoo").on('click',function(){
+    playerName = $("#txtName").val();
+});
+
+function setStatus(){
+    $("#pName").text(playerName);
+    $("#score-id").text(score);
 }
+
 
