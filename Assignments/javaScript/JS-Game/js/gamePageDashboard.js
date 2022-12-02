@@ -1,3 +1,4 @@
+var total;
 var playerName;
 getNow();
 
@@ -41,6 +42,7 @@ function countTime(hh,mm,ss){
         //show section
             $("main").css('display',"none");
             $("#result-form").css('display',"inline");
+            setStatus();
         }
     }, 1000);
 }
@@ -48,11 +50,13 @@ function countTime(hh,mm,ss){
 
 $("#sec-twoo").on('click',function(){
     playerName = $("#txtName").val();
+    alert(playerName);
 });
 
 function setStatus(){
     $("#pName").text(playerName);
-    $("#score-id").text(score);
+    $("#score-id").text(total);
+    console.log("total : "+total);
 }
 
 

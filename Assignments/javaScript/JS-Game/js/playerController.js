@@ -2,6 +2,7 @@ var score = 0;
 var rowOne = false;
 var rowTwo = false;
 var rowThree = false;
+var ppName;
 
 
 $("body").on('keyup',function (event) {
@@ -24,6 +25,11 @@ $("body").on('keyup',function (event) {
         rowThree = true;
         score++;
     }
+
+    total = score;
+    console.log("player : "+total);
+    $("#pName").text(playerName);
+    $("#score-id").text(total);
 });
 
 

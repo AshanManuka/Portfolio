@@ -51,12 +51,22 @@ main>#bg{
 #result-form>#result-div>h3{
     position : absolute;
     color : #3e0a15;
+    left : 45%;
     display : inline-block;
 }
 
 #result-form>#result-div>h2{
+    position : relative;
     color: black;
     font-size: 100px;
+}
+
+#result-form>#result-div>h1{
+    position : relative;
+    color: black;
+    font-size: 100px;
+    left : 45%;
+
 }
 
 #result-form>a>#end-btn{
